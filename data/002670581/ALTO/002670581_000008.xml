@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.bl.uk/schemas/alto/alto-1-4.xsd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<Description>
+		<MeasurementUnit>mm10</MeasurementUnit>
+		<sourceImageInformation>
+			<fileName>//head1/IN/2008-16/A0011467890/006490.jp2</fileName>
+		</sourceImageInformation>
+		<OCRProcessing ID="OCRPROCESSING_1">
+			<preProcessingStep>
+				<processingSoftware>
+					<softwareCreator>CCS Content Conversion Specialists GmbH, Germany</softwareCreator>
+					<softwareName>CCS docWORKS</softwareName>
+					<softwareVersion>6.1-0.67</softwareVersion>
+				</processingSoftware>
+			</preProcessingStep>
+			<ocrProcessingStep>
+				<processingSoftware>
+					<softwareCreator>ABBYY (BIT Software), Russia</softwareCreator>
+					<softwareName>Finereader</softwareName>
+				</processingSoftware>
+			</ocrProcessingStep>
+		</OCRProcessing>
+	</Description>
+	<Styles>
+		<TextStyle ID="TXT_0" FONTSIZE="9" FONTFAMILY="Courier New"/>
+		<ParagraphStyle ID="PAR_LEFT" ALIGN="Left"/>
+	</Styles>
+	<Layout>
+		<Page ID="P8" PHYSICAL_IMG_NR="8" HEIGHT="1922" WIDTH="1117" POSITION="Left" ACCURACY="63.52">
+			<TopMargin ID="P8_TM00001" HPOS="0" VPOS="0" WIDTH="1116" HEIGHT="0"/>
+			<LeftMargin ID="P8_LM00001" HPOS="0" VPOS="0" WIDTH="0" HEIGHT="1921"/>
+			<RightMargin ID="P8_RM00001" HPOS="1116" VPOS="0" WIDTH="0" HEIGHT="1921"/>
+			<BottomMargin ID="P8_BM00001" HPOS="0" VPOS="1921" WIDTH="1116" HEIGHT="0"/>
+			<PrintSpace ID="P8_PS00001" HPOS="0" VPOS="0" WIDTH="1116" HEIGHT="1921">
+				<TextBlock ID="P8_TB00001" HPOS="314" VPOS="872" WIDTH="472" HEIGHT="97" STYLEREFS="TXT_0 PAR_LEFT">
+					<TextLine ID="P8_TL00001" HPOS="476" VPOS="872" WIDTH="154" HEIGHT="14">
+						<String ID="P8_ST00001" HPOS="476" VPOS="873" WIDTH="104" HEIGHT="13" CONTENT="PRINTED" WC="0.55" CC="5566007"/>
+						<SP ID="P8_SP00001" HPOS="580" VPOS="886" WIDTH="21"/>
+						<String ID="P8_ST00002" HPOS="601" VPOS="872" WIDTH="29" HEIGHT="13" CONTENT="BY" WC="0.43" CC="56"/>
+					</TextLine>
+					<TextLine ID="P8_TL00002" HPOS="315" VPOS="899" WIDTH="471" HEIGHT="18">
+						<String ID="P8_ST00003" HPOS="315" VPOS="901" WIDTH="22" HEIGHT="15" CONTENT="G." WC="0.65" CC="60"/>
+						<SP ID="P8_SP00002" HPOS="337" VPOS="916" WIDTH="17"/>
+						<String ID="P8_ST00004" HPOS="354" VPOS="900" WIDTH="80" HEIGHT="15" CONTENT="HENRY" WC="0.42" CC="60975"/>
+						<SP ID="P8_SP00003" HPOS="434" VPOS="916" WIDTH="15"/>
+						<String ID="P8_ST00005" HPOS="449" VPOS="900" WIDTH="119" HEIGHT="17" CONTENT="BRITTAIN," WC="0.63" CC="791009500"/>
+						<SP ID="P8_SP00004" HPOS="568" VPOS="917" WIDTH="16"/>
+						<String ID="P8_ST00006" HPOS="584" VPOS="900" WIDTH="78" HEIGHT="13" CONTENT="STEAM" WC="0.80" CC="20007"/>
+						<SP ID="P8_SP00005" HPOS="662" VPOS="917" WIDTH="16"/>
+						<String ID="P8_ST00007" HPOS="678" VPOS="899" WIDTH="108" HEIGHT="18" CONTENT="PRINTER," WC="0.61" CC="50590450"/>
+					</TextLine>
+					<TextLine ID="P8_TL00003" HPOS="433" VPOS="928" WIDTH="236" HEIGHT="20">
+						<String ID="P8_ST00008" HPOS="433" VPOS="928" WIDTH="45" HEIGHT="20" CONTENT="152," WC="0.70" CC="0650"/>
+						<SP ID="P8_SP00006" HPOS="478" VPOS="948" WIDTH="16"/>
+						<String ID="P8_ST00009" HPOS="494" VPOS="928" WIDTH="61" HEIGHT="14" CONTENT="HIGH" WC="0.75" CC="0144"/>
+						<SP ID="P8_SP00007" HPOS="555" VPOS="948" WIDTH="17"/>
+						<String ID="P8_ST00010" HPOS="572" VPOS="928" WIDTH="97" HEIGHT="17" CONTENT="STREET," WC="0.84" CC="6003200"/>
+					</TextLine>
+					<TextLine ID="P8_TL00004" HPOS="489" VPOS="956" WIDTH="118" HEIGHT="13">
+						<String ID="P8_ST00011" HPOS="489" VPOS="956" WIDTH="118" HEIGHT="13" CONTENT="VENTNOR." WC="0.63" CC="22709060"/>
+					</TextLine>
+				</TextBlock>
+			</PrintSpace>
+		</Page>
+	</Layout>
+</alto>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.bl.uk/schemas/alto/alto-1-4.xsd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<Description>
+		<MeasurementUnit>mm10</MeasurementUnit>
+		<sourceImageInformation>
+			<fileName>//head1/IN/2008-37/A0012018409/BC.tif</fileName>
+		</sourceImageInformation>
+		<OCRProcessing ID="OCRPROCESSING_1">
+			<preProcessingStep>
+				<processingSoftware>
+					<softwareCreator>CCS Content Conversion Specialists GmbH, Germany</softwareCreator>
+					<softwareName>CCS docWORKS</softwareName>
+					<softwareVersion>6.1-0.67</softwareVersion>
+				</processingSoftware>
+			</preProcessingStep>
+			<ocrProcessingStep>
+				<processingSoftware>
+					<softwareCreator>ABBYY (BIT Software), Russia</softwareCreator>
+					<softwareName>Finereader</softwareName>
+				</processingSoftware>
+			</ocrProcessingStep>
+		</OCRProcessing>
+	</Description>
+	<Styles>
+		<TextStyle ID="TXT_0" FONTSIZE="11" FONTFAMILY="Courier New"/>
+		<ParagraphStyle ID="PAR_LEFT" ALIGN="Left"/>
+	</Styles>
+	<Layout>
+		<Page ID="P58" PHYSICAL_IMG_NR="58" HEIGHT="2234" WIDTH="1372" POSITION="Cover">
+			<TopMargin ID="P58_TM00001" HPOS="0" VPOS="0" WIDTH="1371" HEIGHT="0"/>
+			<LeftMargin ID="P58_LM00001" HPOS="0" VPOS="0" WIDTH="0" HEIGHT="2234"/>
+			<RightMargin ID="P58_RM00001" HPOS="1371" VPOS="0" WIDTH="0" HEIGHT="2234"/>
+			<BottomMargin ID="P58_BM00001" HPOS="0" VPOS="2234" WIDTH="1371" HEIGHT="0"/>
+			<PrintSpace ID="P58_PS00001" HPOS="0" VPOS="0" WIDTH="1371" HEIGHT="2234">
+				<ComposedBlock ID="P58_CB00001" HPOS="0" VPOS="0" WIDTH="1370" HEIGHT="2233" STYLEREFS="TXT_0 PAR_LEFT" TYPE="Illustration">
+					<GraphicalElement ID="P58_CB00001_SUB" HPOS="0" VPOS="0" WIDTH="1370" HEIGHT="2233"/>
+				</ComposedBlock>
+			</PrintSpace>
+		</Page>
+	</Layout>
+</alto>

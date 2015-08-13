@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.bl.uk/schemas/alto/alto-1-4.xsd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<Description>
+		<MeasurementUnit>mm10</MeasurementUnit>
+		<sourceImageInformation>
+			<fileName>//head1/IN/2008-47/A0012277277/002650.jp2</fileName>
+		</sourceImageInformation>
+		<OCRProcessing ID="OCRPROCESSING_1">
+			<preProcessingStep>
+				<processingSoftware>
+					<softwareCreator>CCS Content Conversion Specialists GmbH, Germany</softwareCreator>
+					<softwareName>CCS docWORKS</softwareName>
+					<softwareVersion>6.1-0.67</softwareVersion>
+				</processingSoftware>
+			</preProcessingStep>
+			<ocrProcessingStep>
+				<processingSoftware>
+					<softwareCreator>ABBYY (BIT Software), Russia</softwareCreator>
+					<softwareName>Finereader</softwareName>
+				</processingSoftware>
+			</ocrProcessingStep>
+		</OCRProcessing>
+	</Description>
+	<Styles>
+		<TextStyle ID="TXT_0" FONTSIZE="9" FONTFAMILY="Fraktur"/>
+		<ParagraphStyle ID="PAR_LEFT" ALIGN="Left"/>
+	</Styles>
+	<Layout>
+		<Page ID="P6" PHYSICAL_IMG_NR="6" HEIGHT="2012" WIDTH="1237" POSITION="Left" ACCURACY="51.70">
+			<TopMargin ID="P6_TM00001" HPOS="0" VPOS="0" WIDTH="1236" HEIGHT="0"/>
+			<LeftMargin ID="P6_LM00001" HPOS="0" VPOS="0" WIDTH="0" HEIGHT="2011"/>
+			<RightMargin ID="P6_RM00001" HPOS="1236" VPOS="0" WIDTH="0" HEIGHT="2011"/>
+			<BottomMargin ID="P6_BM00001" HPOS="0" VPOS="2011" WIDTH="1236" HEIGHT="0"/>
+			<PrintSpace ID="P6_PS00001" HPOS="0" VPOS="0" WIDTH="1236" HEIGHT="2011">
+				<TextBlock ID="P6_TB00001" HPOS="250" VPOS="723" WIDTH="550" HEIGHT="71" STYLEREFS="TXT_0 PAR_LEFT">
+					<TextLine ID="P6_TL00001" HPOS="483" VPOS="724" WIDTH="317" HEIGHT="30">
+						<String ID="P6_ST00001" HPOS="483" VPOS="724" WIDTH="50" HEIGHT="22" CONTENT="Von" WC="0.48" CC="635"/>
+						<SP ID="P6_SP00001" HPOS="533" VPOS="746" WIDTH="16"/>
+						<String ID="P6_ST00002" HPOS="549" VPOS="725" WIDTH="35" HEIGHT="22" CONTENT="der" WC="0.45" CC="447"/>
+						<SP ID="P6_SP00002" HPOS="584" VPOS="747" WIDTH="16"/>
+						<String ID="P6_ST00003" HPOS="600" VPOS="725" WIDTH="82" HEIGHT="27" CONTENT="Censur" WC="0.55" CC="644334"/>
+						<SP ID="P6_SP00003" HPOS="682" VPOS="752" WIDTH="16"/>
+						<String ID="P6_ST00004" HPOS="698" VPOS="725" WIDTH="102" HEIGHT="29" CONTENT="gestattet." WC="0.62" CC="4755014450"/>
+					</TextLine>
+					<TextLine ID="P6_TL00002" HPOS="251" VPOS="766" WIDTH="334" HEIGHT="27">
+						<String ID="P6_ST00005" HPOS="251" VPOS="766" WIDTH="95" HEIGHT="27" CONTENT="Dorvat," WC="0.52" CC="7544414"/>
+						<SP ID="P6_SP00004" HPOS="346" VPOS="793" WIDTH="16"/>
+						<String ID="P6_ST00006" HPOS="362" VPOS="768" WIDTH="40" HEIGHT="21" CONTENT="den" WC="0.31" CC="676"/>
+						<SP ID="P6_SP00005" HPOS="402" VPOS="793" WIDTH="15"/>
+						<String ID="P6_ST00007" HPOS="417" VPOS="769" WIDTH="21" HEIGHT="21" CONTENT="8." WC="0.70" CC="50"/>
+						<SP ID="P6_SP00006" HPOS="438" VPOS="793" WIDTH="18"/>
+						<String ID="P6_ST00008" HPOS="456" VPOS="768" WIDTH="50" HEIGHT="22" CONTENT="Mai" WC="0.40" CC="655"/>
+						<SP ID="P6_SP00007" HPOS="506" VPOS="793" WIDTH="16"/>
+						<String ID="P6_ST00009" HPOS="522" VPOS="769" WIDTH="63" HEIGHT="20" CONTENT="1864." WC="0.62" CC="05660"/>
+					</TextLine>
+				</TextBlock>
+			</PrintSpace>
+		</Page>
+	</Layout>
+</alto>

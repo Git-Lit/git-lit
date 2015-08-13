@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.bl.uk/schemas/alto/alto-1-4.xsd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<Description>
+		<MeasurementUnit>mm10</MeasurementUnit>
+		<sourceImageInformation>
+			<fileName>//head1/IN/2008-16/A0011467890/006639.jp2</fileName>
+		</sourceImageInformation>
+		<OCRProcessing ID="OCRPROCESSING_1">
+			<preProcessingStep>
+				<processingSoftware>
+					<softwareCreator>CCS Content Conversion Specialists GmbH, Germany</softwareCreator>
+					<softwareName>CCS docWORKS</softwareName>
+					<softwareVersion>6.1-0.67</softwareVersion>
+				</processingSoftware>
+			</preProcessingStep>
+			<ocrProcessingStep>
+				<processingSoftware>
+					<softwareCreator>ABBYY (BIT Software), Russia</softwareCreator>
+					<softwareName>Finereader</softwareName>
+				</processingSoftware>
+			</ocrProcessingStep>
+		</OCRProcessing>
+	</Description>
+	<Styles>
+		<TextStyle ID="TXT_0" FONTSIZE="10" FONTFAMILY="Courier New"/>
+		<TextStyle ID="TXT_1" FONTSIZE="9" FONTFAMILY="Courier New"/>
+		<ParagraphStyle ID="PAR_RIGHT" ALIGN="Right"/>
+		<ParagraphStyle ID="PAR_LEFT" ALIGN="Left"/>
+	</Styles>
+	<Layout>
+		<Page ID="P147" PHYSICAL_IMG_NR="147" HEIGHT="2042" WIDTH="1254" POSITION="Right" ACCURACY="44.67">
+			<TopMargin ID="P147_TM00001" HPOS="0" VPOS="0" WIDTH="1253" HEIGHT="0"/>
+			<LeftMargin ID="P147_LM00001" HPOS="0" VPOS="0" WIDTH="0" HEIGHT="2042"/>
+			<RightMargin ID="P147_RM00001" HPOS="1253" VPOS="0" WIDTH="0" HEIGHT="2042"/>
+			<BottomMargin ID="P147_BM00001" HPOS="0" VPOS="2042" WIDTH="1253" HEIGHT="0"/>
+			<PrintSpace ID="P147_PS00001" HPOS="0" VPOS="0" WIDTH="1253" HEIGHT="2042">
+				<TextBlock ID="P147_TB00001" HPOS="894" VPOS="493" WIDTH="40" HEIGHT="1202" ROTATION="90.00" STYLEREFS="TXT_0 PAR_RIGHT">
+					<TextLine ID="P147_TL00001" HPOS="897" VPOS="495" WIDTH="32" HEIGHT="1200">
+						<String ID="P147_ST00001" HPOS="901" VPOS="1525" WIDTH="23" HEIGHT="170" CONTENT="l,C7ialtc." WC="0.36" CC="6377565883"/>
+						<SP ID="P147_SP00001" HPOS="924" VPOS="1695" WIDTH="-22"/>
+						<String ID="P147_ST00002" HPOS="902" VPOS="1465" WIDTH="27" HEIGHT="27" CONTENT="2," WC="0.69" CC="60"/>
+						<String ID="P147_ST00003" HPOS="901" VPOS="1356" WIDTH="22" HEIGHT="103" CONTENT="U/xper" WC="0.43" CC="188806"/>
+						<SP ID="P147_SP00002" HPOS="929" VPOS="1695" WIDTH="-28"/>
+						<String ID="P147_ST00004" HPOS="901" VPOS="1135" WIDTH="22" HEIGHT="205" CONTENT="Greensand." WC="0.33" CC="4784878674"/>
+						<SP ID="P147_SP00003" HPOS="929" VPOS="1695" WIDTH="-28"/>
+						<String ID="P147_ST00005" HPOS="901" VPOS="1045" WIDTH="27" HEIGHT="30" CONTENT="3," WC="0.72" CC="50"/>
+						<SP ID="P147_SP00004" HPOS="929" VPOS="1695" WIDTH="-29"/>
+						<String ID="P147_ST00006" HPOS="900" VPOS="917" WIDTH="23" HEIGHT="116" CONTENT="Gault." WC="0.36" CC="388583"/>
+						<SP ID="P147_SP00005" HPOS="929" VPOS="1695" WIDTH="-31"/>
+						<String ID="P147_ST00007" HPOS="898" VPOS="816" WIDTH="27" HEIGHT="29" CONTENT="4;" WC="0.19" CC="78"/>
+						<String ID="P147_ST00008" HPOS="897" VPOS="703" WIDTH="23" HEIGHT="105" CONTENT="Lower" WC="0.46" CC="77048"/>
+						<SP ID="P147_SP00006" HPOS="929" VPOS="1695" WIDTH="-30"/>
+						<String ID="P147_ST00009" HPOS="899" VPOS="495" WIDTH="22" HEIGHT="195" CONTENT="Greensand" WC="0.48" CC="366780065"/>
+					</TextLine>
+				</TextBlock>
+				<ComposedBlock ID="P147_CB00001" HPOS="39" VPOS="27" WIDTH="1165" HEIGHT="1987" STYLEREFS="TXT_1 PAR_LEFT" TYPE="Illustration">
+					<GraphicalElement ID="P147_CB00001_SUB" HPOS="39" VPOS="27" WIDTH="1165" HEIGHT="1987"/>
+				</ComposedBlock>
+			</PrintSpace>
+		</Page>
+	</Layout>
+</alto>

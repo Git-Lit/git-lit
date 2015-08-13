@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.bl.uk/schemas/alto/alto-1-4.xsd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<Description>
+		<MeasurementUnit>mm10</MeasurementUnit>
+		<sourceImageInformation>
+			<fileName>//head1/IN/2008-16/A0011467890/006537.jp2</fileName>
+		</sourceImageInformation>
+		<OCRProcessing ID="OCRPROCESSING_1">
+			<preProcessingStep>
+				<processingSoftware>
+					<softwareCreator>CCS Content Conversion Specialists GmbH, Germany</softwareCreator>
+					<softwareName>CCS docWORKS</softwareName>
+					<softwareVersion>6.1-0.67</softwareVersion>
+				</processingSoftware>
+			</preProcessingStep>
+			<ocrProcessingStep>
+				<processingSoftware>
+					<softwareCreator>ABBYY (BIT Software), Russia</softwareCreator>
+					<softwareName>Finereader</softwareName>
+				</processingSoftware>
+			</ocrProcessingStep>
+		</OCRProcessing>
+	</Description>
+	<Styles>
+		<TextStyle ID="TXT_0" FONTSIZE="11" FONTFAMILY="Courier New"/>
+		<TextStyle ID="TXT_1" FONTSIZE="9" FONTFAMILY="Courier New"/>
+		<ParagraphStyle ID="PAR_RIGHT" ALIGN="Right"/>
+		<ParagraphStyle ID="PAR_LEFT" ALIGN="Left"/>
+	</Styles>
+	<Layout>
+		<Page ID="P49" PHYSICAL_IMG_NR="49" HEIGHT="2040" WIDTH="1211" POSITION="Right" ACCURACY="38.68">
+			<TopMargin ID="P49_TM00001" HPOS="0" VPOS="0" WIDTH="1210" HEIGHT="0"/>
+			<LeftMargin ID="P49_LM00001" HPOS="0" VPOS="0" WIDTH="0" HEIGHT="2039"/>
+			<RightMargin ID="P49_RM00001" HPOS="1210" VPOS="0" WIDTH="0" HEIGHT="2039"/>
+			<BottomMargin ID="P49_BM00001" HPOS="0" VPOS="2039" WIDTH="1210" HEIGHT="0"/>
+			<PrintSpace ID="P49_PS00001" HPOS="0" VPOS="0" WIDTH="1210" HEIGHT="2039">
+				<TextBlock ID="P49_TB00001" HPOS="221" VPOS="0" WIDTH="822" HEIGHT="50" STYLEREFS="TXT_0 PAR_RIGHT">
+					<Shape>
+						<Polygon POINTS="226,34 226,28 227,4 1038,4 1038,50 1022,50 538,44 270,37 227,36"/>
+					</Shape>
+					<TextLine ID="P49_TL00001" HPOS="226" VPOS="6" WIDTH="813" HEIGHT="44">
+						<String ID="P49_ST00001" HPOS="226" VPOS="6" WIDTH="225" HEIGHT="35" CONTENT="FOSSILS" WC="0.64" CC="6422440"/>
+						<SP ID="P49_SP00001" HPOS="451" VPOS="41" WIDTH="29"/>
+						<String ID="P49_ST00002" HPOS="480" VPOS="23" WIDTH="107" HEIGHT="22" CONTENT="from" WC="0.33" CC="4858"/>
+						<SP ID="P49_SP00002" HPOS="587" VPOS="45" WIDTH="27"/>
+						<String ID="P49_ST00003" HPOS="614" VPOS="25" WIDTH="73" HEIGHT="21" CONTENT="the" WC="0.47" CC="078"/>
+						<SP ID="P49_SP00003" HPOS="687" VPOS="46" WIDTH="27"/>
+						<String ID="P49_ST00004" HPOS="714" VPOS="15" WIDTH="157" HEIGHT="33" CONTENT="PERNA" WC="0.45" CC="07784"/>
+						<SP ID="P49_SP00004" HPOS="871" VPOS="48" WIDTH="32"/>
+						<String ID="P49_ST00005" HPOS="903" VPOS="19" WIDTH="136" HEIGHT="31" CONTENT="BEDS" WC="0.58" CC="5505"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P49_TB00002" HPOS="236" VPOS="909" WIDTH="279" HEIGHT="31" STYLEREFS="TXT_1 PAR_LEFT">
+					<TextLine ID="P49_TL00002" HPOS="236" VPOS="909" WIDTH="279" HEIGHT="31">
+						<String ID="P49_ST00006" HPOS="236" VPOS="909" WIDTH="109" HEIGHT="31" CONTENT="Sphœra" WC="0.33" CC="663786"/>
+						<SP ID="P49_SP00005" HPOS="345" VPOS="940" WIDTH="18"/>
+						<String ID="P49_ST00007" HPOS="363" VPOS="919" WIDTH="152" HEIGHT="21" CONTENT="coTruqata" WC="0.29" CC="077688887"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P49_TB00003" HPOS="857" VPOS="1557" WIDTH="258" HEIGHT="55" STYLEREFS="TXT_1 PAR_RIGHT">
+					<TextLine ID="P49_TL00003" HPOS="863" VPOS="1559" WIDTH="251" HEIGHT="28">
+						<String ID="P49_ST00008" HPOS="863" VPOS="1559" WIDTH="126" HEIGHT="27" CONTENT="Ciit.Alhtt/" WC="0.27" CC="80787878868"/>
+						<SP ID="P49_SP00006" HPOS="989" VPOS="1586" WIDTH="12"/>
+						<String ID="P49_ST00009" HPOS="1001" VPOS="1559" WIDTH="113" HEIGHT="28" CONTENT="Gobriehs" WC="0.38" CC="88773650"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P49_TB00004" HPOS="791" VPOS="1890" WIDTH="290" HEIGHT="37" STYLEREFS="TXT_1 PAR_RIGHT">
+					<TextLine ID="P49_TL00004" HPOS="791" VPOS="1891" WIDTH="290" HEIGHT="36">
+						<String ID="P49_ST00010" HPOS="791" VPOS="1891" WIDTH="123" HEIGHT="36" CONTENT="Triqcnia" WC="0.25" CC="86788666"/>
+						<SP ID="P49_SP00007" HPOS="914" VPOS="1927" WIDTH="23"/>
+						<String ID="P49_ST00011" HPOS="937" VPOS="1891" WIDTH="119" HEIGHT="36" CONTENT="aiœform" WC="0.35" CC="4862777"/>
+						<SP ID="P49_SP00008" HPOS="1056" VPOS="1927" WIDTH="7"/>
+						<String ID="P49_ST00012" HPOS="1063" VPOS="1901" WIDTH="18" HEIGHT="22" CONTENT="is" WC="0.31" CC="67"/>
+					</TextLine>
+				</TextBlock>
+				<ComposedBlock ID="P49_CB00001" HPOS="5" VPOS="44" WIDTH="1183" HEIGHT="1980" STYLEREFS="TXT_1 PAR_LEFT" TYPE="Illustration">
+					<Shape>
+						<Polygon POINTS="9,2018 9,45 33,45 996,62 1051,47 1051,45 1052,45 1184,64 1184,2019 10,2019"/>
+					</Shape>
+					<GraphicalElement ID="P49_CB00001_SUB" HPOS="5" VPOS="44" WIDTH="1183" HEIGHT="1980"/>
+				</ComposedBlock>
+			</PrintSpace>
+		</Page>
+	</Layout>
+</alto>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.bl.uk/schemas/alto/alto-1-4.xsd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<Description>
+		<MeasurementUnit>mm10</MeasurementUnit>
+		<sourceImageInformation>
+			<fileName>//head1/IN/2007-36/A0010674793/003167.jp2</fileName>
+		</sourceImageInformation>
+		<OCRProcessing ID="OCRPROCESSING_1">
+			<preProcessingStep>
+				<processingSoftware>
+					<softwareCreator>CCS Content Conversion Specialists GmbH, Germany</softwareCreator>
+					<softwareName>CCS docWORKS</softwareName>
+					<softwareVersion>6.1-0.52</softwareVersion>
+				</processingSoftware>
+			</preProcessingStep>
+			<ocrProcessingStep>
+				<processingSoftware>
+					<softwareCreator>ABBYY (BIT Software), Russia</softwareCreator>
+					<softwareName>Finereader</softwareName>
+				</processingSoftware>
+			</ocrProcessingStep>
+		</OCRProcessing>
+	</Description>
+	<Styles>
+		<TextStyle ID="TXT_0" FONTSIZE="11" FONTFAMILY="Courier New"/>
+		<TextStyle ID="TXT_1" FONTSIZE="10" FONTFAMILY="Courier New"/>
+		<TextStyle ID="TXT_2" FONTSIZE="9" FONTFAMILY="Courier New"/>
+		<ParagraphStyle ID="PAR_CENTER" ALIGN="Center"/>
+		<ParagraphStyle ID="PAR_RIGHT" ALIGN="Right"/>
+		<ParagraphStyle ID="PAR_LEFT" ALIGN="Left"/>
+	</Styles>
+	<Layout>
+		<Page ID="P17" PHYSICAL_IMG_NR="17" HEIGHT="1701" WIDTH="1011" PRINTED_IMG_NR="15" POSITION="Right" ACCURACY="85.19">
+			<TopMargin ID="P17_TM00001" HPOS="0" VPOS="0" WIDTH="1011" HEIGHT="92">
+				<TextBlock ID="P17_TB00001" HPOS="270" VPOS="60" WIDTH="439" HEIGHT="28" STYLEREFS="TXT_0 PAR_CENTER">
+					<TextLine ID="P17_TL00001" HPOS="270" VPOS="60" WIDTH="439" HEIGHT="28">
+						<String ID="P17_ST00001" HPOS="270" VPOS="63" WIDTH="88" HEIGHT="25" CONTENT="THE" WC="0.72" CC="043"/>
+						<SP ID="P17_SP00001" HPOS="358" VPOS="88" WIDTH="29"/>
+						<String ID="P17_ST00002" HPOS="387" VPOS="62" WIDTH="91" HEIGHT="26" CONTENT="MAN" WC="0.79" CC="060"/>
+						<SP ID="P17_SP00002" HPOS="478" VPOS="88" WIDTH="29"/>
+						<String ID="P17_ST00003" HPOS="507" VPOS="61" WIDTH="53" HEIGHT="27" CONTENT="OF" WC="1.00" CC="00"/>
+						<SP ID="P17_SP00003" HPOS="560" VPOS="88" WIDTH="29"/>
+						<String ID="P17_ST00004" HPOS="589" VPOS="60" WIDTH="120" HEIGHT="26" CONTENT="DUTY." WC="1.00" CC="00000"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P17_TB00002" HPOS="866" VPOS="63" WIDTH="28" HEIGHT="27" STYLEREFS="TXT_1 PAR_RIGHT">
+					<TextLine ID="P17_TL00002" HPOS="892" VPOS="75" WIDTH="2" HEIGHT="15">
+						<String ID="P17_ST00005" HPOS="892" VPOS="75" WIDTH="2" HEIGHT="15" CONTENT="15" WC="1.00" CC="00"/>
+					</TextLine>
+				</TextBlock>
+			</TopMargin>
+			<LeftMargin ID="P17_LM00001" HPOS="0" VPOS="92" WIDTH="0" HEIGHT="1609"/>
+			<RightMargin ID="P17_RM00001" HPOS="1011" VPOS="92" WIDTH="0" HEIGHT="1609"/>
+			<BottomMargin ID="P17_BM00001" HPOS="0" VPOS="1701" WIDTH="1011" HEIGHT="0"/>
+			<PrintSpace ID="P17_PS00001" HPOS="0" VPOS="92" WIDTH="1011" HEIGHT="1609">
+				<TextBlock ID="P17_TB00003" HPOS="91" VPOS="144" WIDTH="804" HEIGHT="84" STYLEREFS="TXT_2 PAR_LEFT">
+					<TextLine ID="P17_TL00003" HPOS="93" VPOS="144" WIDTH="802" HEIGHT="39">
+						<String ID="P17_ST00006" HPOS="93" VPOS="150" WIDTH="17" HEIGHT="13" CONTENT='"' WC="0.88" CC="1"/>
+						<SP ID="P17_SP00004" HPOS="110" VPOS="163" WIDTH="16"/>
+						<String ID="P17_ST00007" HPOS="126" VPOS="151" WIDTH="63" HEIGHT="26" CONTENT="The" WC="0.86" CC="400"/>
+						<SP ID="P17_SP00005" HPOS="189" VPOS="177" WIDTH="14"/>
+						<String ID="P17_ST00008" HPOS="203" VPOS="151" WIDTH="116" HEIGHT="26" CONTENT="Nation" WC="0.95" CC="000020"/>
+						<SP ID="P17_SP00006" HPOS="319" VPOS="177" WIDTH="17"/>
+						<String ID="P17_ST00009" HPOS="336" VPOS="150" WIDTH="94" HEIGHT="26" CONTENT="wants" WC="0.94" CC="00020"/>
+						<SP ID="P17_SP00007" HPOS="430" VPOS="177" WIDTH="15"/>
+						<String ID="P17_ST00010" HPOS="445" VPOS="157" WIDTH="93" HEIGHT="26" CONTENT="you—" WC="0.78" CC="0008"/>
+						<String ID="P17_ST00011" HPOS="540" VPOS="149" WIDTH="42" HEIGHT="26" CONTENT="all" WC="0.76" CC="024"/>
+						<String ID="P17_ST00012" HPOS="593" VPOS="149" WIDTH="30" HEIGHT="25" CONTENT='!"' WC="0.79" CC="04"/>
+						<SP ID="P17_SP00008" HPOS="623" VPOS="183" WIDTH="14"/>
+						<String ID="P17_ST00013" HPOS="637" VPOS="148" WIDTH="50" HEIGHT="25" CONTENT="the" WC="1.00" CC="000"/>
+						<SP ID="P17_SP00009" HPOS="687" VPOS="183" WIDTH="15"/>
+						<String ID="P17_ST00014" HPOS="702" VPOS="146" WIDTH="99" HEIGHT="27" CONTENT="stilled" WC="0.85" CC="0013300"/>
+						<SP ID="P17_SP00010" HPOS="801" VPOS="183" WIDTH="13"/>
+						<String ID="P17_ST00015" HPOS="814" VPOS="144" WIDTH="81" HEIGHT="27" CONTENT="voice" WC="0.89" CC="05000"/>
+					</TextLine>
+					<TextLine ID="P17_TL00004" HPOS="225" VPOS="196" WIDTH="82" HEIGHT="32">
+						<String ID="P17_ST00016" HPOS="225" VPOS="196" WIDTH="82" HEIGHT="32" CONTENT="said;" WC="0.88" CC="00006"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P17_TB00004" HPOS="135" VPOS="238" WIDTH="634" HEIGHT="38" STYLEREFS="TXT_2 PAR_LEFT">
+					<TextLine ID="P17_TL00005" HPOS="137" VPOS="238" WIDTH="632" HEIGHT="38">
+						<String ID="P17_ST00017" HPOS="137" VPOS="243" WIDTH="68" HEIGHT="26" CONTENT="And" WC="0.81" CC="050"/>
+						<SP ID="P17_SP00011" HPOS="205" VPOS="269" WIDTH="19"/>
+						<String ID="P17_ST00018" HPOS="224" VPOS="243" WIDTH="82" HEIGHT="33" CONTENT="loyal" WC="0.78" CC="05005"/>
+						<SP ID="P17_SP00012" HPOS="306" VPOS="276" WIDTH="19"/>
+						<String ID="P17_ST00019" HPOS="325" VPOS="242" WIDTH="123" HEIGHT="26" CONTENT="Britons" WC="0.94" CC="0100030"/>
+						<SP ID="P17_SP00013" HPOS="448" VPOS="276" WIDTH="19"/>
+						<String ID="P17_ST00020" HPOS="467" VPOS="241" WIDTH="88" HEIGHT="26" CONTENT="listen" WC="1.00" CC="000000"/>
+						<SP ID="P17_SP00014" HPOS="555" VPOS="276" WIDTH="19"/>
+						<String ID="P17_ST00021" HPOS="574" VPOS="246" WIDTH="30" HEIGHT="20" CONTENT="to" WC="0.73" CC="50"/>
+						<SP ID="P17_SP00015" HPOS="604" VPOS="276" WIDTH="18"/>
+						<String ID="P17_ST00022" HPOS="622" VPOS="239" WIDTH="61" HEIGHT="26" CONTENT="him" WC="0.81" CC="500"/>
+						<SP ID="P17_SP00016" HPOS="683" VPOS="276" WIDTH="18"/>
+						<String ID="P17_ST00023" HPOS="701" VPOS="238" WIDTH="68" HEIGHT="27" CONTENT="still." WC="0.87" CC="000610"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P17_TB00005" HPOS="92" VPOS="283" WIDTH="807" HEIGHT="77" STYLEREFS="TXT_2 PAR_LEFT">
+					<TextLine ID="P17_TL00006" HPOS="93" VPOS="283" WIDTH="805" HEIGHT="40">
+						<String ID="P17_ST00024" HPOS="93" VPOS="289" WIDTH="131" HEIGHT="34" CONTENT="Though" WC="0.69" CC="264005"/>
+						<SP ID="P17_SP00017" HPOS="224" VPOS="323" WIDTH="21"/>
+						<String ID="P17_ST00025" HPOS="245" VPOS="288" WIDTH="163" HEIGHT="27" CONTENT="Kitchener" WC="0.90" CC="020040000"/>
+						<SP ID="P17_SP00018" HPOS="408" VPOS="323" WIDTH="19"/>
+						<String ID="P17_ST00026" HPOS="427" VPOS="287" WIDTH="25" HEIGHT="27" CONTENT="is" WC="0.86" CC="02"/>
+						<SP ID="P17_SP00019" HPOS="452" VPOS="323" WIDTH="20"/>
+						<String ID="P17_ST00027" HPOS="472" VPOS="286" WIDTH="165" HEIGHT="27" CONTENT="numbered" WC="0.84" CC="50700000"/>
+						<SP ID="P17_SP00020" HPOS="637" VPOS="323" WIDTH="19"/>
+						<String ID="P17_ST00028" HPOS="656" VPOS="285" WIDTH="69" HEIGHT="27" CONTENT="with" WC="0.98" CC="0000"/>
+						<SP ID="P17_SP00021" HPOS="725" VPOS="323" WIDTH="19"/>
+						<String ID="P17_ST00029" HPOS="744" VPOS="285" WIDTH="50" HEIGHT="25" CONTENT="the" WC="0.99" CC="000"/>
+						<SP ID="P17_SP00022" HPOS="794" VPOS="323" WIDTH="17"/>
+						<String ID="P17_ST00030" HPOS="811" VPOS="283" WIDTH="87" HEIGHT="33" CONTENT="dead," WC="0.92" CC="00004"/>
+					</TextLine>
+					<TextLine ID="P17_TL00007" HPOS="138" VPOS="328" WIDTH="761" HEIGHT="32">
+						<String ID="P17_ST00031" HPOS="138" VPOS="335" WIDTH="69" HEIGHT="25" CONTENT="God" WC="1.00" CC="000"/>
+						<SP ID="P17_SP00023" HPOS="207" VPOS="360" WIDTH="29"/>
+						<String ID="P17_ST00032" HPOS="236" VPOS="334" WIDTH="75" HEIGHT="26" CONTENT="lives" WC="0.87" CC="41000"/>
+						<String ID="P17_ST00033" HPOS="312" VPOS="349" WIDTH="35" HEIGHT="3" CONTENT="—" WC="0.20" CC="8"/>
+						<String ID="P17_ST00034" HPOS="347" VPOS="333" WIDTH="72" HEIGHT="26" CONTENT="with" WC="0.84" CC="0050"/>
+						<SP ID="P17_SP00024" HPOS="419" VPOS="360" WIDTH="28"/>
+						<String ID="P17_ST00035" HPOS="447" VPOS="333" WIDTH="195" HEIGHT="26" CONTENT="instruments" WC="0.93" CC="00300000004"/>
+						<SP ID="P17_SP00025" HPOS="642" VPOS="360" WIDTH="31"/>
+						<String ID="P17_ST00036" HPOS="673" VPOS="337" WIDTH="30" HEIGHT="20" CONTENT="to" WC="1.00" CC="00"/>
+						<SP ID="P17_SP00026" HPOS="703" VPOS="360" WIDTH="29"/>
+						<String ID="P17_ST00037" HPOS="732" VPOS="330" WIDTH="83" HEIGHT="26" CONTENT="work" WC="0.89" CC="0040"/>
+						<SP ID="P17_SP00027" HPOS="815" VPOS="360" WIDTH="28"/>
+						<String ID="P17_ST00038" HPOS="843" VPOS="328" WIDTH="56" HEIGHT="27" CONTENT="His" WC="0.76" CC="520"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P17_TB00006" HPOS="225" VPOS="380" WIDTH="77" HEIGHT="27" STYLEREFS="TXT_2 PAR_LEFT">
+					<TextLine ID="P17_TL00008" HPOS="225" VPOS="381" WIDTH="77" HEIGHT="26">
+						<String ID="P17_ST00039" HPOS="225" VPOS="381" WIDTH="77" HEIGHT="26" CONTENT="will!" WC="0.54" CC="90660"/>
+					</TextLine>
+				</TextBlock>
+			</PrintSpace>
+		</Page>
+	</Layout>
+</alto>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.bl.uk/schemas/alto/alto-1-4.xsd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<Description>
+		<MeasurementUnit>mm10</MeasurementUnit>
+		<sourceImageInformation>
+			<fileName>//head1/IN/2008-16/A0011467890/006788.jp2</fileName>
+		</sourceImageInformation>
+		<OCRProcessing ID="OCRPROCESSING_1">
+			<preProcessingStep>
+				<processingSoftware>
+					<softwareCreator>CCS Content Conversion Specialists GmbH, Germany</softwareCreator>
+					<softwareName>CCS docWORKS</softwareName>
+					<softwareVersion>6.1-0.67</softwareVersion>
+				</processingSoftware>
+			</preProcessingStep>
+			<ocrProcessingStep>
+				<processingSoftware>
+					<softwareCreator>ABBYY (BIT Software), Russia</softwareCreator>
+					<softwareName>Finereader</softwareName>
+				</processingSoftware>
+			</ocrProcessingStep>
+		</OCRProcessing>
+	</Description>
+	<Styles>
+		<TextStyle ID="TXT_0" FONTSIZE="10" FONTFAMILY="Courier New"/>
+		<TextStyle ID="TXT_1" FONTSIZE="9" FONTFAMILY="Courier New"/>
+		<ParagraphStyle ID="PAR_RIGHT" ALIGN="Right"/>
+		<ParagraphStyle ID="PAR_LEFT" ALIGN="Left"/>
+		<ParagraphStyle ID="PAR_CENTER" ALIGN="Center"/>
+	</Styles>
+	<Layout>
+		<Page ID="P284" PHYSICAL_IMG_NR="284" HEIGHT="1922" WIDTH="1117" PRINTED_IMG_NR="226" POSITION="Left" ACCURACY="84.04">
+			<TopMargin ID="P284_TM00001" HPOS="0" VPOS="0" WIDTH="1116" HEIGHT="220">
+				<TextBlock ID="P284_TB00001" HPOS="920" VPOS="8" WIDTH="5" HEIGHT="12" STYLEREFS="TXT_0 PAR_RIGHT">
+					<TextLine ID="P284_TL00001" HPOS="920" VPOS="8" WIDTH="5" HEIGHT="12">
+						<String ID="P284_ST00001" HPOS="920" VPOS="8" WIDTH="5" HEIGHT="12" CONTENT="I" WC="0.28" CC="7"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P284_TB00002" HPOS="138" VPOS="194" WIDTH="49" HEIGHT="24" STYLEREFS="TXT_0 PAR_LEFT">
+					<TextLine ID="P284_TL00002" HPOS="164" VPOS="216" WIDTH="23" HEIGHT="2">
+						<String ID="P284_ST00002" HPOS="164" VPOS="216" WIDTH="23" HEIGHT="2" CONTENT="226" WC="1.00" CC="000"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P284_TB00003" HPOS="452" VPOS="203" WIDTH="167" HEIGHT="17" STYLEREFS="TXT_1 PAR_CENTER">
+					<TextLine ID="P284_TL00003" HPOS="452" VPOS="203" WIDTH="167" HEIGHT="17">
+						<String ID="P284_ST00003" HPOS="452" VPOS="203" WIDTH="167" HEIGHT="17" CONTENT="ADDENDUM." WC="0.85" CC="004206000"/>
+					</TextLine>
+				</TextBlock>
+			</TopMargin>
+			<LeftMargin ID="P284_LM00001" HPOS="0" VPOS="219" WIDTH="0" HEIGHT="1702"/>
+			<RightMargin ID="P284_RM00001" HPOS="1116" VPOS="219" WIDTH="0" HEIGHT="1702"/>
+			<BottomMargin ID="P284_BM00001" HPOS="0" VPOS="1921" WIDTH="1116" HEIGHT="0"/>
+			<PrintSpace ID="P284_PS00001" HPOS="0" VPOS="219" WIDTH="1116" HEIGHT="1702">
+				<TextBlock ID="P284_TB00004" HPOS="139" VPOS="270" WIDTH="865" HEIGHT="159" STYLEREFS="TXT_1 PAR_LEFT">
+					<TextLine ID="P284_TL00004" HPOS="140" VPOS="272" WIDTH="864" HEIGHT="28">
+						<String ID="P284_ST00004" HPOS="140" VPOS="272" WIDTH="29" HEIGHT="23" CONTENT="of" WC="0.85" CC="02"/>
+						<SP ID="P284_SP00001" HPOS="169" VPOS="295" WIDTH="22"/>
+						<String ID="P284_ST00005" HPOS="191" VPOS="273" WIDTH="48" HEIGHT="23" CONTENT="the" WC="0.84" CC="040"/>
+						<SP ID="P284_SP00002" HPOS="239" VPOS="296" WIDTH="20"/>
+						<String ID="P284_ST00006" HPOS="259" VPOS="273" WIDTH="102" HEIGHT="25" CONTENT="Island." WC="0.85" CC="3070000"/>
+						<SP ID="P284_SP00003" HPOS="361" VPOS="298" WIDTH="49"/>
+						<String ID="P284_ST00007" HPOS="410" VPOS="275" WIDTH="60" HEIGHT="24" CONTENT="The" WC="0.92" CC="020"/>
+						<SP ID="P284_SP00004" HPOS="470" VPOS="299" WIDTH="24"/>
+						<String ID="P284_ST00008" HPOS="494" VPOS="275" WIDTH="88" HEIGHT="25" CONTENT="whole" WC="0.69" CC="91030"/>
+						<SP ID="P284_SP00005" HPOS="582" VPOS="300" WIDTH="19"/>
+						<String ID="P284_ST00009" HPOS="601" VPOS="273" WIDTH="85" HEIGHT="26" CONTENT="forms" WC="0.81" CC="30040"/>
+						<SP ID="P284_SP00006" HPOS="686" VPOS="300" WIDTH="26"/>
+						<String ID="P284_ST00010" HPOS="712" VPOS="283" WIDTH="15" HEIGHT="15" CONTENT="a" WC="1.00" CC="0"/>
+						<SP ID="P284_SP00007" HPOS="727" VPOS="300" WIDTH="23"/>
+						<String ID="P284_ST00011" HPOS="750" VPOS="273" WIDTH="146" HEIGHT="25" CONTENT="collection" WC="0.77" CC="0036000641"/>
+						<SP ID="P284_SP00008" HPOS="896" VPOS="300" WIDTH="26"/>
+						<String ID="P284_ST00012" HPOS="922" VPOS="272" WIDTH="30" HEIGHT="25" CONTENT="of" WC="1.00" CC="00"/>
+						<SP ID="P284_SP00009" HPOS="952" VPOS="300" WIDTH="16"/>
+						<String ID="P284_ST00013" HPOS="968" VPOS="280" WIDTH="36" HEIGHT="17" CONTENT="an" WC="0.88" CC="02"/>
+					</TextLine>
+					<TextLine ID="P284_TL00005" HPOS="140" VPOS="316" WIDTH="864" HEIGHT="34">
+						<String ID="P284_ST00014" HPOS="140" VPOS="316" WIDTH="161" HEIGHT="34" CONTENT="i'-.teresting" WC="0.72" CC="6670005000370"/>
+						<SP ID="P284_SP00010" HPOS="301" VPOS="350" WIDTH="31"/>
+						<String ID="P284_ST00015" HPOS="332" VPOS="319" WIDTH="53" HEIGHT="24" CONTENT="and" WC="0.98" CC="000"/>
+						<SP ID="P284_SP00011" HPOS="385" VPOS="350" WIDTH="31"/>
+						<String ID="P284_ST00016" HPOS="416" VPOS="319" WIDTH="164" HEIGHT="25" CONTENT="instructive" WC="0.74" CC="43204000570"/>
+						<SP ID="P284_SP00012" HPOS="580" VPOS="350" WIDTH="31"/>
+						<String ID="P284_ST00017" HPOS="611" VPOS="319" WIDTH="154" HEIGHT="28" CONTENT="character," WC="0.91" CC="0300500000"/>
+						<SP ID="P284_SP00013" HPOS="765" VPOS="350" WIDTH="32"/>
+						<String ID="P284_ST00018" HPOS="797" VPOS="318" WIDTH="67" HEIGHT="25" CONTENT="both" WC="0.83" CC="0006"/>
+						<SP ID="P284_SP00014" HPOS="864" VPOS="350" WIDTH="32"/>
+						<String ID="P284_ST00019" HPOS="896" VPOS="322" WIDTH="29" HEIGHT="20" CONTENT="to" WC="1.00" CC="00"/>
+						<SP ID="P284_SP00015" HPOS="925" VPOS="350" WIDTH="32"/>
+						<String ID="P284_ST00020" HPOS="957" VPOS="318" WIDTH="47" HEIGHT="24" CONTENT="the" WC="0.84" CC="040"/>
+					</TextLine>
+					<TextLine ID="P284_TL00006" HPOS="140" VPOS="361" WIDTH="864" HEIGHT="34">
+						<String ID="P284_ST00021" HPOS="140" VPOS="361" WIDTH="110" HEIGHT="24" CONTENT="student" WC="0.87" CC="0030050"/>
+						<SP ID="P284_SP00016" HPOS="250" VPOS="385" WIDTH="27"/>
+						<String ID="P284_ST00022" HPOS="277" VPOS="362" WIDTH="53" HEIGHT="24" CONTENT="and" WC="1.00" CC="000"/>
+						<SP ID="P284_SP00017" HPOS="330" VPOS="386" WIDTH="25"/>
+						<String ID="P284_ST00023" HPOS="355" VPOS="363" WIDTH="47" HEIGHT="24" CONTENT="the" WC="0.83" CC="050"/>
+						<SP ID="P284_SP00018" HPOS="402" VPOS="387" WIDTH="25"/>
+						<String ID="P284_ST00024" HPOS="427" VPOS="364" WIDTH="110" HEIGHT="31" CONTENT="general" WC="0.90" CC="0000060"/>
+						<SP ID="P284_SP00019" HPOS="537" VPOS="395" WIDTH="20"/>
+						<String ID="P284_ST00025" HPOS="557" VPOS="362" WIDTH="104" HEIGHT="33" CONTENT="public," WC="0.87" CC="0015001"/>
+						<SP ID="P284_SP00020" HPOS="661" VPOS="395" WIDTH="24"/>
+						<String ID="P284_ST00026" HPOS="685" VPOS="363" WIDTH="54" HEIGHT="24" CONTENT="and" WC="0.96" CC="010"/>
+						<SP ID="P284_SP00021" HPOS="739" VPOS="395" WIDTH="22"/>
+						<String ID="P284_ST00027" HPOS="761" VPOS="362" WIDTH="56" HEIGHT="26" CONTENT="will" WC="0.70" CC="6220"/>
+						<SP ID="P284_SP00022" HPOS="817" VPOS="395" WIDTH="19"/>
+						<String ID="P284_ST00028" HPOS="836" VPOS="363" WIDTH="60" HEIGHT="25" CONTENT="well" WC="0.72" CC="5050"/>
+						<SP ID="P284_SP00023" HPOS="896" VPOS="395" WIDTH="22"/>
+						<String ID="P284_ST00029" HPOS="918" VPOS="371" WIDTH="86" HEIGHT="24" CONTENT="repay" WC="0.73" CC="00903"/>
+					</TextLine>
+					<TextLine ID="P284_TL00007" HPOS="140" VPOS="406" WIDTH="107" HEIGHT="23">
+						<String ID="P284_ST00030" HPOS="140" VPOS="413" WIDTH="16" HEIGHT="16" CONTENT="a" WC="1.00" CC="0"/>
+						<SP ID="P284_SP00024" HPOS="156" VPOS="429" WIDTH="18"/>
+						<String ID="P284_ST00031" HPOS="174" VPOS="406" WIDTH="73" HEIGHT="23" CONTENT="visit." WC="0.72" CC="600090"/>
+					</TextLine>
+				</TextBlock>
+			</PrintSpace>
+		</Page>
+	</Layout>
+</alto>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.bl.uk/schemas/alto/alto-1-4.xsd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<Description>
+		<MeasurementUnit>mm10</MeasurementUnit>
+		<sourceImageInformation>
+			<fileName>//head1/IN/2008-16/A0011467890/006693.jp2</fileName>
+		</sourceImageInformation>
+		<OCRProcessing ID="OCRPROCESSING_1">
+			<preProcessingStep>
+				<processingSoftware>
+					<softwareCreator>CCS Content Conversion Specialists GmbH, Germany</softwareCreator>
+					<softwareName>CCS docWORKS</softwareName>
+					<softwareVersion>6.1-0.67</softwareVersion>
+				</processingSoftware>
+			</preProcessingStep>
+			<ocrProcessingStep>
+				<processingSoftware>
+					<softwareCreator>ABBYY (BIT Software), Russia</softwareCreator>
+					<softwareName>Finereader</softwareName>
+				</processingSoftware>
+			</ocrProcessingStep>
+		</OCRProcessing>
+	</Description>
+	<Styles>
+		<TextStyle ID="TXT_0" FONTSIZE="11" FONTFAMILY="Courier New"/>
+		<TextStyle ID="TXT_1" FONTSIZE="9" FONTFAMILY="Courier New"/>
+		<ParagraphStyle ID="PAR_CENTER" ALIGN="Center"/>
+		<ParagraphStyle ID="PAR_LEFT" ALIGN="Left"/>
+	</Styles>
+	<Layout>
+		<Page ID="P195" PHYSICAL_IMG_NR="195" HEIGHT="2076" WIDTH="1199" POSITION="Right" ACCURACY="67.45">
+			<TopMargin ID="P195_TM00001" HPOS="0" VPOS="0" WIDTH="1198" HEIGHT="0"/>
+			<LeftMargin ID="P195_LM00001" HPOS="0" VPOS="0" WIDTH="0" HEIGHT="2076"/>
+			<RightMargin ID="P195_RM00001" HPOS="1198" VPOS="0" WIDTH="0" HEIGHT="2076"/>
+			<BottomMargin ID="P195_BM00001" HPOS="0" VPOS="2076" WIDTH="1198" HEIGHT="0"/>
+			<PrintSpace ID="P195_PS00001" HPOS="0" VPOS="0" WIDTH="1198" HEIGHT="2076">
+				<TextBlock ID="P195_TB00001" HPOS="220" VPOS="18" WIDTH="745" HEIGHT="34" STYLEREFS="TXT_0 PAR_CENTER">
+					<TextLine ID="P195_TL00001" HPOS="222" VPOS="20" WIDTH="743" HEIGHT="32">
+						<String ID="P195_ST00001" HPOS="222" VPOS="20" WIDTH="207" HEIGHT="31" CONTENT="FOSSILS" WC="0.84" CC="2032200"/>
+						<SP ID="P195_SP00001" HPOS="429" VPOS="51" WIDTH="37"/>
+						<String ID="P195_ST00002" HPOS="466" VPOS="24" WIDTH="122" HEIGHT="28" CONTENT="FROM" WC="0.43" CC="0858"/>
+						<SP ID="P195_SP00002" HPOS="588" VPOS="52" WIDTH="38"/>
+						<String ID="P195_ST00003" HPOS="626" VPOS="25" WIDTH="197" HEIGHT="27" CONTENT="HEADON" WC="0.57" CC="058019"/>
+						<SP ID="P195_SP00003" HPOS="823" VPOS="52" WIDTH="36"/>
+						<String ID="P195_ST00004" HPOS="859" VPOS="25" WIDTH="106" HEIGHT="27" CONTENT="HILL." WC="0.87" CC="03003"/>
+					</TextLine>
+				</TextBlock>
+				<ComposedBlock ID="P195_CB00001" HPOS="11" VPOS="72" WIDTH="1157" HEIGHT="1992" STYLEREFS="TXT_1 PAR_LEFT" TYPE="Illustration">
+					<GraphicalElement ID="P195_CB00001_SUB" HPOS="11" VPOS="72" WIDTH="1157" HEIGHT="1992"/>
+				</ComposedBlock>
+			</PrintSpace>
+		</Page>
+	</Layout>
+</alto>

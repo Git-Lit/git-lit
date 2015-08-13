@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.bl.uk/schemas/alto/alto-1-4.xsd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<Description>
+		<MeasurementUnit>mm10</MeasurementUnit>
+		<sourceImageInformation>
+			<fileName>//head1/IN/2008-47/A0012277277/002649.jp2</fileName>
+		</sourceImageInformation>
+		<OCRProcessing ID="OCRPROCESSING_1">
+			<preProcessingStep>
+				<processingSoftware>
+					<softwareCreator>CCS Content Conversion Specialists GmbH, Germany</softwareCreator>
+					<softwareName>CCS docWORKS</softwareName>
+					<softwareVersion>6.1-0.67</softwareVersion>
+				</processingSoftware>
+			</preProcessingStep>
+			<ocrProcessingStep>
+				<processingSoftware>
+					<softwareCreator>ABBYY (BIT Software), Russia</softwareCreator>
+					<softwareName>Finereader</softwareName>
+				</processingSoftware>
+			</ocrProcessingStep>
+		</OCRProcessing>
+	</Description>
+	<Styles>
+		<TextStyle ID="TXT_0" FONTSIZE="11" FONTFAMILY="Fraktur"/>
+		<TextStyle ID="TXT_1" FONTSIZE="10" FONTFAMILY="Fraktur"/>
+		<TextStyle ID="TXT_2" FONTSIZE="9" FONTFAMILY="Fraktur"/>
+		<ParagraphStyle ID="PAR_LEFT" ALIGN="Left"/>
+		<ParagraphStyle ID="PAR_CENTER" ALIGN="Center"/>
+	</Styles>
+	<Layout>
+		<Page ID="P5" PHYSICAL_IMG_NR="5" HEIGHT="2012" WIDTH="1237" POSITION="Right" ACCURACY="45.61">
+			<TopMargin ID="P5_TM00001" HPOS="0" VPOS="0" WIDTH="1236" HEIGHT="0"/>
+			<LeftMargin ID="P5_LM00001" HPOS="0" VPOS="0" WIDTH="0" HEIGHT="2011"/>
+			<RightMargin ID="P5_RM00001" HPOS="1236" VPOS="0" WIDTH="0" HEIGHT="2011"/>
+			<BottomMargin ID="P5_BM00001" HPOS="0" VPOS="2011" WIDTH="1236" HEIGHT="0"/>
+			<PrintSpace ID="P5_PS00001" HPOS="0" VPOS="0" WIDTH="1236" HEIGHT="2011">
+				<TextBlock ID="P5_TB00001" HPOS="44" VPOS="209" WIDTH="1038" HEIGHT="74" STYLEREFS="TXT_0 PAR_LEFT">
+					<TextLine ID="P5_TL00001" HPOS="45" VPOS="210" WIDTH="1037" HEIGHT="73">
+						<String ID="P5_ST00001" HPOS="45" VPOS="210" WIDTH="88" HEIGHT="60" CONTENT="Die" WC="0.33" CC="856"/>
+						<SP ID="P5_SP00001" HPOS="133" VPOS="270" WIDTH="47"/>
+						<String ID="P5_ST00002" HPOS="180" VPOS="212" WIDTH="364" HEIGHT="71" CONTENT="Entwickelung" WC="0.31" CC="856768876737"/>
+						<SP ID="P5_SP00002" HPOS="544" VPOS="283" WIDTH="49"/>
+						<String ID="P5_ST00003" HPOS="593" VPOS="214" WIDTH="85" HEIGHT="56" CONTENT="der" WC="0.40" CC="746"/>
+						<SP ID="P5_SP00003" HPOS="678" VPOS="283" WIDTH="45"/>
+						<String ID="P5_ST00004" HPOS="723" VPOS="210" WIDTH="151" HEIGHT="60" CONTENT="Stadt" WC="0.37" CC="82875"/>
+						<SP ID="P5_SP00004" HPOS="874" VPOS="283" WIDTH="47"/>
+						<String ID="P5_ST00005" HPOS="921" VPOS="210" WIDTH="161" HEIGHT="61" CONTENT="Fellin" WC="0.34" CC="848864"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P5_TB00002" HPOS="353" VPOS="433" WIDTH="429" HEIGHT="55" STYLEREFS="TXT_0 PAR_LEFT">
+					<TextLine ID="P5_TL00002" HPOS="353" VPOS="434" WIDTH="429" HEIGHT="54">
+						<String ID="P5_ST00006" HPOS="353" VPOS="437" WIDTH="65" HEIGHT="42" CONTENT="und" WC="0.75" CC="007"/>
+						<SP ID="P5_SP00005" HPOS="418" VPOS="479" WIDTH="33"/>
+						<String ID="P5_ST00007" HPOS="451" VPOS="435" WIDTH="92" HEIGHT="53" CONTENT="ihrer" WC="0.48" CC="07476"/>
+						<SP ID="P5_SP00006" HPOS="543" VPOS="488" WIDTH="31"/>
+						<String ID="P5_ST00008" HPOS="574" VPOS="434" WIDTH="208" HEIGHT="54" CONTENT="Verfassung" WC="0.54" CC="7246740507"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P5_TB00003" HPOS="548" VPOS="696" WIDTH="44" HEIGHT="20" STYLEREFS="TXT_1 PAR_LEFT">
+					<TextLine ID="P5_TL00003" HPOS="548" VPOS="697" WIDTH="44" HEIGHT="19">
+						<String ID="P5_ST00009" HPOS="548" VPOS="697" WIDTH="44" HEIGHT="19" CONTENT="von" WC="0.62" CC="406"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P5_TB00004" HPOS="471" VPOS="915" WIDTH="220" HEIGHT="62" STYLEREFS="TXT_1 PAR_LEFT">
+					<TextLine ID="P5_TL00004" HPOS="476" VPOS="920" WIDTH="205" HEIGHT="53">
+						<String ID="P5_ST00010" HPOS="476" VPOS="922" WIDTH="41" HEIGHT="42" CONTENT="C." WC="0.60" CC="80"/>
+						<SP ID="P5_SP00007" HPOS="517" VPOS="964" WIDTH="30"/>
+						<String ID="P5_ST00011" HPOS="547" VPOS="920" WIDTH="28" HEIGHT="53" CONTENT="z" WC="0.24" CC="7"/>
+						<SP ID="P5_SP00008" HPOS="575" VPOS="973" WIDTH="17"/>
+						<String ID="P5_ST00012" HPOS="592" VPOS="932" WIDTH="15" HEIGHT="29" CONTENT="l," WC="0.46" CC="73"/>
+						<SP ID="P5_SP00009" HPOS="607" VPOS="973" WIDTH="16"/>
+						<String ID="P5_ST00013" HPOS="623" VPOS="922" WIDTH="10" HEIGHT="39" CONTENT="l" WC="0.26" CC="7"/>
+						<SP ID="P5_SP00010" HPOS="633" VPOS="973" WIDTH="17"/>
+						<String ID="P5_ST00014" HPOS="650" VPOS="921" WIDTH="31" HEIGHT="50" CONTENT="st." WC="0.43" CC="664"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P5_TB00005" HPOS="516" VPOS="1588" WIDTH="141" HEIGHT="32" STYLEREFS="TXT_2 PAR_LEFT">
+					<TextLine ID="P5_TL00005" HPOS="516" VPOS="1589" WIDTH="141" HEIGHT="31">
+						<String ID="P5_ST00015" HPOS="516" VPOS="1589" WIDTH="22" HEIGHT="28" CONTENT="D" WC="0.15" CC="8"/>
+						<String ID="P5_ST00016" HPOS="550" VPOS="1595" WIDTH="12" HEIGHT="21" CONTENT="«" WC="0.20" CC="8"/>
+						<String ID="P5_ST00017" HPOS="575" VPOS="1611" WIDTH="7" HEIGHT="4" CONTENT="." WC="0.73" CC="2"/>
+						<SP ID="P5_SP00011" HPOS="582" VPOS="1617" WIDTH="11"/>
+						<String ID="P5_ST00018" HPOS="593" VPOS="1593" WIDTH="14" HEIGHT="27" CONTENT="p" WC="0.28" CC="7"/>
+						<SP ID="P5_SP00012" HPOS="607" VPOS="1620" WIDTH="11"/>
+						<String ID="P5_ST00019" HPOS="618" VPOS="1594" WIDTH="14" HEIGHT="21" CONTENT="a" WC="0.35" CC="6"/>
+						<String ID="P5_ST00020" HPOS="641" VPOS="1589" WIDTH="16" HEIGHT="26" CONTENT="t." WC="0.69" CC="60"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P5_TB00006" HPOS="139" VPOS="1690" WIDTH="887" HEIGHT="43" STYLEREFS="TXT_2 PAR_LEFT">
+					<TextLine ID="P5_TL00006" HPOS="139" VPOS="1691" WIDTH="887" HEIGHT="42">
+						<String ID="P5_ST00021" HPOS="139" VPOS="1705" WIDTH="77" HEIGHT="28" CONTENT="Druck" WC="0.63" CC="40444"/>
+						<SP ID="P5_SP00013" HPOS="216" VPOS="1733" WIDTH="21"/>
+						<String ID="P5_ST00022" HPOS="237" VPOS="1703" WIDTH="46" HEIGHT="28" CONTENT="und" WC="0.37" CC="764"/>
+						<SP ID="P5_SP00014" HPOS="283" VPOS="1733" WIDTH="21"/>
+						<String ID="P5_ST00023" HPOS="304" VPOS="1701" WIDTH="89" HEIGHT="32" CONTENT="Verlag" WC="0.42" CC="777650"/>
+						<SP ID="P5_SP00015" HPOS="393" VPOS="1733" WIDTH="21"/>
+						<String ID="P5_ST00024" HPOS="414" VPOS="1705" WIDTH="45" HEIGHT="21" CONTENT="von" WC="0.63" CC="073"/>
+						<SP ID="P5_SP00016" HPOS="459" VPOS="1733" WIDTH="21"/>
+						<String ID="P5_ST00025" HPOS="480" VPOS="1696" WIDTH="28" HEIGHT="28" CONTENT="E." WC="0.79" CC="40"/>
+						<SP ID="P5_SP00017" HPOS="508" VPOS="1733" WIDTH="20"/>
+						<String ID="P5_ST00026" HPOS="528" VPOS="1695" WIDTH="25" HEIGHT="28" CONTENT="3." WC="0.49" CC="72"/>
+						<SP ID="P5_SP00018" HPOS="553" VPOS="1733" WIDTH="21"/>
+						<String ID="P5_ST00027" HPOS="574" VPOS="1694" WIDTH="95" HEIGHT="31" CONTENT="Karow," WC="0.48" CC="464770"/>
+						<SP ID="P5_SP00019" HPOS="669" VPOS="1733" WIDTH="22"/>
+						<String ID="P5_ST00028" HPOS="691" VPOS="1693" WIDTH="163" HEIGHT="31" CONTENT="Uuiversitäts-" WC="0.53" CC="4704776764400"/>
+						<String ID="P5_ST00029" HPOS="861" VPOS="1691" WIDTH="165" HEIGHT="31" CONTENT="Buchhändler." WC="0.39" CC="777744677074"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P5_TB00007" HPOS="549" VPOS="1807" WIDTH="89" HEIGHT="31" STYLEREFS="TXT_2 PAR_CENTER">
+					<TextLine ID="P5_TL00007" HPOS="549" VPOS="1808" WIDTH="89" HEIGHT="30">
+						<String ID="P5_ST00030" HPOS="549" VPOS="1808" WIDTH="89" HEIGHT="30" CONTENT="1864." WC="0.45" CC="87380"/>
+					</TextLine>
+				</TextBlock>
+			</PrintSpace>
+		</Page>
+	</Layout>
+</alto>

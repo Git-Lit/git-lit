@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.bl.uk/schemas/alto/alto-1-4.xsd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<Description>
+		<MeasurementUnit>mm10</MeasurementUnit>
+		<sourceImageInformation>
+			<fileName>//head1/IN/2008-16/A0011467890/006805.jp2</fileName>
+		</sourceImageInformation>
+		<OCRProcessing ID="OCRPROCESSING_1">
+			<preProcessingStep>
+				<processingSoftware>
+					<softwareCreator>CCS Content Conversion Specialists GmbH, Germany</softwareCreator>
+					<softwareName>CCS docWORKS</softwareName>
+					<softwareVersion>6.1-0.67</softwareVersion>
+				</processingSoftware>
+			</preProcessingStep>
+			<ocrProcessingStep>
+				<processingSoftware>
+					<softwareCreator>ABBYY (BIT Software), Russia</softwareCreator>
+					<softwareName>Finereader</softwareName>
+				</processingSoftware>
+			</ocrProcessingStep>
+		</OCRProcessing>
+	</Description>
+	<Styles/>
+	<Layout>
+		<Page ID="P301" PHYSICAL_IMG_NR="301" HEIGHT="1922" WIDTH="1117" POSITION="Right">
+			<TopMargin ID="P301_TM00001" HPOS="0" VPOS="0" WIDTH="1116" HEIGHT="0"/>
+			<LeftMargin ID="P301_LM00001" HPOS="0" VPOS="0" WIDTH="0" HEIGHT="1921"/>
+			<RightMargin ID="P301_RM00001" HPOS="1116" VPOS="0" WIDTH="0" HEIGHT="1921"/>
+			<BottomMargin ID="P301_BM00001" HPOS="0" VPOS="1921" WIDTH="1116" HEIGHT="0"/>
+			<PrintSpace ID="P301_PS00001" HPOS="0" VPOS="0" WIDTH="1116" HEIGHT="1921"/>
+		</Page>
+	</Layout>
+</alto>

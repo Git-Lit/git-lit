@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.bl.uk/schemas/alto/alto-1-4.xsd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<Description>
+		<MeasurementUnit>mm10</MeasurementUnit>
+		<sourceImageInformation>
+			<fileName>//head1/IN/2008-16/A0011467890/006659.jp2</fileName>
+		</sourceImageInformation>
+		<OCRProcessing ID="OCRPROCESSING_1">
+			<preProcessingStep>
+				<processingSoftware>
+					<softwareCreator>CCS Content Conversion Specialists GmbH, Germany</softwareCreator>
+					<softwareName>CCS docWORKS</softwareName>
+					<softwareVersion>6.1-0.67</softwareVersion>
+				</processingSoftware>
+			</preProcessingStep>
+			<ocrProcessingStep>
+				<processingSoftware>
+					<softwareCreator>ABBYY (BIT Software), Russia</softwareCreator>
+					<softwareName>Finereader</softwareName>
+				</processingSoftware>
+			</ocrProcessingStep>
+		</OCRProcessing>
+	</Description>
+	<Styles>
+		<TextStyle ID="TXT_0" FONTSIZE="10" FONTFAMILY="Courier New"/>
+		<TextStyle ID="TXT_1" FONTSIZE="9" FONTFAMILY="Courier New"/>
+		<ParagraphStyle ID="PAR_CENTER" ALIGN="Center"/>
+		<ParagraphStyle ID="PAR_RIGHT" ALIGN="Right"/>
+		<ParagraphStyle ID="PAR_LEFT" ALIGN="Left"/>
+	</Styles>
+	<Layout>
+		<Page ID="P165" PHYSICAL_IMG_NR="165" HEIGHT="2079" WIDTH="1253" POSITION="Right" ACCURACY="40.10">
+			<TopMargin ID="P165_TM00001" HPOS="0" VPOS="0" WIDTH="1253" HEIGHT="3"/>
+			<LeftMargin ID="P165_LM00001" HPOS="0" VPOS="3" WIDTH="44" HEIGHT="2053"/>
+			<RightMargin ID="P165_RM00001" HPOS="1208" VPOS="3" WIDTH="45" HEIGHT="2053"/>
+			<BottomMargin ID="P165_BM00001" HPOS="0" VPOS="2056" WIDTH="1253" HEIGHT="23"/>
+			<PrintSpace ID="P165_PS00001" HPOS="44" VPOS="3" WIDTH="1164" HEIGHT="2053">
+				<TextBlock ID="P165_TB00001" HPOS="467" VPOS="3" WIDTH="355" HEIGHT="37" STYLEREFS="TXT_0 PAR_CENTER">
+					<TextLine ID="P165_TL00001" HPOS="467" VPOS="5" WIDTH="355" HEIGHT="35">
+						<String ID="P165_ST00001" HPOS="467" VPOS="5" WIDTH="155" HEIGHT="35" CONTENT="UPPER" WC="0.65" CC="05407"/>
+						<SP ID="P165_SP00001" HPOS="622" VPOS="40" WIDTH="31"/>
+						<String ID="P165_ST00002" HPOS="653" VPOS="6" WIDTH="169" HEIGHT="34" CONTENT="CHALK." WC="0.86" CC="070100"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P165_TB00002" HPOS="607" VPOS="657" WIDTH="223" HEIGHT="60" STYLEREFS="TXT_1 PAR_RIGHT">
+					<TextLine ID="P165_TL00002" HPOS="609" VPOS="668" WIDTH="221" HEIGHT="24">
+						<String ID="P165_ST00003" HPOS="609" VPOS="668" WIDTH="138" HEIGHT="24" CONTENT="Anan.ch.ules" WC="0.41" CC="726736707866"/>
+						<SP ID="P165_SP00002" HPOS="747" VPOS="692" WIDTH="11"/>
+						<String ID="P165_ST00004" HPOS="758" VPOS="670" WIDTH="72" HEIGHT="22" CONTENT="ovahxs" WC="0.28" CC="828887"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P165_TB00003" HPOS="186" VPOS="695" WIDTH="310" HEIGHT="49" STYLEREFS="TXT_1 PAR_LEFT">
+					<TextLine ID="P165_TL00003" HPOS="186" VPOS="707" WIDTH="310" HEIGHT="33">
+						<String ID="P165_ST00005" HPOS="186" VPOS="707" WIDTH="133" HEIGHT="25" CONTENT="Ddi.cra.ster" WC="0.33" CC="887277466847"/>
+						<SP ID="P165_SP00003" HPOS="319" VPOS="732" WIDTH="16"/>
+						<String ID="P165_ST00006" HPOS="335" VPOS="712" WIDTH="161" HEIGHT="28" CONTENT="Coranguinum" WC="0.35" CC="07388883867"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P165_TB00004" HPOS="292" VPOS="1186" WIDTH="244" HEIGHT="25" STYLEREFS="TXT_1 PAR_LEFT">
+					<TextLine ID="P165_TL00004" HPOS="292" VPOS="1186" WIDTH="244" HEIGHT="25">
+						<String ID="P165_ST00007" HPOS="292" VPOS="1186" WIDTH="133" HEIGHT="25" CONTENT="Parasimilia" WC="0.40" CC="66471680687"/>
+						<SP ID="P165_SP00004" HPOS="425" VPOS="1211" WIDTH="9"/>
+						<String ID="P165_ST00008" HPOS="434" VPOS="1187" WIDTH="102" HEIGHT="23" CONTENT="Centra/e" WC="0.28" CC="85487687"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P165_TB00005" HPOS="861" VPOS="1336" WIDTH="287" HEIGHT="40" STYLEREFS="TXT_1 PAR_RIGHT">
+					<TextLine ID="P165_TL00005" HPOS="862" VPOS="1337" WIDTH="286" HEIGHT="31">
+						<String ID="P165_ST00009" HPOS="862" VPOS="1337" WIDTH="170" HEIGHT="31" CONTENT="J^Laqiosioma" WC="0.23" CC="888775868786"/>
+						<SP ID="P165_SP00005" HPOS="1032" VPOS="1368" WIDTH="13"/>
+						<String ID="P165_ST00010" HPOS="1045" VPOS="1344" WIDTH="103" HEIGHT="20" CONTENT="s/&gt;lnosa." WC="0.28" CC="586688586"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P165_TB00006" HPOS="401" VPOS="1621" WIDTH="267" HEIGHT="41" STYLEREFS="TXT_1 PAR_LEFT">
+					<TextLine ID="P165_TL00006" HPOS="403" VPOS="1622" WIDTH="265" HEIGHT="27">
+						<String ID="P165_ST00011" HPOS="403" VPOS="1624" WIDTH="105" HEIGHT="25" CONTENT="Galeriles" WC="0.35" CC="767385873"/>
+						<SP ID="P165_SP00006" HPOS="508" VPOS="1649" WIDTH="10"/>
+						<String ID="P165_ST00012" HPOS="518" VPOS="1622" WIDTH="150" HEIGHT="24" CONTENT="Allo-oalerus" WC="0.39" CC="255707876677"/>
+					</TextLine>
+				</TextBlock>
+				<ComposedBlock ID="P165_CB00001" HPOS="44" VPOS="94" WIDTH="1164" HEIGHT="1962" STYLEREFS="TXT_1 PAR_LEFT" TYPE="Illustration">
+					<GraphicalElement ID="P165_CB00001_SUB" HPOS="44" VPOS="94" WIDTH="1164" HEIGHT="1962"/>
+				</ComposedBlock>
+			</PrintSpace>
+		</Page>
+	</Layout>
+</alto>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.bl.uk/schemas/alto/alto-1-4.xsd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<Description>
+		<MeasurementUnit>mm10</MeasurementUnit>
+		<sourceImageInformation>
+			<fileName>//head1/IN/2008-47/A0012277277/BC.tif</fileName>
+		</sourceImageInformation>
+		<OCRProcessing ID="OCRPROCESSING_1">
+			<preProcessingStep>
+				<processingSoftware>
+					<softwareCreator>CCS Content Conversion Specialists GmbH, Germany</softwareCreator>
+					<softwareName>CCS docWORKS</softwareName>
+					<softwareVersion>6.1-0.67</softwareVersion>
+				</processingSoftware>
+			</preProcessingStep>
+			<ocrProcessingStep>
+				<processingSoftware>
+					<softwareCreator>ABBYY (BIT Software), Russia</softwareCreator>
+					<softwareName>Finereader</softwareName>
+				</processingSoftware>
+			</ocrProcessingStep>
+		</OCRProcessing>
+	</Description>
+	<Styles>
+		<TextStyle ID="TXT_0" FONTSIZE="11" FONTFAMILY="Courier New"/>
+		<ParagraphStyle ID="PAR_LEFT" ALIGN="Left"/>
+	</Styles>
+	<Layout>
+		<Page ID="P44" PHYSICAL_IMG_NR="44" HEIGHT="2161" WIDTH="1307" POSITION="Cover">
+			<TopMargin ID="P44_TM00001" HPOS="0" VPOS="0" WIDTH="1307" HEIGHT="0"/>
+			<LeftMargin ID="P44_LM00001" HPOS="0" VPOS="0" WIDTH="0" HEIGHT="2160"/>
+			<RightMargin ID="P44_RM00001" HPOS="1307" VPOS="0" WIDTH="0" HEIGHT="2160"/>
+			<BottomMargin ID="P44_BM00001" HPOS="0" VPOS="2160" WIDTH="1307" HEIGHT="0"/>
+			<PrintSpace ID="P44_PS00001" HPOS="0" VPOS="0" WIDTH="1307" HEIGHT="2160">
+				<ComposedBlock ID="P44_CB00001" HPOS="0" VPOS="0" WIDTH="1306" HEIGHT="2159" STYLEREFS="TXT_0 PAR_LEFT" TYPE="Illustration">
+					<GraphicalElement ID="P44_CB00001_SUB" HPOS="0" VPOS="0" WIDTH="1306" HEIGHT="2159"/>
+				</ComposedBlock>
+			</PrintSpace>
+		</Page>
+	</Layout>
+</alto>

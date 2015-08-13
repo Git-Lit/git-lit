@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.bl.uk/schemas/alto/alto-1-4.xsd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<Description>
+		<MeasurementUnit>mm10</MeasurementUnit>
+		<sourceImageInformation>
+			<fileName>//head1/IN/2008-16/A0011467890/006631.jp2</fileName>
+		</sourceImageInformation>
+		<OCRProcessing ID="OCRPROCESSING_1">
+			<preProcessingStep>
+				<processingSoftware>
+					<softwareCreator>CCS Content Conversion Specialists GmbH, Germany</softwareCreator>
+					<softwareName>CCS docWORKS</softwareName>
+					<softwareVersion>6.1-0.67</softwareVersion>
+				</processingSoftware>
+			</preProcessingStep>
+			<ocrProcessingStep>
+				<processingSoftware>
+					<softwareCreator>ABBYY (BIT Software), Russia</softwareCreator>
+					<softwareName>Finereader</softwareName>
+				</processingSoftware>
+			</ocrProcessingStep>
+		</OCRProcessing>
+	</Description>
+	<Styles>
+		<TextStyle ID="TXT_0" FONTSIZE="10" FONTFAMILY="Courier New"/>
+		<TextStyle ID="TXT_1" FONTSIZE="9" FONTFAMILY="Courier New"/>
+		<ParagraphStyle ID="PAR_LEFT" ALIGN="Left"/>
+		<ParagraphStyle ID="PAR_RIGHT" ALIGN="Right"/>
+	</Styles>
+	<Layout>
+		<Page ID="P139" PHYSICAL_IMG_NR="139" HEIGHT="2068" WIDTH="1248" POSITION="Right" ACCURACY="50.80">
+			<TopMargin ID="P139_TM00001" HPOS="0" VPOS="0" WIDTH="1247" HEIGHT="0"/>
+			<LeftMargin ID="P139_LM00001" HPOS="0" VPOS="0" WIDTH="0" HEIGHT="2068"/>
+			<RightMargin ID="P139_RM00001" HPOS="1247" VPOS="0" WIDTH="0" HEIGHT="2068"/>
+			<BottomMargin ID="P139_BM00001" HPOS="0" VPOS="2068" WIDTH="1247" HEIGHT="0"/>
+			<PrintSpace ID="P139_PS00001" HPOS="0" VPOS="0" WIDTH="1247" HEIGHT="2068">
+				<TextBlock ID="P139_TB00001" HPOS="103" VPOS="20" WIDTH="968" HEIGHT="29" STYLEREFS="TXT_0 PAR_LEFT">
+					<TextLine ID="P139_TL00001" HPOS="104" VPOS="22" WIDTH="967" HEIGHT="27">
+						<String ID="P139_ST00001" HPOS="104" VPOS="22" WIDTH="193" HEIGHT="27" CONTENT="TURRILITES" WC="0.76" CC="0408423000"/>
+						<SP ID="P139_SP00001" HPOS="297" VPOS="49" WIDTH="20"/>
+						<String ID="P139_ST00002" HPOS="317" VPOS="30" WIDTH="70" HEIGHT="19" CONTENT="from" WC="0.40" CC="1956"/>
+						<SP ID="P139_SP00002" HPOS="387" VPOS="49" WIDTH="18"/>
+						<String ID="P139_ST00003" HPOS="405" VPOS="31" WIDTH="53" HEIGHT="18" CONTENT="the" WC="0.59" CC="506"/>
+						<SP ID="P139_SP00003" HPOS="458" VPOS="49" WIDTH="18"/>
+						<String ID="P139_ST00004" HPOS="476" VPOS="24" WIDTH="126" HEIGHT="25" CONTENT="LOWER" WC="0.62" CC="15047"/>
+						<SP ID="P139_SP00004" HPOS="602" VPOS="49" WIDTH="20"/>
+						<String ID="P139_ST00005" HPOS="622" VPOS="26" WIDTH="128" HEIGHT="23" CONTENT="CHALK" WC="0.43" CC="45907"/>
+						<SP ID="P139_SP00005" HPOS="750" VPOS="49" WIDTH="19"/>
+						<String ID="P139_ST00006" HPOS="769" VPOS="27" WIDTH="19" HEIGHT="22" CONTENT="&amp;" WC="0.72" CC="2"/>
+						<SP ID="P139_SP00006" HPOS="788" VPOS="49" WIDTH="22"/>
+						<String ID="P139_ST00007" HPOS="810" VPOS="25" WIDTH="123" HEIGHT="24" CONTENT="CHALK" WC="0.66" CC="20851"/>
+						<SP ID="P139_SP00007" HPOS="933" VPOS="49" WIDTH="25"/>
+						<String ID="P139_ST00008" HPOS="958" VPOS="25" WIDTH="113" HEIGHT="24" CONTENT="MARL" WC="0.45" CC="9290"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P139_TB00002" HPOS="106" VPOS="1244" WIDTH="158" HEIGHT="22" STYLEREFS="TXT_1 PAR_LEFT">
+					<TextLine ID="P139_TL00002" HPOS="108" VPOS="1244" WIDTH="156" HEIGHT="22">
+						<String ID="P139_ST00009" HPOS="108" VPOS="1244" WIDTH="156" HEIGHT="22" CONTENT="T.UTicLvLatas." WC="0.31" CC="80787743788887"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P139_TB00003" HPOS="1012" VPOS="1321" WIDTH="119" HEIGHT="25" STYLEREFS="TXT_1 PAR_RIGHT">
+					<TextLine ID="P139_TL00003" HPOS="1012" VPOS="1323" WIDTH="119" HEIGHT="22">
+						<String ID="P139_ST00010" HPOS="1012" VPOS="1323" WIDTH="19" HEIGHT="22" CONTENT="T." WC="0.53" CC="71"/>
+						<SP ID="P139_SP00008" HPOS="1031" VPOS="1345" WIDTH="7"/>
+						<String ID="P139_ST00011" HPOS="1038" VPOS="1323" WIDTH="93" HEIGHT="22" CONTENT="costahix" WC="0.34" CC="15587878"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P139_TB00004" HPOS="228" VPOS="1966" WIDTH="327" HEIGHT="29" STYLEREFS="TXT_1 PAR_LEFT">
+					<TextLine ID="P139_TL00004" HPOS="228" VPOS="1968" WIDTH="327" HEIGHT="27">
+						<String ID="P139_ST00012" HPOS="228" VPOS="1972" WIDTH="140" HEIGHT="23" CONTENT="Turrililes" WC="0.33" CC="8818666676"/>
+						<SP ID="P139_SP00009" HPOS="368" VPOS="1995" WIDTH="22"/>
+						<String ID="P139_ST00013" HPOS="390" VPOS="1968" WIDTH="165" HEIGHT="27" CONTENT="iuierculaius." WC="0.47" CC="8878607421803"/>
+					</TextLine>
+				</TextBlock>
+				<ComposedBlock ID="P139_CB00001" HPOS="33" VPOS="67" WIDTH="1159" HEIGHT="1986" STYLEREFS="TXT_1 PAR_LEFT" TYPE="Illustration">
+					<GraphicalElement ID="P139_CB00001_SUB" HPOS="33" VPOS="67" WIDTH="1159" HEIGHT="1986"/>
+				</ComposedBlock>
+			</PrintSpace>
+		</Page>
+	</Layout>
+</alto>

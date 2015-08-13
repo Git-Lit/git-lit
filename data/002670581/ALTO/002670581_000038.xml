@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.bl.uk/schemas/alto/alto-1-4.xsd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<Description>
+		<MeasurementUnit>mm10</MeasurementUnit>
+		<sourceImageInformation>
+			<fileName>//head1/IN/2008-16/A0011467890/006524.jp2</fileName>
+		</sourceImageInformation>
+		<OCRProcessing ID="OCRPROCESSING_1">
+			<preProcessingStep>
+				<processingSoftware>
+					<softwareCreator>CCS Content Conversion Specialists GmbH, Germany</softwareCreator>
+					<softwareName>CCS docWORKS</softwareName>
+					<softwareVersion>6.1-0.67</softwareVersion>
+				</processingSoftware>
+			</preProcessingStep>
+			<ocrProcessingStep>
+				<processingSoftware>
+					<softwareCreator>ABBYY (BIT Software), Russia</softwareCreator>
+					<softwareName>Finereader</softwareName>
+				</processingSoftware>
+			</ocrProcessingStep>
+		</OCRProcessing>
+	</Description>
+	<Styles>
+		<TextStyle ID="TXT_0" FONTSIZE="10" FONTFAMILY="Courier New"/>
+		<TextStyle ID="TXT_1" FONTSIZE="9" FONTFAMILY="Courier New"/>
+		<ParagraphStyle ID="PAR_LEFT" ALIGN="Left"/>
+		<ParagraphStyle ID="PAR_RIGHT" ALIGN="Right"/>
+		<ParagraphStyle ID="PAR_CENTER" ALIGN="Center"/>
+	</Styles>
+	<Layout>
+		<Page ID="P38" PHYSICAL_IMG_NR="38" HEIGHT="1922" WIDTH="1117" PRINTED_IMG_NR="24" POSITION="Left" ACCURACY="74.24">
+			<TopMargin ID="P38_TM00001" HPOS="0" VPOS="0" WIDTH="1116" HEIGHT="220">
+				<TextBlock ID="P38_TB00001" HPOS="163" VPOS="190" WIDTH="32" HEIGHT="29" STYLEREFS="TXT_0 PAR_LEFT">
+					<TextLine ID="P38_TL00001" HPOS="165" VPOS="191" WIDTH="30" HEIGHT="28">
+						<String ID="P38_ST00001" HPOS="165" VPOS="191" WIDTH="30" HEIGHT="28" CONTENT="24" WC="0.77" CC="40"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P38_TB00002" HPOS="425" VPOS="189" WIDTH="335" HEIGHT="21" STYLEREFS="TXT_0 PAR_RIGHT">
+					<TextLine ID="P38_TL00002" HPOS="425" VPOS="190" WIDTH="335" HEIGHT="20">
+						<String ID="P38_ST00002" HPOS="425" VPOS="191" WIDTH="138" HEIGHT="19" CONTENT="wealden" WC="0.25" CC="9394977"/>
+						<SP ID="P38_SP00001" HPOS="563" VPOS="210" WIDTH="27"/>
+						<String ID="P38_ST00003" HPOS="590" VPOS="190" WIDTH="170" HEIGHT="20" CONTENT="formation." WC="0.55" CC="5050957073"/>
+					</TextLine>
+				</TextBlock>
+			</TopMargin>
+			<LeftMargin ID="P38_LM00001" HPOS="0" VPOS="220" WIDTH="163" HEIGHT="608"/>
+			<RightMargin ID="P38_RM00001" HPOS="1023" VPOS="220" WIDTH="93" HEIGHT="608"/>
+			<BottomMargin ID="P38_BM00001" HPOS="0" VPOS="828" WIDTH="1116" HEIGHT="1093"/>
+			<PrintSpace ID="P38_PS00001" HPOS="163" VPOS="220" WIDTH="864" HEIGHT="613">
+				<TextBlock ID="P38_TB00003" HPOS="515" VPOS="264" WIDTH="154" HEIGHT="24" STYLEREFS="TXT_0 PAR_CENTER">
+					<TextLine ID="P38_TL00003" HPOS="516" VPOS="264" WIDTH="153" HEIGHT="24">
+						<String ID="P38_ST00004" HPOS="516" VPOS="264" WIDTH="153" HEIGHT="24" CONTENT="Reptiles." WC="0.60" CC="514054264"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P38_TB00004" HPOS="228" VPOS="320" WIDTH="481" HEIGHT="332" STYLEREFS="TXT_1 PAR_LEFT">
+					<TextLine ID="P38_TL00004" HPOS="232" VPOS="320" WIDTH="374" HEIGHT="26">
+						<String ID="P38_ST00005" HPOS="232" VPOS="320" WIDTH="148" HEIGHT="26" CONTENT="Cetiosamus" WC="0.55" CC="7050350957"/>
+						<SP ID="P38_SP00002" HPOS="380" VPOS="346" WIDTH="17"/>
+						<String ID="P38_ST00006" HPOS="397" VPOS="320" WIDTH="83" HEIGHT="25" CONTENT="brevis." WC="0.47" CC="0985353"/>
+						<SP ID="P38_SP00003" HPOS="480" VPOS="346" WIDTH="30"/>
+						<String ID="P38_ST00007" HPOS="510" VPOS="320" WIDTH="96" HEIGHT="25" CONTENT="Owen." WC="0.66" CC="40244"/>
+					</TextLine>
+					<TextLine ID="P38_TL00005" HPOS="232" VPOS="354" WIDTH="436" HEIGHT="26">
+						<String ID="P38_ST00008" HPOS="232" VPOS="355" WIDTH="148" HEIGHT="25" CONTENT="Cetiosaurus" WC="0.58" CC="09164006924"/>
+						<SP ID="P38_SP00004" HPOS="380" VPOS="380" WIDTH="17"/>
+						<String ID="P38_ST00009" HPOS="397" VPOS="354" WIDTH="147" HEIGHT="25" CONTENT="Bucklandi." WC="0.88" CC="0050302000"/>
+						<SP ID="P38_SP00005" HPOS="544" VPOS="380" WIDTH="29"/>
+						<String ID="P38_ST00010" HPOS="573" VPOS="355" WIDTH="95" HEIGHT="24" CONTENT="Owen." WC="0.94" CC="00003"/>
+					</TextLine>
+					<TextLine ID="P38_TL00006" HPOS="231" VPOS="389" WIDTH="455" HEIGHT="33">
+						<String ID="P38_ST00011" HPOS="231" VPOS="389" WIDTH="221" HEIGHT="33" CONTENT="Streptospondylus" WC="0.83" CC="0224006003100060"/>
+						<SP ID="P38_SP00006" HPOS="452" VPOS="422" WIDTH="18"/>
+						<String ID="P38_ST00012" HPOS="470" VPOS="390" WIDTH="84" HEIGHT="31" CONTENT="major." WC="0.49" CC="903690"/>
+						<SP ID="P38_SP00007" HPOS="554" VPOS="422" WIDTH="37"/>
+						<String ID="P38_ST00013" HPOS="591" VPOS="389" WIDTH="95" HEIGHT="25" CONTENT="Owen." WC="0.83" CC="30004"/>
+					</TextLine>
+					<TextLine ID="P38_TL00007" HPOS="231" VPOS="424" WIDTH="180" HEIGHT="32">
+						<String ID="P38_ST00014" HPOS="231" VPOS="424" WIDTH="180" HEIGHT="32" CONTENT="Hylaosaurus." WC="0.64" CC="000030839951"/>
+					</TextLine>
+					<TextLine ID="P38_TL00008" HPOS="229" VPOS="457" WIDTH="415" HEIGHT="33">
+						<String ID="P38_ST00015" HPOS="229" VPOS="457" WIDTH="138" HEIGHT="32" CONTENT="Iguanodon" WC="0.98" CC="000000001"/>
+						<SP ID="P38_SP00008" HPOS="367" VPOS="489" WIDTH="18"/>
+						<String ID="P38_ST00016" HPOS="385" VPOS="457" WIDTH="123" HEIGHT="25" CONTENT="Mantelli." WC="0.75" CC="007550003"/>
+						<SP ID="P38_SP00009" HPOS="508" VPOS="489" WIDTH="32"/>
+						<String ID="P38_ST00017" HPOS="540" VPOS="458" WIDTH="104" HEIGHT="32" CONTENT="Meyer." WC="1.00" CC="000000"/>
+					</TextLine>
+					<TextLine ID="P38_TL00009" HPOS="230" VPOS="491" WIDTH="298" HEIGHT="26">
+						<String ID="P38_ST00018" HPOS="230" VPOS="492" WIDTH="172" HEIGHT="25" CONTENT="Plesiosaurus." WC="0.57" CC="9000045086990"/>
+						<SP ID="P38_SP00010" HPOS="402" VPOS="517" WIDTH="32"/>
+						<String ID="P38_ST00019" HPOS="434" VPOS="491" WIDTH="94" HEIGHT="26" CONTENT="Owen." WC="0.96" CC="00020"/>
+					</TextLine>
+					<TextLine ID="P38_TL00010" HPOS="230" VPOS="525" WIDTH="393" HEIGHT="33">
+						<String ID="P38_ST00020" HPOS="230" VPOS="526" WIDTH="22" HEIGHT="24" CONTENT="A" WC="1.00" CC="0"/>
+						<SP ID="P38_SP00011" HPOS="252" VPOS="550" WIDTH="18"/>
+						<String ID="P38_ST00021" HPOS="270" VPOS="525" WIDTH="50" HEIGHT="33" CONTENT="few" WC="0.75" CC="007"/>
+						<SP ID="P38_SP00012" HPOS="320" VPOS="558" WIDTH="18"/>
+						<String ID="P38_ST00022" HPOS="338" VPOS="526" WIDTH="117" HEIGHT="24" CONTENT="vertebræ." WC="0.53" CC="709340960"/>
+						<SP ID="P38_SP00013" HPOS="455" VPOS="558" WIDTH="38"/>
+						<String ID="P38_ST00023" HPOS="493" VPOS="525" WIDTH="130" HEIGHT="25" CONTENT="Wilkins." WC="0.83" CC="05203010"/>
+					</TextLine>
+					<TextLine ID="P38_TL00011" HPOS="230" VPOS="559" WIDTH="479" HEIGHT="33">
+						<String ID="P38_ST00024" HPOS="230" VPOS="560" WIDTH="187" HEIGHT="32" CONTENT="Ichthyosaurus" WC="0.64" CC="0000007095789"/>
+						<SP ID="P38_SP00014" HPOS="417" VPOS="592" WIDTH="18"/>
+						<String ID="P38_ST00025" HPOS="435" VPOS="560" WIDTH="116" HEIGHT="25" CONTENT="vertebræ." WC="0.57" CC="809160920"/>
+						<SP ID="P38_SP00015" HPOS="551" VPOS="592" WIDTH="39"/>
+						<String ID="P38_ST00026" HPOS="590" VPOS="559" WIDTH="119" HEIGHT="25" CONTENT="Wilkins" WC="0.93" CC="0200100"/>
+					</TextLine>
+					<TextLine ID="P38_TL00012" HPOS="230" VPOS="594" WIDTH="346" HEIGHT="33">
+						<String ID="P38_ST00027" HPOS="230" VPOS="594" WIDTH="189" HEIGHT="33" CONTENT="Megalosaurus." WC="0.62" CC="0609020099660"/>
+						<SP ID="P38_SP00016" HPOS="419" VPOS="627" WIDTH="27"/>
+						<String ID="P38_ST00028" HPOS="446" VPOS="594" WIDTH="130" HEIGHT="25" CONTENT="Wilkins." WC="0.81" CC="04702000"/>
+					</TextLine>
+					<TextLine ID="P38_TL00013" HPOS="231" VPOS="628" WIDTH="276" HEIGHT="24">
+						<String ID="P38_ST00029" HPOS="231" VPOS="628" WIDTH="149" HEIGHT="24" CONTENT="Crocodilian" WC="0.79" CC="59005000003"/>
+						<SP ID="P38_SP00017" HPOS="380" VPOS="652" WIDTH="17"/>
+						<String ID="P38_ST00030" HPOS="397" VPOS="628" WIDTH="110" HEIGHT="24" CONTENT="remains." WC="0.60" CC="90700490"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P38_TB00005" HPOS="225" VPOS="657" WIDTH="802" HEIGHT="176" STYLEREFS="TXT_1 PAR_LEFT">
+					<TextLine ID="P38_TL00014" HPOS="231" VPOS="662" WIDTH="322" HEIGHT="34">
+						<String ID="P38_ST00031" HPOS="231" VPOS="663" WIDTH="170" HEIGHT="32" CONTENT="Pterodactyle." WC="0.50" CC="8377507723083"/>
+						<SP ID="P38_SP00018" HPOS="401" VPOS="695" WIDTH="37"/>
+						<String ID="P38_ST00032" HPOS="438" VPOS="663" WIDTH="60" HEIGHT="23" CONTENT="Fox" WC="1.00" CC="000"/>
+						<SP ID="P38_SP00019" HPOS="498" VPOS="695" WIDTH="11"/>
+						<String ID="P38_ST00033" HPOS="509" VPOS="662" WIDTH="44" HEIGHT="34" CONTENT="(?)." WC="0.79" CC="0080"/>
+					</TextLine>
+					<TextLine ID="P38_TL00015" HPOS="232" VPOS="697" WIDTH="520" HEIGHT="33">
+						<String ID="P38_ST00034" HPOS="232" VPOS="697" WIDTH="128" HEIGHT="25" CONTENT="Chelonian" WC="0.65" CC="607052070"/>
+						<SP ID="P38_SP00020" HPOS="360" VPOS="722" WIDTH="20"/>
+						<String ID="P38_ST00035" HPOS="380" VPOS="699" WIDTH="119" HEIGHT="31" CONTENT="carapace," WC="0.39" CC="468773375"/>
+						<SP ID="P38_SP00021" HPOS="499" VPOS="730" WIDTH="24"/>
+						<String ID="P38_ST00036" HPOS="523" VPOS="697" WIDTH="139" HEIGHT="25" CONTENT="Sandown" WC="0.83" CC="0402005"/>
+						<SP ID="P38_SP00022" HPOS="662" VPOS="730" WIDTH="21"/>
+						<String ID="P38_ST00037" HPOS="683" VPOS="697" WIDTH="69" HEIGHT="33" CONTENT="Bay." WC="0.70" CC="4510"/>
+					</TextLine>
+					<TextLine ID="P38_TL00016" HPOS="231" VPOS="729" WIDTH="792" HEIGHT="35">
+						<String ID="P38_ST00038" HPOS="231" VPOS="732" WIDTH="117" HEIGHT="32" CONTENT="Carapace" WC="0.40" CC="65837348"/>
+						<SP ID="P38_SP00023" HPOS="348" VPOS="764" WIDTH="25"/>
+						<String ID="P38_ST00039" HPOS="373" VPOS="730" WIDTH="29" HEIGHT="34" CONTENT="of" WC="0.88" CC="20"/>
+						<SP ID="P38_SP00024" HPOS="402" VPOS="764" WIDTH="21"/>
+						<String ID="P38_ST00040" HPOS="423" VPOS="731" WIDTH="91" HEIGHT="28" CONTENT="Turtle," WC="0.54" CC="6154076"/>
+						<SP ID="P38_SP00025" HPOS="514" VPOS="764" WIDTH="21"/>
+						<String ID="P38_ST00041" HPOS="535" VPOS="731" WIDTH="28" HEIGHT="24" CONTENT="in" WC="0.88" CC="20"/>
+						<SP ID="P38_SP00026" HPOS="563" VPOS="764" WIDTH="24"/>
+						<String ID="P38_ST00042" HPOS="587" VPOS="731" WIDTH="131" HEIGHT="33" CONTENT="septaria," WC="0.82" CC="003040240"/>
+						<SP ID="P38_SP00027" HPOS="718" VPOS="764" WIDTH="19"/>
+						<String ID="P38_ST00043" HPOS="737" VPOS="730" WIDTH="70" HEIGHT="25" CONTENT="from" WC="0.87" CC="3001"/>
+						<SP ID="P38_SP00028" HPOS="807" VPOS="764" WIDTH="30"/>
+						<String ID="P38_ST00044" HPOS="837" VPOS="736" WIDTH="16" HEIGHT="9" CONTENT='"' WC="0.52" CC="4"/>
+						<SP ID="P38_SP00029" HPOS="853" VPOS="764" WIDTH="11"/>
+						<String ID="P38_ST00045" HPOS="864" VPOS="730" WIDTH="51" HEIGHT="25" CONTENT="Tie" WC="0.84" CC="040"/>
+						<SP ID="P38_SP00030" HPOS="915" VPOS="764" WIDTH="19"/>
+						<String ID="P38_ST00046" HPOS="934" VPOS="729" WIDTH="89" HEIGHT="29" CONTENT='Pits,"' WC="0.72" CC="660003"/>
+					</TextLine>
+					<TextLine ID="P38_TL00017" HPOS="280" VPOS="764" WIDTH="745" HEIGHT="33">
+						<String ID="P38_ST00047" HPOS="280" VPOS="769" WIDTH="67" HEIGHT="22" CONTENT="west" WC="0.95" CC="2000"/>
+						<SP ID="P38_SP00031" HPOS="347" VPOS="791" WIDTH="20"/>
+						<String ID="P38_ST00048" HPOS="367" VPOS="764" WIDTH="29" HEIGHT="26" CONTENT="of" WC="0.91" CC="01"/>
+						<SP ID="P38_SP00032" HPOS="396" VPOS="791" WIDTH="16"/>
+						<String ID="P38_ST00049" HPOS="412" VPOS="765" WIDTH="153" HEIGHT="25" CONTENT="Atherfield" WC="0.91" CC="1500200000"/>
+						<SP ID="P38_SP00033" HPOS="565" VPOS="791" WIDTH="20"/>
+						<String ID="P38_ST00050" HPOS="585" VPOS="765" WIDTH="91" HEIGHT="26" CONTENT="Point." WC="0.88" CC="600000"/>
+						<SP ID="P38_SP00034" HPOS="676" VPOS="791" WIDTH="39"/>
+						<String ID="P38_ST00051" HPOS="715" VPOS="765" WIDTH="31" HEIGHT="24" CONTENT="In" WC="0.77" CC="04"/>
+						<SP ID="P38_SP00035" HPOS="746" VPOS="791" WIDTH="14"/>
+						<String ID="P38_ST00052" HPOS="760" VPOS="765" WIDTH="158" HEIGHT="32" CONTENT="possession" WC="0.94" CC="1000000400"/>
+						<SP ID="P38_SP00036" HPOS="918" VPOS="797" WIDTH="14"/>
+						<String ID="P38_ST00053" HPOS="932" VPOS="764" WIDTH="29" HEIGHT="25" CONTENT="of" WC="0.86" CC="01"/>
+						<SP ID="P38_SP00037" HPOS="961" VPOS="797" WIDTH="16"/>
+						<String ID="P38_ST00054" HPOS="977" VPOS="764" WIDTH="48" HEIGHT="26" CONTENT="the" WC="1.00" CC="000"/>
+					</TextLine>
+					<TextLine ID="P38_TL00018" HPOS="283" VPOS="799" WIDTH="471" HEIGHT="31">
+						<String ID="P38_ST00055" HPOS="283" VPOS="800" WIDTH="68" HEIGHT="24" CONTENT="Rev." WC="0.91" CC="2010"/>
+						<SP ID="P38_SP00038" HPOS="351" VPOS="824" WIDTH="21"/>
+						<String ID="P38_ST00056" HPOS="372" VPOS="800" WIDTH="31" HEIGHT="24" CONTENT="P." WC="0.83" CC="30"/>
+						<SP ID="P38_SP00039" HPOS="403" VPOS="824" WIDTH="21"/>
+						<String ID="P38_ST00057" HPOS="424" VPOS="801" WIDTH="33" HEIGHT="23" CONTENT="B." WC="0.65" CC="70"/>
+						<SP ID="P38_SP00040" HPOS="457" VPOS="824" WIDTH="20"/>
+						<String ID="P38_ST00058" HPOS="477" VPOS="799" WIDTH="111" HEIGHT="31" CONTENT="Brodie," WC="0.66" CC="7216400"/>
+						<SP ID="P38_SP00041" HPOS="588" VPOS="830" WIDTH="14"/>
+						<String ID="P38_ST00059" HPOS="602" VPOS="799" WIDTH="152" HEIGHT="26" CONTENT="Warwick." WC="0.86" CC="13013000"/>
+					</TextLine>
+				</TextBlock>
+			</PrintSpace>
+		</Page>
+	</Layout>
+</alto>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.bl.uk/schemas/alto/alto-1-4.xsd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<Description>
+		<MeasurementUnit>mm10</MeasurementUnit>
+		<sourceImageInformation>
+			<fileName>//head1/IN/2008-16/A0011467890/006635.jp2</fileName>
+		</sourceImageInformation>
+		<OCRProcessing ID="OCRPROCESSING_1">
+			<preProcessingStep>
+				<processingSoftware>
+					<softwareCreator>CCS Content Conversion Specialists GmbH, Germany</softwareCreator>
+					<softwareName>CCS docWORKS</softwareName>
+					<softwareVersion>6.1-0.67</softwareVersion>
+				</processingSoftware>
+			</preProcessingStep>
+			<ocrProcessingStep>
+				<processingSoftware>
+					<softwareCreator>ABBYY (BIT Software), Russia</softwareCreator>
+					<softwareName>Finereader</softwareName>
+				</processingSoftware>
+			</ocrProcessingStep>
+		</OCRProcessing>
+	</Description>
+	<Styles>
+		<TextStyle ID="TXT_0" FONTSIZE="11" FONTFAMILY="Courier New"/>
+		<TextStyle ID="TXT_1" FONTSIZE="9" FONTFAMILY="Courier New"/>
+		<ParagraphStyle ID="PAR_RIGHT" ALIGN="Right"/>
+		<ParagraphStyle ID="PAR_LEFT" ALIGN="Left"/>
+	</Styles>
+	<Layout>
+		<Page ID="P143" PHYSICAL_IMG_NR="143" HEIGHT="2058" WIDTH="1213" POSITION="Right" ACCURACY="33.96">
+			<TopMargin ID="P143_TM00001" HPOS="0" VPOS="0" WIDTH="1213" HEIGHT="17"/>
+			<LeftMargin ID="P143_LM00001" HPOS="0" VPOS="17" WIDTH="14" HEIGHT="1919"/>
+			<RightMargin ID="P143_RM00001" HPOS="1176" VPOS="17" WIDTH="37" HEIGHT="1919"/>
+			<BottomMargin ID="P143_BM00001" HPOS="0" VPOS="1936" WIDTH="1213" HEIGHT="122"/>
+			<PrintSpace ID="P143_PS00001" HPOS="14" VPOS="17" WIDTH="1162" HEIGHT="1919">
+				<TextBlock ID="P143_TB00001" HPOS="281" VPOS="17" WIDTH="722" HEIGHT="31" STYLEREFS="TXT_0 PAR_RIGHT">
+					<TextLine ID="P143_TL00001" HPOS="283" VPOS="19" WIDTH="720" HEIGHT="29">
+						<String ID="P143_ST00001" HPOS="283" VPOS="20" WIDTH="207" HEIGHT="28" CONTENT="FOSSILS" WC="0.88" CC="0002302"/>
+						<SP ID="P143_SP00001" HPOS="490" VPOS="48" WIDTH="32"/>
+						<String ID="P143_ST00002" HPOS="522" VPOS="29" WIDTH="82" HEIGHT="18" CONTENT="from" WC="0.25" CC="8946"/>
+						<SP ID="P143_SP00002" HPOS="604" VPOS="48" WIDTH="24"/>
+						<String ID="P143_ST00003" HPOS="628" VPOS="30" WIDTH="49" HEIGHT="16" CONTENT="the" WC="0.61" CC="065"/>
+						<SP ID="P143_SP00003" HPOS="677" VPOS="48" WIDTH="24"/>
+						<String ID="P143_ST00004" HPOS="701" VPOS="21" WIDTH="138" HEIGHT="26" CONTENT="CHALK" WC="0.78" CC="01900"/>
+						<SP ID="P143_SP00004" HPOS="839" VPOS="48" WIDTH="37"/>
+						<String ID="P143_ST00005" HPOS="876" VPOS="19" WIDTH="127" HEIGHT="27" CONTENT="MARL." WC="0.30" CC="98762"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P143_TB00002" HPOS="613" VPOS="408" WIDTH="407" HEIGHT="24" STYLEREFS="TXT_1 PAR_RIGHT">
+					<TextLine ID="P143_TL00002" HPOS="615" VPOS="408" WIDTH="405" HEIGHT="24">
+						<String ID="P143_ST00006" HPOS="615" VPOS="408" WIDTH="58" HEIGHT="24" CONTENT="cJaw" WC="0.24" CC="7885"/>
+						<SP ID="P143_SP00005" HPOS="673" VPOS="432" WIDTH="9"/>
+						<String ID="P143_ST00007" HPOS="682" VPOS="414" WIDTH="22" HEIGHT="17" CONTENT="ot" WC="0.14" CC="88"/>
+						<SP ID="P143_SP00006" HPOS="704" VPOS="432" WIDTH="14"/>
+						<String ID="P143_ST00008" HPOS="718" VPOS="419" WIDTH="13" HEIGHT="12" CONTENT="a" WC="0.14" CC="8"/>
+						<SP ID="P143_SP00007" HPOS="731" VPOS="432" WIDTH="10"/>
+						<String ID="P143_ST00009" HPOS="741" VPOS="409" WIDTH="56" HEIGHT="23" CONTENT="fish" WC="0.32" CC="7468"/>
+						<SP ID="P143_SP00008" HPOS="797" VPOS="432" WIDTH="10"/>
+						<String ID="P143_ST00010" HPOS="807" VPOS="413" WIDTH="52" HEIGHT="18" CONTENT="with." WC="0.41" CC="07777"/>
+						<SP ID="P143_SP00009" HPOS="859" VPOS="432" WIDTH="9"/>
+						<String ID="P143_ST00011" HPOS="868" VPOS="411" WIDTH="62" HEIGHT="20" CONTENT="Tecik." WC="0.20" CC="888877"/>
+						<SP ID="P143_SP00010" HPOS="930" VPOS="432" WIDTH="8"/>
+						<String ID="P143_ST00012" HPOS="938" VPOS="412" WIDTH="25" HEIGHT="19" CONTENT="in" WC="0.29" CC="58"/>
+						<SP ID="P143_SP00011" HPOS="963" VPOS="432" WIDTH="11"/>
+						<String ID="P143_ST00013" HPOS="974" VPOS="409" WIDTH="46" HEIGHT="22" CONTENT="siiu" WC="0.27" CC="7668"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P143_TB00003" HPOS="116" VPOS="461" WIDTH="237" HEIGHT="32" STYLEREFS="TXT_1 PAR_LEFT">
+					<TextLine ID="P143_TL00003" HPOS="116" VPOS="461" WIDTH="237" HEIGHT="31">
+						<String ID="P143_ST00014" HPOS="116" VPOS="461" WIDTH="116" HEIGHT="31" CONTENT="Scaphites" WC="0.39" CC="107766799"/>
+						<SP ID="P143_SP00012" HPOS="232" VPOS="492" WIDTH="13"/>
+						<String ID="P143_ST00015" HPOS="245" VPOS="463" WIDTH="108" HEIGHT="21" CONTENT="sinaius." WC="0.55" CC="05336680"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P143_TB00004" HPOS="164" VPOS="907" WIDTH="195" HEIGHT="50" STYLEREFS="TXT_1 PAR_LEFT">
+					<TextLine ID="P143_TL00004" HPOS="166" VPOS="908" WIDTH="193" HEIGHT="33">
+						<String ID="P143_ST00016" HPOS="166" VPOS="908" WIDTH="193" HEIGHT="33" CONTENT="J^alæocorystes" WC="0.26" CC="58868837776877"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P143_TB00005" HPOS="618" VPOS="983" WIDTH="401" HEIGHT="44" STYLEREFS="TXT_1 PAR_RIGHT">
+					<TextLine ID="P143_TL00005" HPOS="619" VPOS="985" WIDTH="400" HEIGHT="36">
+						<String ID="P143_ST00017" HPOS="619" VPOS="990" WIDTH="66" HEIGHT="21" CONTENT="Tooth" WC="0.31" CC="47786"/>
+						<SP ID="P143_SP00013" HPOS="685" VPOS="1011" WIDTH="11"/>
+						<String ID="P143_ST00018" HPOS="696" VPOS="990" WIDTH="26" HEIGHT="21" CONTENT="of" WC="0.35" CC="75"/>
+						<SP ID="P143_SP00014" HPOS="722" VPOS="1011" WIDTH="7"/>
+						<String ID="P143_ST00019" HPOS="729" VPOS="985" WIDTH="143" HEIGHT="25" CONTENT="Pluchodus" WC="0.38" CC="887087374"/>
+						<SP ID="P143_SP00015" HPOS="872" VPOS="1011" WIDTH="7"/>
+						<String ID="P143_ST00020" HPOS="879" VPOS="985" WIDTH="140" HEIGHT="36" CONTENT="p-olyaurus-" WC="0.38" CC="73707583777"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P143_TB00006" HPOS="601" VPOS="1220" WIDTH="284" HEIGHT="31" STYLEREFS="TXT_1 PAR_RIGHT">
+					<TextLine ID="P143_TL00006" HPOS="602" VPOS="1220" WIDTH="283" HEIGHT="29">
+						<String ID="P143_ST00021" HPOS="602" VPOS="1222" WIDTH="69" HEIGHT="24" CONTENT="Toclk" WC="0.42" CC="17838"/>
+						<SP ID="P143_SP00016" HPOS="671" VPOS="1246" WIDTH="8"/>
+						<String ID="P143_ST00022" HPOS="679" VPOS="1227" WIDTH="22" HEIGHT="17" CONTENT="of" WC="0.34" CC="85"/>
+						<SP ID="P143_SP00017" HPOS="701" VPOS="1246" WIDTH="4"/>
+						<String ID="P143_ST00023" HPOS="705" VPOS="1220" WIDTH="79" HEIGHT="25" CONTENT="Shark" WC="0.29" CC="68757"/>
+						<SP ID="P143_SP00018" HPOS="784" VPOS="1246" WIDTH="6"/>
+						<String ID="P143_ST00024" HPOS="790" VPOS="1228" WIDTH="7" HEIGHT="19" CONTENT="s" WC="0.35" CC="6"/>
+						<SP ID="P143_SP00019" HPOS="797" VPOS="1247" WIDTH="6"/>
+						<String ID="P143_ST00025" HPOS="803" VPOS="1225" WIDTH="82" HEIGHT="24" CONTENT="lamnaj" WC="0.29" CC="684787"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P143_TB00007" HPOS="232" VPOS="1384" WIDTH="204" HEIGHT="73" STYLEREFS="TXT_1 PAR_LEFT">
+					<TextLine ID="P143_TL00007" HPOS="296" VPOS="1384" WIDTH="140" HEIGHT="5">
+						<String ID="P143_ST00026" HPOS="296" VPOS="1384" WIDTH="33" HEIGHT="2" CONTENT="V'-^r." WC="0.21" CC="867887"/>
+						<SP ID="P143_SP00020" HPOS="329" VPOS="1386" WIDTH="5"/>
+						<String ID="P143_ST00027" HPOS="334" VPOS="1384" WIDTH="49" HEIGHT="4" CONTENT="..■■■TU-&#34;'" WC="0.22" CC="7688888777"/>
+						<SP ID="P143_SP00021" HPOS="383" VPOS="1388" WIDTH="6"/>
+						<String ID="P143_ST00028" HPOS="389" VPOS="1384" WIDTH="47" HEIGHT="5" CONTENT="*&gt;ii^*.V*" WC="0.20" CC="788887787"/>
+					</TextLine>
+					<TextLine ID="P143_TL00008" HPOS="234" VPOS="1403" WIDTH="202" HEIGHT="32">
+						<String ID="P143_ST00029" HPOS="234" VPOS="1403" WIDTH="202" HEIGHT="32" CONTENT="JPalœocorysies." WC="0.32" CC="887157567876782"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P143_TB00008" HPOS="134" VPOS="1836" WIDTH="191" HEIGHT="57" STYLEREFS="TXT_1 PAR_LEFT">
+					<TextLine ID="P143_TL00009" HPOS="136" VPOS="1837" WIDTH="189" HEIGHT="28">
+						<String ID="P143_ST00030" HPOS="136" VPOS="1837" WIDTH="189" HEIGHT="28" CONTENT="Taiceocorysies." WC="0.29" CC="858758286767867"/>
+					</TextLine>
+					<TextLine ID="P143_TL00010" HPOS="180" VPOS="1865" WIDTH="92" HEIGHT="27">
+						<String ID="P143_ST00031" HPOS="180" VPOS="1865" WIDTH="92" HEIGHT="27" CONTENT="(Side)" WC="0.26" CC="478878"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P143_TB00009" HPOS="776" VPOS="1901" WIDTH="289" HEIGHT="32" STYLEREFS="TXT_1 PAR_RIGHT">
+					<TextLine ID="P143_TL00011" HPOS="776" VPOS="1902" WIDTH="289" HEIGHT="31">
+						<String ID="P143_ST00032" HPOS="776" VPOS="1902" WIDTH="127" HEIGHT="25" CONTENT="JVautilus" WC="0.25" CC="867888675"/>
+						<SP ID="P143_SP00022" HPOS="903" VPOS="1927" WIDTH="8"/>
+						<String ID="P143_ST00033" HPOS="911" VPOS="1905" WIDTH="154" HEIGHT="28" CONTENT="expansus?" WC="0.33" CC="578685763"/>
+					</TextLine>
+				</TextBlock>
+				<ComposedBlock ID="P143_CB00001" HPOS="14" VPOS="61" WIDTH="1162" HEIGHT="1875" STYLEREFS="TXT_1 PAR_LEFT" TYPE="Illustration">
+					<GraphicalElement ID="P143_CB00001_SUB" HPOS="14" VPOS="61" WIDTH="1162" HEIGHT="1875"/>
+				</ComposedBlock>
+			</PrintSpace>
+		</Page>
+	</Layout>
+</alto>

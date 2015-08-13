@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.bl.uk/schemas/alto/alto-1-4.xsd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<Description>
+		<MeasurementUnit>mm10</MeasurementUnit>
+		<sourceImageInformation>
+			<fileName>//head1/IN/2008-16/A0011467890/006577.jp2</fileName>
+		</sourceImageInformation>
+		<OCRProcessing ID="OCRPROCESSING_1">
+			<preProcessingStep>
+				<processingSoftware>
+					<softwareCreator>CCS Content Conversion Specialists GmbH, Germany</softwareCreator>
+					<softwareName>CCS docWORKS</softwareName>
+					<softwareVersion>6.1-0.67</softwareVersion>
+				</processingSoftware>
+			</preProcessingStep>
+			<ocrProcessingStep>
+				<processingSoftware>
+					<softwareCreator>ABBYY (BIT Software), Russia</softwareCreator>
+					<softwareName>Finereader</softwareName>
+				</processingSoftware>
+			</ocrProcessingStep>
+		</OCRProcessing>
+	</Description>
+	<Styles>
+		<TextStyle ID="TXT_0" FONTSIZE="11" FONTFAMILY="Courier New"/>
+		<TextStyle ID="TXT_1" FONTSIZE="9" FONTFAMILY="Courier New"/>
+		<ParagraphStyle ID="PAR_RIGHT" ALIGN="Right"/>
+		<ParagraphStyle ID="PAR_LEFT" ALIGN="Left"/>
+	</Styles>
+	<Layout>
+		<Page ID="P89" PHYSICAL_IMG_NR="89" HEIGHT="2035" WIDTH="1252" POSITION="Right" ACCURACY="34.62">
+			<TopMargin ID="P89_TM00001" HPOS="0" VPOS="0" WIDTH="1252" HEIGHT="22"/>
+			<LeftMargin ID="P89_LM00001" HPOS="0" VPOS="22" WIDTH="21" HEIGHT="1983"/>
+			<RightMargin ID="P89_RM00001" HPOS="1233" VPOS="22" WIDTH="19" HEIGHT="1983"/>
+			<BottomMargin ID="P89_BM00001" HPOS="0" VPOS="2005" WIDTH="1252" HEIGHT="30"/>
+			<PrintSpace ID="P89_PS00001" HPOS="21" VPOS="22" WIDTH="1214" HEIGHT="1983">
+				<TextBlock ID="P89_TB00001" HPOS="1207" VPOS="809" WIDTH="28" HEIGHT="449" ROTATION="90.00" STYLEREFS="TXT_0 PAR_RIGHT">
+					<TextLine ID="P89_TL00001" HPOS="1207" VPOS="809" WIDTH="26" HEIGHT="449">
+						<String ID="P89_ST00001" HPOS="1207" VPOS="978" WIDTH="26" HEIGHT="280" CONTENT="Blackgang" WC="0.65" CC="665070040"/>
+						<SP ID="P89_SP00001" HPOS="1233" VPOS="1258" WIDTH="-26"/>
+						<String ID="P89_ST00002" HPOS="1207" VPOS="809" WIDTH="26" HEIGHT="128" CONTENT="Chine" WC="0.67" CC="50045"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P89_TB00002" HPOS="1190" VPOS="1446" WIDTH="35" HEIGHT="488" ROTATION="90.00" STYLEREFS="TXT_1 PAR_RIGHT">
+					<TextLine ID="P89_TL00002" HPOS="1190" VPOS="1472" WIDTH="17" HEIGHT="407">
+						<String ID="P89_ST00003" HPOS="1191" VPOS="1827" WIDTH="12" HEIGHT="52" CONTENT="Frusri" WC="0.34" CC="778726"/>
+						<SP ID="P89_SP00002" HPOS="1203" VPOS="1879" WIDTH="-7"/>
+						<String ID="P89_ST00004" HPOS="1196" VPOS="1807" WIDTH="7" HEIGHT="10" CONTENT="j" WC="0.14" CC="8"/>
+						<SP ID="P89_SP00003" HPOS="1203" VPOS="1879" WIDTH="-12"/>
+						<String ID="P89_ST00005" HPOS="1191" VPOS="1691" WIDTH="12" HEIGHT="105" CONTENT="Photograph" WC="0.31" CC="8774885287"/>
+						<SP ID="P89_SP00004" HPOS="1203" VPOS="1879" WIDTH="-7"/>
+						<String ID="P89_ST00006" HPOS="1196" VPOS="1658" WIDTH="7" HEIGHT="22" CONTENT="br" WC="0.48" CC="81"/>
+						<SP ID="P89_SP00005" HPOS="1203" VPOS="1879" WIDTH="-13"/>
+						<String ID="P89_ST00007" HPOS="1190" VPOS="1633" WIDTH="14" HEIGHT="14" CONTENT="F" WC="0.12" CC="8"/>
+						<SP ID="P89_SP00006" HPOS="1204" VPOS="1879" WIDTH="-12"/>
+						<String ID="P89_ST00008" HPOS="1192" VPOS="1588" WIDTH="12" HEIGHT="40" CONTENT="tiUQ" WC="0.38" CC="7366"/>
+						<String ID="P89_ST00009" HPOS="1191" VPOS="1547" WIDTH="16" HEIGHT="41" CONTENT="'son," WC="0.36" CC="78770"/>
+						<SP ID="P89_SP00007" HPOS="1207" VPOS="1879" WIDTH="-15"/>
+						<String ID="P89_ST00010" HPOS="1192" VPOS="1511" WIDTH="12" HEIGHT="30" CONTENT="\Jen" WC="0.18" CC="8888"/>
+						<String ID="P89_ST00011" HPOS="1194" VPOS="1472" WIDTH="10" HEIGHT="35" CONTENT="toon" WC="0.19" CC="7878"/>
+					</TextLine>
+				</TextBlock>
+				<ComposedBlock ID="P89_CB00001" HPOS="21" VPOS="22" WIDTH="1212" HEIGHT="1983" STYLEREFS="TXT_1 PAR_LEFT" TYPE="Illustration">
+					<GraphicalElement ID="P89_CB00001_SUB" HPOS="21" VPOS="22" WIDTH="1212" HEIGHT="1983"/>
+				</ComposedBlock>
+			</PrintSpace>
+		</Page>
+	</Layout>
+</alto>

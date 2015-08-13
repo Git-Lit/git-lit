@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.bl.uk/schemas/alto/alto-1-4.xsd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<Description>
+		<MeasurementUnit>mm10</MeasurementUnit>
+		<sourceImageInformation>
+			<fileName>//head1/IN/2008-16/A0011467890/006595.jp2</fileName>
+		</sourceImageInformation>
+		<OCRProcessing ID="OCRPROCESSING_1">
+			<preProcessingStep>
+				<processingSoftware>
+					<softwareCreator>CCS Content Conversion Specialists GmbH, Germany</softwareCreator>
+					<softwareName>CCS docWORKS</softwareName>
+					<softwareVersion>6.1-0.67</softwareVersion>
+				</processingSoftware>
+			</preProcessingStep>
+			<ocrProcessingStep>
+				<processingSoftware>
+					<softwareCreator>ABBYY (BIT Software), Russia</softwareCreator>
+					<softwareName>Finereader</softwareName>
+				</processingSoftware>
+			</ocrProcessingStep>
+		</OCRProcessing>
+	</Description>
+	<Styles>
+		<TextStyle ID="TXT_0" FONTSIZE="11" FONTFAMILY="Courier New"/>
+		<TextStyle ID="TXT_1" FONTSIZE="9" FONTFAMILY="Courier New"/>
+		<ParagraphStyle ID="PAR_RIGHT" ALIGN="Right"/>
+		<ParagraphStyle ID="PAR_LEFT" ALIGN="Left"/>
+	</Styles>
+	<Layout>
+		<Page ID="P105" PHYSICAL_IMG_NR="105" HEIGHT="2076" WIDTH="1215" POSITION="Right" ACCURACY="33.80">
+			<TopMargin ID="P105_TM00001" HPOS="0" VPOS="0" WIDTH="1214" HEIGHT="0"/>
+			<LeftMargin ID="P105_LM00001" HPOS="0" VPOS="0" WIDTH="0" HEIGHT="2076"/>
+			<RightMargin ID="P105_RM00001" HPOS="1214" VPOS="0" WIDTH="0" HEIGHT="2076"/>
+			<BottomMargin ID="P105_BM00001" HPOS="0" VPOS="2076" WIDTH="1214" HEIGHT="0"/>
+			<PrintSpace ID="P105_PS00001" HPOS="0" VPOS="0" WIDTH="1214" HEIGHT="2076">
+				<TextBlock ID="P105_TB00001" HPOS="376" VPOS="11" WIDTH="513" HEIGHT="38" STYLEREFS="TXT_0 PAR_RIGHT">
+					<TextLine ID="P105_TL00001" HPOS="378" VPOS="14" WIDTH="511" HEIGHT="35">
+						<String ID="P105_ST00001" HPOS="378" VPOS="14" WIDTH="166" HEIGHT="30" CONTENT="UPPER" WC="0.82" CC="00440"/>
+						<SP ID="P105_SP00001" HPOS="544" VPOS="44" WIDTH="39"/>
+						<String ID="P105_ST00002" HPOS="583" VPOS="16" WIDTH="306" HEIGHT="33" CONTENT="GREENSAND." WC="0.58" CC="0601657902"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P105_TB00002" HPOS="892" VPOS="578" WIDTH="254" HEIGHT="36" STYLEREFS="TXT_1 PAR_RIGHT">
+					<TextLine ID="P105_TL00002" HPOS="894" VPOS="583" WIDTH="251" HEIGHT="31">
+						<String ID="P105_ST00003" HPOS="894" VPOS="583" WIDTH="132" HEIGHT="31" CONTENT="T-rigoTtia." WC="0.33" CC="45778648775"/>
+						<SP ID="P105_SP00002" HPOS="1026" VPOS="614" WIDTH="12"/>
+						<String ID="P105_ST00004" HPOS="1038" VPOS="593" WIDTH="107" HEIGHT="21" CONTENT="spinosa." WC="0.33" CC="66776387"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P105_TB00003" HPOS="522" VPOS="616" WIDTH="233" HEIGHT="20" STYLEREFS="TXT_1 PAR_RIGHT">
+					<TextLine ID="P105_TL00003" HPOS="523" VPOS="616" WIDTH="232" HEIGHT="20">
+						<String ID="P105_ST00005" HPOS="523" VPOS="616" WIDTH="105" HEIGHT="19" CONTENT="Cardinal" WC="0.44" CC="56072886"/>
+						<SP ID="P105_SP00003" HPOS="628" VPOS="635" WIDTH="7"/>
+						<String ID="P105_ST00006" HPOS="635" VPOS="617" WIDTH="94" HEIGHT="19" CONTENT="gentian" WC="0.18" CC="8888787"/>
+						<String ID="P105_ST00007" HPOS="734" VPOS="626" WIDTH="11" HEIGHT="10" CONTENT=",;" WC="0.29" CC="76"/>
+						<SP ID="P105_SP00004" HPOS="745" VPOS="636" WIDTH="5"/>
+						<String ID="P105_ST00008" HPOS="750" VPOS="627" WIDTH="5" HEIGHT="8" CONTENT="n" WC="0.13" CC="8"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P105_TB00004" HPOS="34" VPOS="1164" WIDTH="212" HEIGHT="39" STYLEREFS="TXT_1 PAR_LEFT">
+					<TextLine ID="P105_TL00004" HPOS="47" VPOS="1166" WIDTH="199" HEIGHT="32">
+						<String ID="P105_ST00009" HPOS="47" VPOS="1166" WIDTH="131" HEIGHT="23" CONTENT="CardiosJer" WC="0.26" CC="6858787873"/>
+						<SP ID="P105_SP00005" HPOS="178" VPOS="1189" WIDTH="11"/>
+						<String ID="P105_ST00010" HPOS="189" VPOS="1177" WIDTH="57" HEIGHT="21" CONTENT="spec" WC="0.24" CC="5788"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P105_TB00005" HPOS="975" VPOS="1170" WIDTH="204" HEIGHT="33" STYLEREFS="TXT_1 PAR_RIGHT">
+					<TextLine ID="P105_TL00005" HPOS="975" VPOS="1176" WIDTH="204" HEIGHT="25">
+						<String ID="P105_ST00011" HPOS="975" VPOS="1179" WIDTH="63" HEIGHT="22" CONTENT="Teclen" WC="0.18" CC="878878"/>
+						<SP ID="P105_SP00006" HPOS="1038" VPOS="1201" WIDTH="8"/>
+						<String ID="P105_ST00012" HPOS="1046" VPOS="1176" WIDTH="133" HEIGHT="24" CONTENT="orbicularis." WC="0.46" CC="717168276365"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P105_TB00006" HPOS="77" VPOS="1535" WIDTH="224" HEIGHT="47" STYLEREFS="TXT_1 PAR_LEFT">
+					<TextLine ID="P105_TL00006" HPOS="77" VPOS="1547" WIDTH="224" HEIGHT="24">
+						<String ID="P105_ST00013" HPOS="77" VPOS="1547" WIDTH="143" HEIGHT="24" CONTENT="lerehraiata" WC="0.24" CC="76688786888"/>
+						<SP ID="P105_SP00007" HPOS="220" VPOS="1571" WIDTH="15"/>
+						<String ID="P105_ST00014" HPOS="235" VPOS="1558" WIDTH="66" HEIGHT="13" CONTENT="snac." WC="0.30" CC="37886"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P105_TB00007" HPOS="127" VPOS="1995" WIDTH="325" HEIGHT="38" STYLEREFS="TXT_1 PAR_LEFT">
+					<TextLine ID="P105_TL00007" HPOS="129" VPOS="1998" WIDTH="94" HEIGHT="26">
+						<String ID="P105_ST00015" HPOS="129" VPOS="1998" WIDTH="94" HEIGHT="26" CONTENT="2'ecten" WC="0.30" CC="8186887"/>
+						<SP ID="P105_SP00008" HPOS="223" VPOS="2024" WIDTH="0"/>
+					</TextLine>
+				</TextBlock>
+				<ComposedBlock ID="P105_CB00001" HPOS="22" VPOS="59" WIDTH="1176" HEIGHT="1999" STYLEREFS="TXT_1 PAR_LEFT" TYPE="Illustration">
+					<GraphicalElement ID="P105_CB00001_SUB" HPOS="22" VPOS="59" WIDTH="1176" HEIGHT="1999"/>
+				</ComposedBlock>
+			</PrintSpace>
+		</Page>
+	</Layout>
+</alto>

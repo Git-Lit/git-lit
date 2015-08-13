@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.bl.uk/schemas/alto/alto-1-4.xsd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<Description>
+		<MeasurementUnit>mm10</MeasurementUnit>
+		<sourceImageInformation>
+			<fileName>//head1/IN/2008-16/A0011467890/006613.jp2</fileName>
+		</sourceImageInformation>
+		<OCRProcessing ID="OCRPROCESSING_1">
+			<preProcessingStep>
+				<processingSoftware>
+					<softwareCreator>CCS Content Conversion Specialists GmbH, Germany</softwareCreator>
+					<softwareName>CCS docWORKS</softwareName>
+					<softwareVersion>6.1-0.67</softwareVersion>
+				</processingSoftware>
+			</preProcessingStep>
+			<ocrProcessingStep>
+				<processingSoftware>
+					<softwareCreator>ABBYY (BIT Software), Russia</softwareCreator>
+					<softwareName>Finereader</softwareName>
+				</processingSoftware>
+			</ocrProcessingStep>
+		</OCRProcessing>
+	</Description>
+	<Styles>
+		<TextStyle ID="TXT_0" FONTSIZE="11" FONTFAMILY="Courier New"/>
+		<TextStyle ID="TXT_1" FONTSIZE="9" FONTFAMILY="Courier New"/>
+		<ParagraphStyle ID="PAR_CENTER" ALIGN="Center"/>
+		<ParagraphStyle ID="PAR_LEFT" ALIGN="Left"/>
+		<ParagraphStyle ID="PAR_RIGHT" ALIGN="Right"/>
+	</Styles>
+	<Layout>
+		<Page ID="P123" PHYSICAL_IMG_NR="123" HEIGHT="2068" WIDTH="1227" POSITION="Right" ACCURACY="42.92">
+			<TopMargin ID="P123_TM00001" HPOS="0" VPOS="0" WIDTH="1226" HEIGHT="0"/>
+			<LeftMargin ID="P123_LM00001" HPOS="0" VPOS="0" WIDTH="0" HEIGHT="2068"/>
+			<RightMargin ID="P123_RM00001" HPOS="1226" VPOS="0" WIDTH="0" HEIGHT="2068"/>
+			<BottomMargin ID="P123_BM00001" HPOS="0" VPOS="2068" WIDTH="1226" HEIGHT="0"/>
+			<PrintSpace ID="P123_PS00001" HPOS="0" VPOS="0" WIDTH="1226" HEIGHT="2068">
+				<TextBlock ID="P123_TB00001" HPOS="365" VPOS="5" WIDTH="540" HEIGHT="34" STYLEREFS="TXT_0 PAR_CENTER">
+					<TextLine ID="P123_TL00001" HPOS="367" VPOS="7" WIDTH="538" HEIGHT="32">
+						<String ID="P123_ST00001" HPOS="367" VPOS="7" WIDTH="355" HEIGHT="32" CONTENT="FOSSiLFEROUS" WC="0.66" CC="042470631305"/>
+						<SP ID="P123_SP00001" HPOS="722" VPOS="39" WIDTH="47"/>
+						<String ID="P123_ST00002" HPOS="769" VPOS="8" WIDTH="136" HEIGHT="31" CONTENT="MARL." WC="0.41" CC="99900"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P123_TB00002" HPOS="468" VPOS="611" WIDTH="264" HEIGHT="27" STYLEREFS="TXT_1 PAR_CENTER">
+					<TextLine ID="P123_TL00002" HPOS="470" VPOS="611" WIDTH="262" HEIGHT="26">
+						<String ID="P123_ST00003" HPOS="470" VPOS="611" WIDTH="123" HEIGHT="19" CONTENT="AAAaulilu.il" WC="0.29" CC="888784777088"/>
+						<SP ID="P123_SP00002" HPOS="593" VPOS="630" WIDTH="13"/>
+						<String ID="P123_ST00004" HPOS="606" VPOS="613" WIDTH="126" HEIGHT="24" CONTENT="exjiansus." WC="0.41" CC="0764674577"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P123_TB00003" HPOS="144" VPOS="1131" WIDTH="314" HEIGHT="34" STYLEREFS="TXT_1 PAR_LEFT">
+					<TextLine ID="P123_TL00003" HPOS="144" VPOS="1132" WIDTH="313" HEIGHT="33">
+						<String ID="P123_ST00005" HPOS="144" VPOS="1132" WIDTH="195" HEIGHT="28" CONTENT="Pleuroiomaria." WC="0.40" CC="88786867734060"/>
+						<SP ID="P123_SP00003" HPOS="339" VPOS="1160" WIDTH="14"/>
+						<String ID="P123_ST00006" HPOS="353" VPOS="1135" WIDTH="104" HEIGHT="30" CONTENT="(cirrus)" WC="0.39" CC="06667847"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P123_TB00004" HPOS="736" VPOS="1189" WIDTH="332" HEIGHT="35" STYLEREFS="TXT_1 PAR_RIGHT">
+					<TextLine ID="P123_TL00004" HPOS="738" VPOS="1191" WIDTH="330" HEIGHT="33">
+						<String ID="P123_ST00007" HPOS="738" VPOS="1195" WIDTH="133" HEIGHT="29" CONTENT="lurrilites" WC="0.66" CC="6610004860"/>
+						<SP ID="P123_SP00004" HPOS="871" VPOS="1224" WIDTH="16"/>
+						<String ID="P123_ST00008" HPOS="887" VPOS="1191" WIDTH="181" HEIGHT="31" CONTENT="Morrisiania.." WC="0.63" CC="7509040780300"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P123_TB00005" HPOS="541" VPOS="1976" WIDTH="226" HEIGHT="30" STYLEREFS="TXT_1 PAR_RIGHT">
+					<TextLine ID="P123_TL00005" HPOS="544" VPOS="1985" WIDTH="223" HEIGHT="21">
+						<String ID="P123_ST00009" HPOS="544" VPOS="1985" WIDTH="113" HEIGHT="21" CONTENT="Peelerc" WC="0.15" CC="8888888"/>
+						<SP ID="P123_SP00005" HPOS="657" VPOS="2006" WIDTH="17"/>
+						<String ID="P123_ST00010" HPOS="674" VPOS="1996" WIDTH="38" HEIGHT="10" CONTENT="as" WC="0.36" CC="66"/>
+						<SP ID="P123_SP00006" HPOS="712" VPOS="2006" WIDTH="0"/>
+						<String ID="P123_ST00011" HPOS="712" VPOS="1995" WIDTH="55" HEIGHT="11" CONTENT="per." WC="0.37" CC="8564"/>
+					</TextLine>
+				</TextBlock>
+				<ComposedBlock ID="P123_CB00001" HPOS="21" VPOS="55" WIDTH="1177" HEIGHT="2003" STYLEREFS="TXT_1 PAR_LEFT" TYPE="Illustration">
+					<GraphicalElement ID="P123_CB00001_SUB" HPOS="21" VPOS="55" WIDTH="1177" HEIGHT="2003"/>
+				</ComposedBlock>
+			</PrintSpace>
+		</Page>
+	</Layout>
+</alto>

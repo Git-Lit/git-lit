@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.bl.uk/schemas/alto/alto-1-4.xsd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<Description>
+		<MeasurementUnit>mm10</MeasurementUnit>
+		<sourceImageInformation>
+			<fileName>//head1/IN/2008-16/A0011467890/006533.jp2</fileName>
+		</sourceImageInformation>
+		<OCRProcessing ID="OCRPROCESSING_1">
+			<preProcessingStep>
+				<processingSoftware>
+					<softwareCreator>CCS Content Conversion Specialists GmbH, Germany</softwareCreator>
+					<softwareName>CCS docWORKS</softwareName>
+					<softwareVersion>6.1-0.67</softwareVersion>
+				</processingSoftware>
+			</preProcessingStep>
+			<ocrProcessingStep>
+				<processingSoftware>
+					<softwareCreator>ABBYY (BIT Software), Russia</softwareCreator>
+					<softwareName>Finereader</softwareName>
+				</processingSoftware>
+			</ocrProcessingStep>
+		</OCRProcessing>
+	</Description>
+	<Styles>
+		<TextStyle ID="TXT_0" FONTSIZE="10" FONTFAMILY="Courier New"/>
+		<TextStyle ID="TXT_1" FONTSIZE="9" FONTFAMILY="Courier New"/>
+		<ParagraphStyle ID="PAR_CENTER" ALIGN="Center"/>
+		<ParagraphStyle ID="PAR_LEFT" ALIGN="Left"/>
+		<ParagraphStyle ID="PAR_RIGHT" ALIGN="Right"/>
+	</Styles>
+	<Layout>
+		<Page ID="P45" PHYSICAL_IMG_NR="45" HEIGHT="2044" WIDTH="1214" POSITION="Right" ACCURACY="44.33">
+			<TopMargin ID="P45_TM00001" HPOS="0" VPOS="0" WIDTH="1214" HEIGHT="0"/>
+			<LeftMargin ID="P45_LM00001" HPOS="0" VPOS="0" WIDTH="0" HEIGHT="2043"/>
+			<RightMargin ID="P45_RM00001" HPOS="1214" VPOS="0" WIDTH="0" HEIGHT="2043"/>
+			<BottomMargin ID="P45_BM00001" HPOS="0" VPOS="2043" WIDTH="1214" HEIGHT="0"/>
+			<PrintSpace ID="P45_PS00001" HPOS="0" VPOS="0" WIDTH="1214" HEIGHT="2043">
+				<TextBlock ID="P45_TB00001" HPOS="242" VPOS="11" WIDTH="692" HEIGHT="39" STYLEREFS="TXT_0 PAR_CENTER">
+					<TextLine ID="P45_TL00001" HPOS="242" VPOS="14" WIDTH="692" HEIGHT="36">
+						<String ID="P45_ST00001" HPOS="242" VPOS="14" WIDTH="190" HEIGHT="31" CONTENT="FOSSILS" WC="0.71" CC="4300704"/>
+						<SP ID="P45_SP00001" HPOS="432" VPOS="45" WIDTH="21"/>
+						<String ID="P45_ST00002" HPOS="453" VPOS="26" WIDTH="82" HEIGHT="20" CONTENT="from" WC="0.54" CC="2527"/>
+						<SP ID="P45_SP00002" HPOS="535" VPOS="46" WIDTH="19"/>
+						<String ID="P45_ST00003" HPOS="554" VPOS="28" WIDTH="51" HEIGHT="19" CONTENT="the" WC="0.32" CC="577"/>
+						<SP ID="P45_SP00003" HPOS="605" VPOS="47" WIDTH="27"/>
+						<String ID="P45_ST00004" HPOS="632" VPOS="19" WIDTH="146" HEIGHT="30" CONTENT="PERNA" WC="0.55" CC="40772"/>
+						<SP ID="P45_SP00004" HPOS="778" VPOS="49" WIDTH="36"/>
+						<String ID="P45_ST00005" HPOS="814" VPOS="19" WIDTH="120" HEIGHT="31" CONTENT="BEDS." WC="0.78" CC="60004"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P45_TB00002" HPOS="119" VPOS="419" WIDTH="265" HEIGHT="45" STYLEREFS="TXT_1 PAR_LEFT">
+					<TextLine ID="P45_TL00002" HPOS="119" VPOS="423" WIDTH="265" HEIGHT="40">
+						<String ID="P45_ST00006" HPOS="119" VPOS="423" WIDTH="136" HEIGHT="30" CONTENT="Aauiilus" WC="0.31" CC="88788553"/>
+						<SP ID="P45_SP00005" HPOS="255" VPOS="453" WIDTH="7"/>
+						<String ID="P45_ST00007" HPOS="262" VPOS="426" WIDTH="122" HEIGHT="37" CONTENT="jilicaiixS." WC="0.32" CC="86877865852"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P45_TB00003" HPOS="815" VPOS="487" WIDTH="269" HEIGHT="32" STYLEREFS="TXT_1 PAR_RIGHT">
+					<TextLine ID="P45_TL00003" HPOS="816" VPOS="489" WIDTH="268" HEIGHT="29">
+						<String ID="P45_ST00008" HPOS="816" VPOS="489" WIDTH="135" HEIGHT="28" CONTENT="Nautilus" WC="0.31" CC="58681886"/>
+						<SP ID="P45_SP00006" HPOS="951" VPOS="517" WIDTH="18"/>
+						<String ID="P45_ST00009" HPOS="969" VPOS="494" WIDTH="115" HEIGHT="24" CONTENT="radialu.-," WC="0.31" CC="6876775567"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P45_TB00004" HPOS="120" VPOS="1084" WIDTH="262" HEIGHT="29" STYLEREFS="TXT_1 PAR_LEFT">
+					<TextLine ID="P45_TL00004" HPOS="122" VPOS="1086" WIDTH="260" HEIGHT="27">
+						<String ID="P45_ST00010" HPOS="122" VPOS="1086" WIDTH="125" HEIGHT="27" CONTENT="Cv/irzna" WC="0.23" CC="77767888"/>
+						<SP ID="P45_SP00007" HPOS="247" VPOS="1113" WIDTH="18"/>
+						<String ID="P45_ST00011" HPOS="265" VPOS="1090" WIDTH="117" HEIGHT="23" CONTENT="anqutala" WC="0.37" CC="75377358"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P45_TB00005" HPOS="119" VPOS="1468" WIDTH="177" HEIGHT="23" STYLEREFS="TXT_1 PAR_LEFT">
+					<TextLine ID="P45_TL00005" HPOS="119" VPOS="1468" WIDTH="176" HEIGHT="23">
+						<String ID="P45_ST00012" HPOS="119" VPOS="1472" WIDTH="13" HEIGHT="14" CONTENT="J" WC="1.00" CC="0"/>
+						<SP ID="P45_SP00008" HPOS="132" VPOS="1486" WIDTH="11"/>
+						<String ID="P45_ST00013" HPOS="143" VPOS="1468" WIDTH="68" HEIGHT="19" CONTENT="lielis" WC="0.57" CC="028805"/>
+						<SP ID="P45_SP00009" HPOS="211" VPOS="1487" WIDTH="9"/>
+						<String ID="P45_ST00014" HPOS="220" VPOS="1472" WIDTH="75" HEIGHT="19" CONTENT="ma(fir." WC="0.47" CC="8664650"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P45_TB00006" HPOS="392" VPOS="1630" WIDTH="213" HEIGHT="24" STYLEREFS="TXT_1 PAR_LEFT">
+					<TextLine ID="P45_TL00006" HPOS="392" VPOS="1630" WIDTH="213" HEIGHT="23">
+						<String ID="P45_ST00015" HPOS="392" VPOS="1630" WIDTH="89" HEIGHT="23" CONTENT="Perna" WC="0.29" CC="84785"/>
+						<SP ID="P45_SP00010" HPOS="481" VPOS="1653" WIDTH="14"/>
+						<String ID="P45_ST00016" HPOS="495" VPOS="1630" WIDTH="110" HEIGHT="23" CONTENT="mvlleli" WC="0.38" CC="4587780"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P45_TB00007" HPOS="746" VPOS="1943" WIDTH="276" HEIGHT="48" STYLEREFS="TXT_1 PAR_RIGHT">
+					<TextLine ID="P45_TL00007" HPOS="748" VPOS="1950" WIDTH="274" HEIGHT="37">
+						<String ID="P45_ST00017" HPOS="748" VPOS="1950" WIDTH="156" HEIGHT="37" CONTENT=".flolocysizs" WC="0.32" CC="786883583587"/>
+						<SP ID="P45_SP00011" HPOS="904" VPOS="1987" WIDTH="15"/>
+						<String ID="P45_ST00018" HPOS="919" VPOS="1953" WIDTH="103" HEIGHT="23" CONTENT="eleaaits" WC="0.37" CC="00778688"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P45_TB00008" HPOS="191" VPOS="1977" WIDTH="309" HEIGHT="44" STYLEREFS="TXT_1 PAR_LEFT">
+					<TextLine ID="P45_TL00008" HPOS="197" VPOS="1977" WIDTH="300" HEIGHT="35">
+						<String ID="P45_ST00019" HPOS="197" VPOS="1977" WIDTH="139" HEIGHT="35" CONTENT="AlVIyiilus" WC="0.42" CC="8770870583"/>
+						<SP ID="P45_SP00012" HPOS="336" VPOS="2012" WIDTH="15"/>
+						<String ID="P45_ST00020" HPOS="351" VPOS="1978" WIDTH="146" HEIGHT="25" CONTENT="eienLhdus" WC="0.29" CC="781886777"/>
+					</TextLine>
+				</TextBlock>
+				<ComposedBlock ID="P45_CB00001" HPOS="18" VPOS="58" WIDTH="1172" HEIGHT="1964" STYLEREFS="TXT_1 PAR_LEFT" TYPE="Illustration">
+					<GraphicalElement ID="P45_CB00001_SUB" HPOS="18" VPOS="58" WIDTH="1172" HEIGHT="1964"/>
+				</ComposedBlock>
+			</PrintSpace>
+		</Page>
+	</Layout>
+</alto>
