@@ -1,10 +1,15 @@
 # Git-Lit
 
-Scripts to create git repositories for ALTO XML texts, like those from the British Library's scanned documents. 
+Scripts to create git repositories for ALTO XML texts, like those from the British Library's scanned documents. These scripts produce the GitHub repositories that can be seen on [Git-Lit](https://github.com/Git-Lit). 
+
 
 # Project Summary
 
 This project aims to make the British Library's corpus of scanned and OCRed ALTO XML texts better available to digital humanists, by transforming the texts into useful file formats and publishing them to the Web as corpus repositories. This is intended to have a threefold effect. First, it will make public the heretofore obscure textual holdings of the British Library (with their permission, of course). Second, it will transform their verbose XML data into archival TEI XML and plain text formats that are easier to read and computationally analyze. Third, it will make this data available to text analysts, editors, and other interested parties by creating version-controlled git repositories for each text and programmatically posting them to GitHub. This will allow for crowdsourced proofreading and collaborative improvement of the texts, as well as archival storage of every subsequent revision of the text. 
+
+# Project Status
+
+The main script, corresponding to Phase I, currently works with all the test texts. Some minor issues exist, as can be found in the issue tracker. 
 
 # Project Planning
 
