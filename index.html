@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Git-Lit by JonathanReeve</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Git-Lit</h1>
+      <h2 class="project-tagline">Software to parse, version control, and create GitHub repositories for British Library ALTO XML texts.</h2>
+      <a href="https://github.com/JonathanReeve/git-lit" class="btn">View on GitHub</a>
+      <a href="https://github.com/JonathanReeve/git-lit/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/JonathanReeve/git-lit/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="git-lit" class="anchor" href="#git-lit" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git-Lit</h1>
+
+<p>The Git-Lit project contains scripts to create git repositories for ALTO XML texts, like those from the British Library's scanned documents. These scripts produce the GitHub repositories that can be seen on the <a href="https://github.com/Git-Lit">Git-Lit</a> organization. </p>
+
+<h1>
+<a id="project-summary" class="anchor" href="#project-summary" aria-hidden="true"><span class="octicon octicon-link"></span></a>Project Summary</h1>
+
+<p>This project aims to make the British Library's corpus of scanned and OCRed ALTO XML texts better available to digital humanists, by transforming the texts into useful file formats and publishing them to the Web as corpus repositories. This is intended to have a threefold effect. First, it will make public the heretofore obscure textual holdings of the British Library (with their permission, of course). Second, it will transform their verbose XML data into archival TEI XML and plain text formats that are easier to read and computationally analyze. Third, it will make this data available to text analysts, editors, and other interested parties by creating version-controlled git repositories for each text and programmatically posting them to GitHub. This will allow for crowdsourced proofreading and collaborative improvement of the texts, as well as archival storage of every subsequent revision of the text. </p>
+
+<h1>
+<a id="project-status" class="anchor" href="#project-status" aria-hidden="true"><span class="octicon octicon-link"></span></a>Project Status</h1>
+
+<p>The main script, corresponding to Phase I, currently works with all the test texts. Some minor issues exist, as can be found in the issue tracker. </p>
+
+<h1>
+<a id="project-planning" class="anchor" href="#project-planning" aria-hidden="true"><span class="octicon octicon-link"></span></a>Project Planning</h1>
+
+<p>This project will be divided into these phases: </p>
+
+<p><em>Phase I</em>. A script will be written to parse each text's JSON metadata and use this to create a GitHub repository title, description, and README.md file for the text. That script will then interface with the GitHub API to create a new repository, set these properties, and push a newly initialized git module for each text, which, apart from the readme file, hasn't yet been altered from its original state. At this point the texts will already be public, and will already be useful to text analysts. </p>
+
+<p><em>Phase II</em>. Indices will be created for these texts in the form of submodule pointers. Parent repositories will be created for certain categories of texts, containing only pointers to subrepository remotes and their commit hashes. These category-based parent repositories might include "17th Century Novels," "18th Century Correspondence," or simply "Poetry," but the categories are not mutually exclusive by necessity. This will allow a literary scholar interested in a particular category to instantly assemble a corpus by <code>git clone</code>ing the parent repository and checking out its submodules with <code>git submodule update --init --recursive</code>. An early sketch of this idea is outlined in my blog post, <a href="http://jonreeve.com/2015/03/proposal-for-a-corpus-protocol/">A Proposal for a Corpus Sharing Protocol</a>. </p>
+
+<p><em>Phase III</em>. A script will be written to transform the text into a more useful format, by ingesting the verbose ALTO XML and outputting Markdown editions of each text. Markdown was chosen as a plain-text file format, as it is one of the more human-readable formats, and one with the least amount of markup syntax, making it a reasonable format for computational analysis. GitHub also features an in-browser Markdown editor, which would allow any interested party to submit an edit to a text without leaving the browser. These markdown editions will be programmically committed and pushed to each repository. </p>
+
+<p><em>Phase IV</em>. Another transformation script will be written to ingest the ALTO XML and output TEI Simple XML. TEI Simple was chosen as an archival markup format, as it is a standardized subset of TEI XML, and eliminates many of the semantic ambiguities of the TEI superset. Many XSLT stylesheets and other tools have already been written for TEI XML, and it is the most feature-rich of textual markup languages. </p>
+
+<h1>
+<a id="technical-details" class="anchor" href="#technical-details" aria-hidden="true"><span class="octicon octicon-link"></span></a>Technical Details</h1>
+
+<p>The main script is main.ipynb, an IPython Notebook. It requires some variables set in secrets.py, which is not included here for security reasons. It assumes that all documents live in <code>/data</code> relative to <code>main.ipynb</code>. It runs on Python 3, and requires the libraries <code>lxml</code>, <code>sh</code>, <code>pandas</code>, <code>github3</code>, <code>logging</code>, <code>jinja2</code>, and possibly others. It has only been tested on Linux, but could possibly work on other platforms. </p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/JonathanReeve/git-lit">Git-Lit</a> is maintained by <a href="https://github.com/JonathanReeve">JonathanReeve</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
