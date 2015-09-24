@@ -2,3 +2,5 @@
 
 *.py text
 *.ipynb text
+*.xml text
+
