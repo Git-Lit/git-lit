@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.bl.uk/schemas/alto/alto-1-4.xsd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<Description>
+		<MeasurementUnit>mm10</MeasurementUnit>
+		<sourceImageInformation>
+			<fileName>//head1/IN/2008-18/A0011552787/005496.jp2</fileName>
+		</sourceImageInformation>
+		<OCRProcessing ID="OCRPROCESSING_1">
+			<preProcessingStep>
+				<processingSoftware>
+					<softwareCreator>CCS Content Conversion Specialists GmbH, Germany</softwareCreator>
+					<softwareName>CCS docWORKS</softwareName>
+					<softwareVersion>6.1-0.67</softwareVersion>
+				</processingSoftware>
+			</preProcessingStep>
+			<ocrProcessingStep>
+				<processingSoftware>
+					<softwareCreator>ABBYY (BIT Software), Russia</softwareCreator>
+					<softwareName>Finereader</softwareName>
+				</processingSoftware>
+			</ocrProcessingStep>
+		</OCRProcessing>
+	</Description>
+	<Styles>
+		<TextStyle ID="TXT_0" FONTSIZE="9" FONTFAMILY="Courier New"/>
+		<ParagraphStyle ID="PAR_RIGHT" ALIGN="Right"/>
+		<ParagraphStyle ID="PAR_LEFT" ALIGN="Left"/>
+	</Styles>
+	<Layout>
+		<Page ID="P23" PHYSICAL_IMG_NR="23" HEIGHT="1607" WIDTH="1062" POSITION="Right" ACCURACY="67.67">
+			<TopMargin ID="P23_TM00001" HPOS="0" VPOS="0" WIDTH="1061" HEIGHT="0"/>
+			<LeftMargin ID="P23_LM00001" HPOS="0" VPOS="0" WIDTH="0" HEIGHT="1491"/>
+			<RightMargin ID="P23_RM00001" HPOS="1061" VPOS="0" WIDTH="0" HEIGHT="1491"/>
+			<BottomMargin ID="P23_BM00001" HPOS="0" VPOS="1491" WIDTH="1061" HEIGHT="115"/>
+			<PrintSpace ID="P23_PS00001" HPOS="0" VPOS="0" WIDTH="1061" HEIGHT="1491">
+				<TextBlock ID="P23_TB00001" HPOS="907" VPOS="672" WIDTH="27" HEIGHT="284" ROTATION="90.00" STYLEREFS="TXT_0 PAR_RIGHT">
+					<TextLine ID="P23_TL00001" HPOS="914" VPOS="672" WIDTH="19" HEIGHT="284">
+						<String ID="P23_ST00001" HPOS="914" VPOS="941" WIDTH="16" HEIGHT="15" CONTENT="t." WC="0.56" CC="71"/>
+						<SP ID="P23_SP00001" HPOS="930" VPOS="956" WIDTH="-16"/>
+						<String ID="P23_ST00002" HPOS="914" VPOS="856" WIDTH="15" HEIGHT="70" CONTENT="Ann's" WC="0.72" CC="07600"/>
+						<SP ID="P23_SP00002" HPOS="930" VPOS="956" WIDTH="-16"/>
+						<String ID="P23_ST00003" HPOS="914" VPOS="744" WIDTH="19" HEIGHT="97" CONTENT="square," WC="0.57" CC="0560970"/>
+						<SP ID="P23_SP00003" HPOS="933" VPOS="956" WIDTH="-19"/>
+						<String ID="P23_ST00004" HPOS="914" VPOS="672" WIDTH="13" HEIGHT="52" CONTENT="1746." WC="0.86" CC="10013"/>
+					</TextLine>
+				</TextBlock>
+				<ComposedBlock ID="P23_CB00001" HPOS="151" VPOS="242" WIDTH="781" HEIGHT="1132" STYLEREFS="TXT_0 PAR_LEFT" TYPE="Illustration">
+					<GraphicalElement ID="P23_CB00001_SUB" HPOS="151" VPOS="242" WIDTH="781" HEIGHT="1132"/>
+				</ComposedBlock>
+			</PrintSpace>
+		</Page>
+	</Layout>
+</alto>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.bl.uk/schemas/alto/alto-1-4.xsd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<Description>
+		<MeasurementUnit>mm10</MeasurementUnit>
+		<sourceImageInformation>
+			<fileName>//head1/IN/2008-18/A0011552787/005479.jp2</fileName>
+		</sourceImageInformation>
+		<OCRProcessing ID="OCRPROCESSING_1">
+			<preProcessingStep>
+				<processingSoftware>
+					<softwareCreator>CCS Content Conversion Specialists GmbH, Germany</softwareCreator>
+					<softwareName>CCS docWORKS</softwareName>
+					<softwareVersion>6.1-0.67</softwareVersion>
+				</processingSoftware>
+			</preProcessingStep>
+			<ocrProcessingStep>
+				<processingSoftware>
+					<softwareCreator>ABBYY (BIT Software), Russia</softwareCreator>
+					<softwareName>Finereader</softwareName>
+				</processingSoftware>
+			</ocrProcessingStep>
+		</OCRProcessing>
+	</Description>
+	<Styles>
+		<TextStyle ID="TXT_0" FONTSIZE="11" FONTFAMILY="Courier New"/>
+		<TextStyle ID="TXT_1" FONTSIZE="10" FONTFAMILY="Courier New"/>
+		<TextStyle ID="TXT_2" FONTSIZE="9" FONTFAMILY="Courier New"/>
+		<ParagraphStyle ID="PAR_LEFT" ALIGN="Left"/>
+		<ParagraphStyle ID="PAR_RIGHT" ALIGN="Right"/>
+	</Styles>
+	<Layout>
+		<Page ID="P6" PHYSICAL_IMG_NR="6" HEIGHT="1607" WIDTH="1062" POSITION="Left" ACCURACY="61.60">
+			<TopMargin ID="P6_TM00001" HPOS="0" VPOS="0" WIDTH="1061" HEIGHT="70"/>
+			<LeftMargin ID="P6_LM00001" HPOS="0" VPOS="70" WIDTH="31" HEIGHT="1506"/>
+			<RightMargin ID="P6_RM00001" HPOS="965" VPOS="70" WIDTH="96" HEIGHT="1506"/>
+			<BottomMargin ID="P6_BM00001" HPOS="0" VPOS="1576" WIDTH="1061" HEIGHT="30"/>
+			<PrintSpace ID="P6_PS00001" HPOS="31" VPOS="70" WIDTH="934" HEIGHT="1507">
+				<TextBlock ID="P6_TB00001" HPOS="31" VPOS="70" WIDTH="919" HEIGHT="181" STYLEREFS="TXT_0 PAR_LEFT">
+					<TextLine ID="P6_TL00001" HPOS="182" VPOS="94" WIDTH="693" HEIGHT="73">
+						<String ID="P6_ST00001" HPOS="182" VPOS="104" WIDTH="63" HEIGHT="51" CONTENT="W" WC="0.14" CC="8"/>
+						<String ID="P6_ST00002" HPOS="264" VPOS="94" WIDTH="45" HEIGHT="58" CONTENT="I" WC="0.15" CC="8"/>
+						<SP ID="P6_SP00001" HPOS="309" VPOS="155" WIDTH="14"/>
+						<String ID="P6_ST00003" HPOS="323" VPOS="100" WIDTH="133" HEIGHT="52" CONTENT="ÆLm" WC="0.14" CC="879"/>
+						<SP ID="P6_SP00002" HPOS="456" VPOS="155" WIDTH="68"/>
+						<String ID="P6_ST00004" HPOS="524" VPOS="94" WIDTH="143" HEIGHT="61" CONTENT="Jay" WC="0.41" CC="674"/>
+						<SP ID="P6_SP00003" HPOS="667" VPOS="155" WIDTH="13"/>
+						<String ID="P6_ST00005" HPOS="680" VPOS="94" WIDTH="38" HEIGHT="56" CONTENT="i" WC="0.21" CC="7"/>
+						<SP ID="P6_SP00004" HPOS="718" VPOS="155" WIDTH="13"/>
+						<String ID="P6_ST00006" HPOS="731" VPOS="94" WIDTH="144" HEIGHT="73" CONTENT="Wm$" WC="0.13" CC="699"/>
+					</TextLine>
+					<TextLine ID="P6_TL00002" HPOS="33" VPOS="218" WIDTH="917" HEIGHT="33">
+						<String ID="P6_ST00007" HPOS="33" VPOS="221" WIDTH="214" HEIGHT="30" CONTENT="FACING" WC="0.75" CC="040504"/>
+						<SP ID="P6_SP00005" HPOS="247" VPOS="251" WIDTH="54"/>
+						<String ID="P6_ST00008" HPOS="301" VPOS="221" WIDTH="119" HEIGHT="30" CONTENT="THE" WC="0.61" CC="056"/>
+						<SP ID="P6_SP00006" HPOS="420" VPOS="251" WIDTH="60"/>
+						<String ID="P6_ST00009" HPOS="480" VPOS="220" WIDTH="237" HEIGHT="30" CONTENT="MARINE" WC="0.77" CC="062003"/>
+						<SP ID="P6_SP00007" HPOS="717" VPOS="251" WIDTH="56"/>
+						<String ID="P6_ST00010" HPOS="773" VPOS="218" WIDTH="177" HEIGHT="31" CONTENT="PARK." WC="0.91" CC="00400"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P6_TB00002" HPOS="915" VPOS="336" WIDTH="50" HEIGHT="1086" ROTATION="90.00" STYLEREFS="TXT_1 PAR_RIGHT">
+					<TextLine ID="P6_TL00003" HPOS="917" VPOS="336" WIDTH="45" HEIGHT="1084">
+						<String ID="P6_ST00011" HPOS="927" VPOS="1284" WIDTH="28" HEIGHT="136" CONTENT="Special" WC="0.98" CC="0000000"/>
+						<SP ID="P6_SP00008" HPOS="955" VPOS="1420" WIDTH="-30"/>
+						<String ID="P6_ST00012" HPOS="925" VPOS="1076" WIDTH="37" HEIGHT="178" CONTENT="Boarding" WC="0.69" CC="00070079"/>
+						<SP ID="P6_SP00009" HPOS="962" VPOS="1420" WIDTH="-38"/>
+						<String ID="P6_ST00013" HPOS="924" VPOS="922" WIDTH="29" HEIGHT="130" CONTENT="Terms" WC="0.84" CC="30040"/>
+						<SP ID="P6_SP00010" HPOS="962" VPOS="1420" WIDTH="-40"/>
+						<String ID="P6_ST00014" HPOS="922" VPOS="809" WIDTH="30" HEIGHT="91" CONTENT="from" WC="0.94" CC="0020"/>
+						<SP ID="P6_SP00011" HPOS="962" VPOS="1420" WIDTH="-42"/>
+						<String ID="P6_ST00015" HPOS="920" VPOS="730" WIDTH="29" HEIGHT="55" CONTENT="£2" WC="0.30" CC="48"/>
+						<SP ID="P6_SP00012" HPOS="962" VPOS="1420" WIDTH="-42"/>
+						<String ID="P6_ST00016" HPOS="920" VPOS="630" WIDTH="29" HEIGHT="76" CONTENT="12s." WC="0.82" CC="2004"/>
+						<SP ID="P6_SP00013" HPOS="962" VPOS="1420" WIDTH="-43"/>
+						<String ID="P6_ST00017" HPOS="919" VPOS="547" WIDTH="30" HEIGHT="57" CONTENT="6d," WC="1.00" CC="000"/>
+						<SP ID="P6_SP00014" HPOS="962" VPOS="1420" WIDTH="-35"/>
+						<String ID="P6_ST00018" HPOS="927" VPOS="456" WIDTH="20" HEIGHT="62" CONTENT="per" WC="1.00" CC="000"/>
+						<SP ID="P6_SP00015" HPOS="962" VPOS="1420" WIDTH="-45"/>
+						<String ID="P6_ST00019" HPOS="917" VPOS="336" WIDTH="28" HEIGHT="98" CONTENT="Week" WC="0.79" CC="2006"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P6_TB00003" HPOS="31" VPOS="590" WIDTH="37" HEIGHT="571" ROTATION="90.00" STYLEREFS="TXT_1 PAR_LEFT">
+					<TextLine ID="P6_TL00004" HPOS="33" VPOS="592" WIDTH="33" HEIGHT="569">
+						<String ID="P6_ST00020" HPOS="37" VPOS="969" WIDTH="29" HEIGHT="192" CONTENT="Week-end" WC="0.83" CC="00090030"/>
+						<SP ID="P6_SP00016" HPOS="66" VPOS="1161" WIDTH="-32"/>
+						<String ID="P6_ST00021" HPOS="34" VPOS="815" WIDTH="31" HEIGHT="129" CONTENT="Terms" WC="0.67" CC="40370"/>
+						<SP ID="P6_SP00017" HPOS="66" VPOS="1161" WIDTH="-32"/>
+						<String ID="P6_ST00022" HPOS="34" VPOS="704" WIDTH="31" HEIGHT="89" CONTENT="from" WC="0.72" CC="4510"/>
+						<SP ID="P6_SP00018" HPOS="66" VPOS="1161" WIDTH="-33"/>
+						<String ID="P6_ST00023" HPOS="33" VPOS="592" WIDTH="31" HEIGHT="84" CONTENT="20s." WC="0.66" CC="8103"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P6_TB00004" HPOS="235" VPOS="1485" WIDTH="601" HEIGHT="43" STYLEREFS="TXT_0 PAR_RIGHT">
+					<TextLine ID="P6_TL00005" HPOS="237" VPOS="1487" WIDTH="599" HEIGHT="41">
+						<String ID="P6_ST00024" HPOS="237" VPOS="1487" WIDTH="39" HEIGHT="40" CONTENT="J." WC="0.32" CC="93"/>
+						<SP ID="P6_SP00019" HPOS="276" VPOS="1527" WIDTH="39"/>
+						<String ID="P6_ST00025" HPOS="315" VPOS="1488" WIDTH="30" HEIGHT="31" CONTENT="C." WC="0.41" CC="74"/>
+						<SP ID="P6_SP00020" HPOS="345" VPOS="1527" WIDTH="36"/>
+						<String ID="P6_ST00026" HPOS="381" VPOS="1489" WIDTH="455" HEIGHT="39" CONTENT="SEIDENSTRICKER," WC="0.94" CC="001000000020004"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P6_TB00005" HPOS="745" VPOS="1552" WIDTH="193" HEIGHT="25" STYLEREFS="TXT_2 PAR_RIGHT">
+					<TextLine ID="P6_TL00006" HPOS="746" VPOS="1554" WIDTH="192" HEIGHT="23">
+						<String ID="P6_ST00027" HPOS="746" VPOS="1554" WIDTH="192" HEIGHT="23" CONTENT="PROPRIETOR." WC="0.50" CC="78388233080"/>
+					</TextLine>
+				</TextBlock>
+				<ComposedBlock ID="P6_CB00001" HPOS="32" VPOS="315" WIDTH="931" HEIGHT="1114" STYLEREFS="TXT_2 PAR_LEFT" TYPE="Illustration">
+					<GraphicalElement ID="P6_CB00001_SUB" HPOS="32" VPOS="315" WIDTH="931" HEIGHT="1114"/>
+				</ComposedBlock>
+			</PrintSpace>
+		</Page>
+	</Layout>
+</alto>

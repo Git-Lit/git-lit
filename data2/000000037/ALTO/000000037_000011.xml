@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.bl.uk/schemas/alto/alto-1-4.xsd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<Description>
+		<MeasurementUnit>mm10</MeasurementUnit>
+		<sourceImageInformation>
+			<fileName>//head1/IN/2008-18/A0011552787/005484.jp2</fileName>
+		</sourceImageInformation>
+		<OCRProcessing ID="OCRPROCESSING_1">
+			<preProcessingStep>
+				<processingSoftware>
+					<softwareCreator>CCS Content Conversion Specialists GmbH, Germany</softwareCreator>
+					<softwareName>CCS docWORKS</softwareName>
+					<softwareVersion>6.1-0.67</softwareVersion>
+				</processingSoftware>
+			</preProcessingStep>
+			<ocrProcessingStep>
+				<processingSoftware>
+					<softwareCreator>ABBYY (BIT Software), Russia</softwareCreator>
+					<softwareName>Finereader</softwareName>
+				</processingSoftware>
+			</ocrProcessingStep>
+		</OCRProcessing>
+	</Description>
+	<Styles>
+		<TextStyle ID="TXT_0" FONTSIZE="9" FONTFAMILY="Courier New"/>
+		<ParagraphStyle ID="PAR_RIGHT" ALIGN="Right"/>
+		<ParagraphStyle ID="PAR_LEFT" ALIGN="Left"/>
+	</Styles>
+	<Layout>
+		<Page ID="P11" PHYSICAL_IMG_NR="11" HEIGHT="1678" WIDTH="1096" POSITION="Right" ACCURACY="37.79">
+			<TopMargin ID="P11_TM00001" HPOS="0" VPOS="0" WIDTH="1095" HEIGHT="0"/>
+			<LeftMargin ID="P11_LM00001" HPOS="0" VPOS="0" WIDTH="0" HEIGHT="1654"/>
+			<RightMargin ID="P11_RM00001" HPOS="1095" VPOS="0" WIDTH="0" HEIGHT="1654"/>
+			<BottomMargin ID="P11_BM00001" HPOS="0" VPOS="1654" WIDTH="1095" HEIGHT="24"/>
+			<PrintSpace ID="P11_PS00001" HPOS="0" VPOS="0" WIDTH="1095" HEIGHT="1654">
+				<TextBlock ID="P11_TB00001" HPOS="1041" VPOS="721" WIDTH="15" HEIGHT="262" ROTATION="90.00" STYLEREFS="TXT_0 PAR_RIGHT">
+					<TextLine ID="P11_TL00001" HPOS="1042" VPOS="721" WIDTH="14" HEIGHT="262">
+						<String ID="P11_ST00001" HPOS="1042" VPOS="938" WIDTH="13" HEIGHT="45" CONTENT="OLD" WC="0.18" CC="697"/>
+						<SP ID="P11_SP00001" HPOS="1055" VPOS="983" WIDTH="-12"/>
+						<String ID="P11_ST00002" HPOS="1043" VPOS="821" WIDTH="13" HEIGHT="101" CONTENT="MARKET" WC="0.51" CC="496061"/>
+						<SP ID="P11_SP00002" HPOS="1056" VPOS="983" WIDTH="-13"/>
+						<String ID="P11_ST00003" HPOS="1043" VPOS="721" WIDTH="13" HEIGHT="85" CONTENT="STREET" WC="0.45" CC="666760"/>
+					</TextLine>
+				</TextBlock>
+				<ComposedBlock ID="P11_CB00001" HPOS="33" VPOS="8" WIDTH="1022" HEIGHT="1646" STYLEREFS="TXT_0 PAR_LEFT" TYPE="Illustration">
+					<GraphicalElement ID="P11_CB00001_SUB" HPOS="33" VPOS="8" WIDTH="1022" HEIGHT="1646"/>
+				</ComposedBlock>
+			</PrintSpace>
+		</Page>
+	</Layout>
+</alto>

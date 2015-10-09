@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.bl.uk/schemas/alto/alto-1-4.xsd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<Description>
+		<MeasurementUnit>mm10</MeasurementUnit>
+		<sourceImageInformation>
+			<fileName>//head1/IN/2008-18/A0011552787/005494.jp2</fileName>
+		</sourceImageInformation>
+		<OCRProcessing ID="OCRPROCESSING_1">
+			<preProcessingStep>
+				<processingSoftware>
+					<softwareCreator>CCS Content Conversion Specialists GmbH, Germany</softwareCreator>
+					<softwareName>CCS docWORKS</softwareName>
+					<softwareVersion>6.1-0.67</softwareVersion>
+				</processingSoftware>
+			</preProcessingStep>
+			<ocrProcessingStep>
+				<processingSoftware>
+					<softwareCreator>ABBYY (BIT Software), Russia</softwareCreator>
+					<softwareName>Finereader</softwareName>
+				</processingSoftware>
+			</ocrProcessingStep>
+		</OCRProcessing>
+	</Description>
+	<Styles>
+		<TextStyle ID="TXT_0" FONTSIZE="9" FONTFAMILY="Courier New"/>
+		<ParagraphStyle ID="PAR_RIGHT" ALIGN="Right"/>
+		<ParagraphStyle ID="PAR_LEFT" ALIGN="Left"/>
+	</Styles>
+	<Layout>
+		<Page ID="P21" PHYSICAL_IMG_NR="21" HEIGHT="1607" WIDTH="1062" POSITION="Right" ACCURACY="57.97">
+			<TopMargin ID="P21_TM00001" HPOS="0" VPOS="0" WIDTH="1061" HEIGHT="0"/>
+			<LeftMargin ID="P21_LM00001" HPOS="0" VPOS="0" WIDTH="0" HEIGHT="1491"/>
+			<RightMargin ID="P21_RM00001" HPOS="1061" VPOS="0" WIDTH="0" HEIGHT="1491"/>
+			<BottomMargin ID="P21_BM00001" HPOS="0" VPOS="1491" WIDTH="1061" HEIGHT="115"/>
+			<PrintSpace ID="P21_PS00001" HPOS="0" VPOS="0" WIDTH="1061" HEIGHT="1491">
+				<TextBlock ID="P21_TB00001" HPOS="849" VPOS="535" WIDTH="24" HEIGHT="568" ROTATION="90.00" STYLEREFS="TXT_0 PAR_RIGHT">
+					<TextLine ID="P21_TL00001" HPOS="851" VPOS="535" WIDTH="21" HEIGHT="567">
+						<String ID="P21_ST00001" HPOS="852" VPOS="1056" WIDTH="15" HEIGHT="46" CONTENT="OLD" WC="0.41" CC="376"/>
+						<SP ID="P21_SP00001" HPOS="867" VPOS="1102" WIDTH="-16"/>
+						<String ID="P21_ST00002" HPOS="851" VPOS="951" WIDTH="15" HEIGHT="90" CONTENT="COFFEE" WC="0.58" CC="047660"/>
+						<SP ID="P21_SP00002" HPOS="867" VPOS="1102" WIDTH="-16"/>
+						<String ID="P21_ST00003" HPOS="851" VPOS="858" WIDTH="14" HEIGHT="78" CONTENT="HOUSE" WC="0.54" CC="60744"/>
+						<SP ID="P21_SP00003" HPOS="867" VPOS="1102" WIDTH="-16"/>
+						<String ID="P21_ST00004" HPOS="851" VPOS="792" WIDTH="15" HEIGHT="51" CONTENT="AND" WC="0.46" CC="087"/>
+						<SP ID="P21_SP00004" HPOS="867" VPOS="1102" WIDTH="-16"/>
+						<String ID="P21_ST00005" HPOS="851" VPOS="701" WIDTH="21" HEIGHT="76" CONTENT="SHOPS," WC="0.73" CC="300631"/>
+						<SP ID="P21_SP00005" HPOS="872" VPOS="1102" WIDTH="-19"/>
+						<String ID="P21_ST00006" HPOS="853" VPOS="606" WIDTH="15" HEIGHT="79" CONTENT="ABOUT" WC="0.73" CC="06042"/>
+						<SP ID="P21_SP00006" HPOS="872" VPOS="1102" WIDTH="-17"/>
+						<String ID="P21_ST00007" HPOS="855" VPOS="581" WIDTH="13" HEIGHT="7" CONTENT="1" WC="0.68" CC="3"/>
+						<String ID="P21_ST00008" HPOS="853" VPOS="535" WIDTH="17" HEIGHT="40" CONTENT="776." WC="0.50" CC="6660"/>
+					</TextLine>
+				</TextBlock>
+				<ComposedBlock ID="P21_CB00001" HPOS="195" VPOS="198" WIDTH="671" HEIGHT="1253" STYLEREFS="TXT_0 PAR_LEFT" TYPE="Illustration">
+					<GraphicalElement ID="P21_CB00001_SUB" HPOS="195" VPOS="198" WIDTH="671" HEIGHT="1253"/>
+				</ComposedBlock>
+			</PrintSpace>
+		</Page>
+	</Layout>
+</alto>

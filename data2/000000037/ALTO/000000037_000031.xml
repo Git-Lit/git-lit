@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.bl.uk/schemas/alto/alto-1-4.xsd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<Description>
+		<MeasurementUnit>mm10</MeasurementUnit>
+		<sourceImageInformation>
+			<fileName>//head1/IN/2008-18/A0011552787/005504.jp2</fileName>
+		</sourceImageInformation>
+		<OCRProcessing ID="OCRPROCESSING_1">
+			<preProcessingStep>
+				<processingSoftware>
+					<softwareCreator>CCS Content Conversion Specialists GmbH, Germany</softwareCreator>
+					<softwareName>CCS docWORKS</softwareName>
+					<softwareVersion>6.1-0.67</softwareVersion>
+				</processingSoftware>
+			</preProcessingStep>
+			<ocrProcessingStep>
+				<processingSoftware>
+					<softwareCreator>ABBYY (BIT Software), Russia</softwareCreator>
+					<softwareName>Finereader</softwareName>
+				</processingSoftware>
+			</ocrProcessingStep>
+		</OCRProcessing>
+	</Description>
+	<Styles>
+		<TextStyle ID="TXT_0" FONTSIZE="9" FONTFAMILY="Courier New"/>
+		<ParagraphStyle ID="PAR_CENTER" ALIGN="Center"/>
+		<ParagraphStyle ID="PAR_LEFT" ALIGN="Left"/>
+	</Styles>
+	<Layout>
+		<Page ID="P31" PHYSICAL_IMG_NR="31" HEIGHT="1607" WIDTH="1062" POSITION="Right" ACCURACY="52.67">
+			<TopMargin ID="P31_TM00001" HPOS="0" VPOS="0" WIDTH="1061" HEIGHT="0"/>
+			<LeftMargin ID="P31_LM00001" HPOS="0" VPOS="0" WIDTH="0" HEIGHT="1491"/>
+			<RightMargin ID="P31_RM00001" HPOS="1061" VPOS="0" WIDTH="0" HEIGHT="1491"/>
+			<BottomMargin ID="P31_BM00001" HPOS="0" VPOS="1491" WIDTH="1061" HEIGHT="115"/>
+			<PrintSpace ID="P31_PS00001" HPOS="0" VPOS="0" WIDTH="1061" HEIGHT="1491">
+				<TextBlock ID="P31_TB00001" HPOS="380" VPOS="1304" WIDTH="284" HEIGHT="21" STYLEREFS="TXT_0 PAR_CENTER">
+					<TextLine ID="P31_TL00001" HPOS="381" VPOS="1305" WIDTH="283" HEIGHT="20">
+						<String ID="P31_ST00001" HPOS="381" VPOS="1311" WIDTH="88" HEIGHT="14" CONTENT="SMITHY" WC="0.56" CC="253156"/>
+						<SP ID="P31_SP00001" HPOS="469" VPOS="1325" WIDTH="18"/>
+						<String ID="P31_ST00002" HPOS="487" VPOS="1311" WIDTH="61" HEIGHT="14" CONTENT="DOOR" WC="0.70" CC="7040"/>
+						<SP ID="P31_SP00002" HPOS="548" VPOS="1325" WIDTH="16"/>
+						<String ID="P31_ST00003" HPOS="564" VPOS="1311" WIDTH="25" HEIGHT="14" CONTENT="IN" WC="0.35" CC="66"/>
+						<SP ID="P31_SP00003" HPOS="589" VPOS="1325" WIDTH="18"/>
+						<String ID="P31_ST00004" HPOS="607" VPOS="1305" WIDTH="57" HEIGHT="20" CONTENT="l82I." WC="0.49" CC="56660"/>
+					</TextLine>
+				</TextBlock>
+				<ComposedBlock ID="P31_CB00001" HPOS="143" VPOS="320" WIDTH="782" HEIGHT="956" STYLEREFS="TXT_0 PAR_LEFT" TYPE="Illustration">
+					<GraphicalElement ID="P31_CB00001_SUB" HPOS="143" VPOS="320" WIDTH="782" HEIGHT="956"/>
+				</ComposedBlock>
+			</PrintSpace>
+		</Page>
+	</Layout>
+</alto>

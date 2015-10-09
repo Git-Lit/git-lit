@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.bl.uk/schemas/alto/alto-1-4.xsd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<Description>
+		<MeasurementUnit>mm10</MeasurementUnit>
+		<sourceImageInformation>
+			<fileName>//head1/IN/2008-18/A0011552787/005487.jp2</fileName>
+		</sourceImageInformation>
+		<OCRProcessing ID="OCRPROCESSING_1">
+			<preProcessingStep>
+				<processingSoftware>
+					<softwareCreator>CCS Content Conversion Specialists GmbH, Germany</softwareCreator>
+					<softwareName>CCS docWORKS</softwareName>
+					<softwareVersion>6.1-0.67</softwareVersion>
+				</processingSoftware>
+			</preProcessingStep>
+			<ocrProcessingStep>
+				<processingSoftware>
+					<softwareCreator>ABBYY (BIT Software), Russia</softwareCreator>
+					<softwareName>Finereader</softwareName>
+				</processingSoftware>
+			</ocrProcessingStep>
+		</OCRProcessing>
+	</Description>
+	<Styles>
+		<TextStyle ID="TXT_0" FONTSIZE="9" FONTFAMILY="Courier New"/>
+		<ParagraphStyle ID="PAR_RIGHT" ALIGN="Right"/>
+		<ParagraphStyle ID="PAR_LEFT" ALIGN="Left"/>
+	</Styles>
+	<Layout>
+		<Page ID="P14" PHYSICAL_IMG_NR="14" HEIGHT="1607" WIDTH="1062" POSITION="Left" ACCURACY="56.41">
+			<TopMargin ID="P14_TM00001" HPOS="0" VPOS="0" WIDTH="1061" HEIGHT="-1"/>
+			<LeftMargin ID="P14_LM00001" HPOS="0" VPOS="-68" WIDTH="143" HEIGHT="1491"/>
+			<RightMargin ID="P14_RM00001" HPOS="915" VPOS="-68" WIDTH="146" HEIGHT="1491"/>
+			<BottomMargin ID="P14_BM00001" HPOS="0" VPOS="1423" WIDTH="1061" HEIGHT="183"/>
+			<PrintSpace ID="P14_PS00001" HPOS="143" VPOS="-68" WIDTH="772" HEIGHT="1491">
+				<TextBlock ID="P14_TB00001" HPOS="893" VPOS="552" WIDTH="22" HEIGHT="673" ROTATION="90.00" STYLEREFS="TXT_0 PAR_RIGHT">
+					<TextLine ID="P14_TL00001" HPOS="897" VPOS="552" WIDTH="18" HEIGHT="673">
+						<String ID="P14_ST00001" HPOS="899" VPOS="1089" WIDTH="13" HEIGHT="136" CONTENT="chetham's" WC="0.76" CC="004070160"/>
+						<SP ID="P14_SP00001" HPOS="912" VPOS="1225" WIDTH="-14"/>
+						<String ID="P14_ST00002" HPOS="898" VPOS="954" WIDTH="17" HEIGHT="119" CONTENT="hospital," WC="0.53" CC="406505990"/>
+						<SP ID="P14_SP00002" HPOS="915" VPOS="1225" WIDTH="-17"/>
+						<String ID="P14_ST00003" HPOS="898" VPOS="809" WIDTH="13" HEIGHT="127" CONTENT="formerly" WC="0.52" CC="10806497"/>
+						<SP ID="P14_SP00003" HPOS="915" VPOS="1225" WIDTH="-18"/>
+						<String ID="P14_ST00004" HPOS="897" VPOS="745" WIDTH="14" HEIGHT="48" CONTENT="the" WC="0.57" CC="245"/>
+						<SP ID="P14_SP00004" HPOS="915" VPOS="1225" WIDTH="-18"/>
+						<String ID="P14_ST00005" HPOS="897" VPOS="621" WIDTH="14" HEIGHT="110" CONTENT="college." WC="0.64" CC="00796400"/>
+						<SP ID="P14_SP00005" HPOS="915" VPOS="1225" WIDTH="-18"/>
+						<String ID="P14_ST00006" HPOS="897" VPOS="552" WIDTH="14" HEIGHT="50" CONTENT="1797," WC="0.37" CC="57673"/>
+					</TextLine>
+				</TextBlock>
+				<ComposedBlock ID="P14_CB00001" HPOS="144" VPOS="265" WIDTH="733" HEIGHT="1158" STYLEREFS="TXT_0 PAR_LEFT" TYPE="Illustration">
+					<GraphicalElement ID="P14_CB00001_SUB" HPOS="144" VPOS="265" WIDTH="733" HEIGHT="1158"/>
+				</ComposedBlock>
+			</PrintSpace>
+		</Page>
+	</Layout>
+</alto>

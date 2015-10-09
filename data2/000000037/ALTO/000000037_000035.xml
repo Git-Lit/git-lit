@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.bl.uk/schemas/alto/alto-1-4.xsd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<Description>
+		<MeasurementUnit>mm10</MeasurementUnit>
+		<sourceImageInformation>
+			<fileName>//head1/IN/2008-18/A0011552787/005508.jp2</fileName>
+		</sourceImageInformation>
+		<OCRProcessing ID="OCRPROCESSING_1">
+			<preProcessingStep>
+				<processingSoftware>
+					<softwareCreator>CCS Content Conversion Specialists GmbH, Germany</softwareCreator>
+					<softwareName>CCS docWORKS</softwareName>
+					<softwareVersion>6.1-0.67</softwareVersion>
+				</processingSoftware>
+			</preProcessingStep>
+			<ocrProcessingStep>
+				<processingSoftware>
+					<softwareCreator>ABBYY (BIT Software), Russia</softwareCreator>
+					<softwareName>Finereader</softwareName>
+				</processingSoftware>
+			</ocrProcessingStep>
+		</OCRProcessing>
+	</Description>
+	<Styles>
+		<TextStyle ID="TXT_0" FONTSIZE="9" FONTFAMILY="Courier New"/>
+		<ParagraphStyle ID="PAR_RIGHT" ALIGN="Right"/>
+		<ParagraphStyle ID="PAR_LEFT" ALIGN="Left"/>
+	</Styles>
+	<Layout>
+		<Page ID="P35" PHYSICAL_IMG_NR="35" HEIGHT="1607" WIDTH="1062" POSITION="Right" ACCURACY="70.03">
+			<TopMargin ID="P35_TM00001" HPOS="0" VPOS="0" WIDTH="1061" HEIGHT="0"/>
+			<LeftMargin ID="P35_LM00001" HPOS="0" VPOS="0" WIDTH="0" HEIGHT="1491"/>
+			<RightMargin ID="P35_RM00001" HPOS="1061" VPOS="0" WIDTH="0" HEIGHT="1491"/>
+			<BottomMargin ID="P35_BM00001" HPOS="0" VPOS="1491" WIDTH="1061" HEIGHT="115"/>
+			<PrintSpace ID="P35_PS00001" HPOS="0" VPOS="0" WIDTH="1061" HEIGHT="1491">
+				<TextBlock ID="P35_TB00001" HPOS="921" VPOS="712" WIDTH="26" HEIGHT="274" ROTATION="90.00" STYLEREFS="TXT_0 PAR_RIGHT">
+					<TextLine ID="P35_TL00001" HPOS="925" VPOS="712" WIDTH="19" HEIGHT="274">
+						<String ID="P35_ST00001" HPOS="925" VPOS="939" WIDTH="13" HEIGHT="47" CONTENT="THE" WC="0.76" CC="007"/>
+						<SP ID="P35_SP00001" HPOS="938" VPOS="986" WIDTH="-13"/>
+						<String ID="P35_ST00002" HPOS="925" VPOS="782" WIDTH="19" HEIGHT="141" CONTENT="INFIRMARY," WC="0.67" CC="0073880050"/>
+						<SP ID="P35_SP00002" HPOS="944" VPOS="986" WIDTH="-18"/>
+						<String ID="P35_ST00003" HPOS="926" VPOS="712" WIDTH="12" HEIGHT="51" CONTENT="1815." WC="0.68" CC="24440"/>
+					</TextLine>
+				</TextBlock>
+				<ComposedBlock ID="P35_CB00001" HPOS="224" VPOS="285" WIDTH="720" HEIGHT="1133" STYLEREFS="TXT_0 PAR_LEFT" TYPE="Illustration">
+					<GraphicalElement ID="P35_CB00001_SUB" HPOS="224" VPOS="285" WIDTH="720" HEIGHT="1133"/>
+				</ComposedBlock>
+			</PrintSpace>
+		</Page>
+	</Layout>
+</alto>

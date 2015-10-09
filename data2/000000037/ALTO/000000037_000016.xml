@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.bl.uk/schemas/alto/alto-1-4.xsd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<Description>
+		<MeasurementUnit>mm10</MeasurementUnit>
+		<sourceImageInformation>
+			<fileName>//head1/IN/2008-18/A0011552787/005489.jp2</fileName>
+		</sourceImageInformation>
+		<OCRProcessing ID="OCRPROCESSING_1">
+			<preProcessingStep>
+				<processingSoftware>
+					<softwareCreator>CCS Content Conversion Specialists GmbH, Germany</softwareCreator>
+					<softwareName>CCS docWORKS</softwareName>
+					<softwareVersion>6.1-0.67</softwareVersion>
+				</processingSoftware>
+			</preProcessingStep>
+			<ocrProcessingStep>
+				<processingSoftware>
+					<softwareCreator>ABBYY (BIT Software), Russia</softwareCreator>
+					<softwareName>Finereader</softwareName>
+				</processingSoftware>
+			</ocrProcessingStep>
+		</OCRProcessing>
+	</Description>
+	<Styles>
+		<TextStyle ID="TXT_0" FONTSIZE="9" FONTFAMILY="Courier New"/>
+		<ParagraphStyle ID="PAR_RIGHT" ALIGN="Right"/>
+		<ParagraphStyle ID="PAR_LEFT" ALIGN="Left"/>
+	</Styles>
+	<Layout>
+		<Page ID="P16" PHYSICAL_IMG_NR="16" HEIGHT="1607" WIDTH="1062" POSITION="Left" ACCURACY="46.40">
+			<TopMargin ID="P16_TM00001" HPOS="0" VPOS="0" WIDTH="1061" HEIGHT="0"/>
+			<LeftMargin ID="P16_LM00001" HPOS="0" VPOS="0" WIDTH="0" HEIGHT="1491"/>
+			<RightMargin ID="P16_RM00001" HPOS="1061" VPOS="0" WIDTH="0" HEIGHT="1491"/>
+			<BottomMargin ID="P16_BM00001" HPOS="0" VPOS="1491" WIDTH="1061" HEIGHT="115"/>
+			<PrintSpace ID="P16_PS00001" HPOS="0" VPOS="0" WIDTH="1061" HEIGHT="1491">
+				<TextBlock ID="P16_TB00001" HPOS="1000" VPOS="491" WIDTH="17" HEIGHT="640" ROTATION="90.00" STYLEREFS="TXT_0 PAR_RIGHT">
+					<TextLine ID="P16_TL00001" HPOS="1001" VPOS="491" WIDTH="16" HEIGHT="640">
+						<String ID="P16_ST00001" HPOS="1004" VPOS="994" WIDTH="13" HEIGHT="137" CONTENT="CHETHAM'S" WC="0.50" CC="244849801"/>
+						<SP ID="P16_SP00001" HPOS="1017" VPOS="1131" WIDTH="-13"/>
+						<String ID="P16_ST00002" HPOS="1004" VPOS="867" WIDTH="13" HEIGHT="105" CONTENT="COLLEGE" WC="0.53" CC="1069770"/>
+						<SP ID="P16_SP00002" HPOS="1017" VPOS="1131" WIDTH="-14"/>
+						<String ID="P16_ST00003" HPOS="1003" VPOS="789" WIDTH="14" HEIGHT="62" CONTENT="GATE" WC="0.40" CC="7097"/>
+						<SP ID="P16_SP00003" HPOS="1017" VPOS="1131" WIDTH="-15"/>
+						<String ID="P16_ST00004" HPOS="1002" VPOS="724" WIDTH="14" HEIGHT="50" CONTENT="AND" WC="0.25" CC="957"/>
+						<SP ID="P16_SP00004" HPOS="1017" VPOS="1131" WIDTH="-15"/>
+						<String ID="P16_ST00005" HPOS="1002" VPOS="587" WIDTH="13" HEIGHT="121" CONTENT="GRAMMAR" WC="0.52" CC="7030299"/>
+						<SP ID="P16_SP00005" HPOS="1017" VPOS="1131" WIDTH="-16"/>
+						<String ID="P16_ST00006" HPOS="1001" VPOS="491" WIDTH="13" HEIGHT="81" CONTENT="SCHOOL" WC="0.58" CC="038607"/>
+					</TextLine>
+				</TextBlock>
+				<ComposedBlock ID="P16_CB00001" HPOS="33" VPOS="165" WIDTH="954" HEIGHT="1277" STYLEREFS="TXT_0 PAR_LEFT" TYPE="Illustration">
+					<GraphicalElement ID="P16_CB00001_SUB" HPOS="33" VPOS="165" WIDTH="954" HEIGHT="1277"/>
+				</ComposedBlock>
+			</PrintSpace>
+		</Page>
+	</Layout>
+</alto>
