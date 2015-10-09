@@ -1,0 +1,6 @@
+* text=auto
+
+*.py text
+*.ipynb text
+*.xml text
+
