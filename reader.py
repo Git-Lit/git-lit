@@ -52,6 +52,7 @@ class BLText:
         oldTitle = self.title
         textID = self.ID
         idLength = len(textID)
+        oldTitle = re.sub(r'[^\w\s-]','',out)
         titleNoSpace = oldTitle.replace(' ','-')
         ## need uniRecode function
         newTitle = titleNoSpace[:100-idLength]+textID
