@@ -75,24 +75,14 @@ class GithubRepo():
 
 
 
-test = GithubRepo(testtext)
+#test = GithubRepo(testtext)
 
+#test.create_and_push()
 
+#for text in c.texts: 
+#    print(t1ext)
 
-test.create_and_push()
-
-
-
-for text in c.texts: 
-    print(text)
-
-
-
-for text in c.texts: 
-    repo = GithubRepo(text)
-    repo.create_and_push()
-
-
-
-
+#for text in c.texts: 
+#    repo = GithubRepo(text)
+#    repo.create_and_push()
 

@@ -31,8 +31,6 @@ class CdContext():
     def __exit__(self, exception_type, exception_value, traceback):
         sh.cd(self._og_directory)
 
-
-
 IGNORE_FILES = ""
 
 class LocalRepo():
@@ -68,8 +66,9 @@ class LocalRepo():
                     '-m',
                     '{message}'.format(message=message)
                 )
-            except sh.ErrorReturnCode_1:
+            except sh.ErrorReturnCode_1 as e: 
                 print("Commit aborted for {0} with msg {1}".format(self.book.book_id, message))
+                print("Error: " + e.value)
 
 
 class NewFilesHandler():
