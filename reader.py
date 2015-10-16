@@ -18,7 +18,6 @@ class BLText:
         self.ID = os.path.basename(textdir) # alias
         self.book_id = self.ID # another alias. TODO: simplify this
         self.tree = self.parseMetadata(textdir)
-        self.author = self.getAuthor()
         self.flickrURL =  BLText.FLICKR_TEMPLATE % self.ID
         self.britLibURL = BLText.BRITLIB_TEMPLATE % (self.ID, self.ID)
 
@@ -42,12 +41,14 @@ class BLText:
 #    def getTitle(self): 
 #        return self.getText('//MODS:title')
         
-    def getAuthor(self): 
+    @property
+    def author(self): 
         rawAuthor = self.getText('//MODS:name[@type="personal"]/MODS:namePart')
         # TODO: do some transformations to the text here. Get it in the appropriate case. 
         return rawAuthor
 
-    def assignTitle(self):
+    @property
+    def githubTitle(self):
         oldTitle = self.title
         textID = self.ID
         idLength = len(textID)
