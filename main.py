@@ -1,7 +1,4 @@
-
 # coding: utf-8
-
-# In[20]:
 
 import lxml.etree
 import os
@@ -9,8 +6,6 @@ from IPython.display import display
 import pandas as pd
 import sh
 
-
-# In[21]:
 
 class BLText:
     FLICKR_TEMPLATE = 'https://www.flickr.com/photos/britishlibrary/tags/sysnum%s'
@@ -53,7 +48,6 @@ class BLText:
         return rawAuthor
 
 
-# In[22]:
 
 # A collection of BLText objects. 
 class BLCorpus(): 
@@ -75,18 +69,15 @@ class BLCorpus():
         display(self.df)
 
 
-# In[23]:
 
 c = BLCorpus('data2')
 c.df
 
 
-# In[24]:
 
 c.texts[0].textdir
 
 
-# In[25]:
 
 """
 Borrowed from GITenburg project. 
@@ -106,7 +97,6 @@ logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
 
-# In[26]:
 
 
 class CdContext():
@@ -124,7 +114,6 @@ class CdContext():
         sh.cd(self._og_directory)
 
 
-# In[27]:
 
 IGNORE_FILES = ""
 
@@ -217,29 +206,24 @@ def make(book):
     
 
 
-# In[28]:
 
 testtext = c.texts[0]
 testtext
 
 
-# In[29]:
 
 c.texts
 
 
-# In[19]:
 
 
 
 
-# In[30]:
 
 for text in c.texts: 
     make(text)
 
 
-# In[32]:
 
 # Borrowed from the GITenberg project
 
@@ -316,30 +300,25 @@ class GithubRepo():
                 sh.git('push', 'origin', 'master')
 
 
-# In[77]:
 
 test = GithubRepo(testtext)
 
 
-# In[50]:
 
 test.create_and_push()
 
 
-# In[84]:
 
 for text in c.texts: 
     print(text)
 
 
-# In[87]:
 
 for text in c.texts: 
     repo = GithubRepo(text)
     repo.create_and_push()
 
 
-# In[ ]:
 
 
 
