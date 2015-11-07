@@ -13,18 +13,14 @@ class BLText:
     BRITLIB_TEMPLATE = 'http://explore.bl.uk/primo_library/libweb/action/search.do?cs=frb&doc=BLL01%s&dscnt=1&scp.scps=scope:(BLCONTENT)&frbg=&tab=local_tab&srt=rank&ct=search&mode=Basic&dum=true&tb=t&indx=1&vl(freeText0)=%s&fn=search&vid=BLVU1'
     NAMESPACES = {'MODS': 'http://www.loc.gov/mods/v3'}
     
-    def __init__(self, textdir): 
-        self.textdir = textdir
-        self.ID = os.path.basename(textdir) # alias
-        self.book_id = self.ID # another alias. TODO: simplify this
-        self.tree = self.parseMetadata(textdir)
-        self.flickrURL =  BLText.FLICKR_TEMPLATE % self.ID
-        self.britLibURL = BLText.BRITLIB_TEMPLATE % (self.ID, self.ID)
+    def __init__(self, metadataFile): 
+        #self.textdir = textdir
+        #self.ID = os.path.basename(textdir) # alias
+        #self.book_id = self.ID # another alias. TODO: simplify this
+        self.tree = lxml.etree.parse(metadataFile)        
+        #self.flickrURL =  BLText.FLICKR_TEMPLATE % self.ID
+        #self.britLibURL = BLText.BRITLIB_TEMPLATE % (self.ID, self.ID)
 
-    def parseMetadata(self, textdir):
-        fullpath = textdir + '/' + self.ID + '_metadata.xml'
-        return lxml.etree.parse(fullpath)
-    
     def getText(self, xpath):
         out = self.tree.xpath(xpath + '/text()', namespaces=BLText.NAMESPACES)
         if isinstance(out, list): 
