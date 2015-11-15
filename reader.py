@@ -5,6 +5,7 @@ import os
 from IPython.display import display
 import pandas as pd
 import sh
+import unicodedata
 
 
 class BLText:
@@ -50,7 +51,7 @@ class BLText:
         idLength = len(textID)
         oldTitle = re.sub(r'[^\w\s-]','',out)
         titleNoSpace = oldTitle.replace(' ','-')
-        ## need uniRecode function
+        cleanTitle = str(unicodedata.normalize('NFKD', titleNoSpace).encode('ascii', 'ignore'))
         newTitle = titleNoSpace[:100-idLength]+textID
         return newTitle
 
