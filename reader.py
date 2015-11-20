@@ -6,7 +6,7 @@ from IPython.display import display
 import pandas as pd
 import sh
 import unicodedata
-
+import re
 
 class BLText:
     FLICKR_TEMPLATE = 'https://www.flickr.com/photos/britishlibrary/tags/sysnum%s'
@@ -15,8 +15,8 @@ class BLText:
     NAMESPACES = {'MODS': 'http://www.loc.gov/mods/v3'}
     
     def __init__(self, metadataFile): 
-        #self.textdir = textdir
-        #self.ID = os.path.basename(textdir) # alias
+        textdir = '12345'
+        self.book_id = os.path.basename(textdir) # alias
         #self.book_id = self.ID # another alias. TODO: simplify this
         self.tree = lxml.etree.parse(metadataFile)        
         #self.flickrURL =  BLText.FLICKR_TEMPLATE % self.ID
@@ -47,14 +47,16 @@ class BLText:
     @property
     def githubTitle(self):
         oldTitle = self.title
-        textID = self.ID
+        textID = self.book_id
         idLength = len(textID)
-        oldTitle = re.sub(r'[^\w\s-]','',out)
+        oldTitle = re.sub(r'[^\w\s-]','',oldTitle)
         titleNoSpace = oldTitle.replace(' ','-')
         cleanTitle = str(unicodedata.normalize('NFKD', titleNoSpace).encode('ascii', 'ignore'))
         newTitle = titleNoSpace[:100-idLength]+textID
         return newTitle
 
+    def printOut(self): 
+        print( "title: {}\nauthor: {}\ngithubTitle: {}\n".format(self.title, self.author, self.githubTitle))
 
 # A collection of BLText objects. 
 class BLCorpus(): 
