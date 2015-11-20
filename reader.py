@@ -64,11 +64,14 @@ class BLCorpus():
         self.baseDir = corpusDir
         self.texts = []
         self.readDataDir()
-        self.makeDataFrame()
+        #self.makeDataFrame()
 
     def readDataDir(self): 
         textdirs = os.listdir(self.baseDir)
-        self.texts = [ BLText(os.path.join(self.baseDir,textdir)) for textdir in textdirs ]
+        print( 'textdirs: ' )
+        for textdir in textdirs: 
+            print( textdir )
+        self.texts = [ BLText(os.path.join(self.baseDir,textdir, textdir+'_metadata.xml')) for textdir in textdirs ]
         self.metadata = [ [ text.ID, text.title, text.author ] for text in self.texts ] 
     
     def makeDataFrame(self): 
