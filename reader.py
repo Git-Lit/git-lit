@@ -4,7 +4,6 @@ import lxml.etree
 import os
 from IPython.display import display
 import pandas as pd
-import sh
 import unicodedata
 import re
 
@@ -18,12 +17,12 @@ class BLText:
         textdir = '12345'
         self.book_id = os.path.basename(textdir) # alias
         #self.book_id = self.ID # another alias. TODO: simplify this
-        self.tree = lxml.etree.parse(metadataFile)        
+        self.tree = lxml.etree.parse(metadataFile)
         #self.flickrURL =  BLText.FLICKR_TEMPLATE % self.ID
         #self.britLibURL = BLText.BRITLIB_TEMPLATE % (self.ID, self.ID)
 
     def getText(self, xpath):
-        out = self.tree.xpath(xpath + '/text()', namespaces=BLText.NAMESPACES)
+        out = self.tree.xpath(xpath + '/text()', namespaces=self.NAMESPACES)
         if isinstance(out, list): 
             if len(out) == 1: 
                 # No sense having a list of length one. Get just the string. 
