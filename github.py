@@ -6,11 +6,12 @@ Syncs a local git book repo to a remote git repo (by default, github)
 """
 
 import logging
-from re import sub
 import time
 
 import github3
 import sh
+
+from local import CdContext
 
 try:
     from secrets import GH_USER, GH_PASSWORD
