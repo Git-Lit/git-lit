@@ -5,9 +5,6 @@ Makes an organized git repo of a book folder.
 """
 
 import codecs
-import logging
-import os
-from os.path import abspath, dirname
 
 import jinja2
 import sh
