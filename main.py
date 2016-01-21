@@ -1,67 +1,26 @@
 # coding: utf-8
 
+import github
+import local
 from reader import BLCorpus
-
-c = BLCorpus('data2')
-c.df
-
-
-c.texts[0].textdir
-
-
-"""
-Borrowed from GITenburg project. 
-Makes an organized git repo of a book folder.
-"""
-
 
 import logging
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
-from local import LocalRepo, NewFilesHandler
-from github import GithubRepo
+# TODO: Break this up to read & create iteratively
+corpus = BLCorpus('data', metadataOnly=False)
+#c.df
 
-IGNORE_FILES = ""
+# Only test with limited directories
+testtexts = corpus.texts[2:4]
 
+for text in testtexts: 
+    logging.info('Making local repo ' + str(text))
+    local.make(text)
+    remote = github.GithubRepo(text)
+    logging.info('Making & pushing to remote repo')
+    remote.create_and_push()
+    logging.info('Remote repo complete')
 
-def make(book):
-    # Initial commit of book files
-    local_repo = LocalRepo(book)
-    local_repo.add_all_files()
-    local_repo.commit("initial import from British Library originals.")
-
-    # New files commit
-    NewFilesHandler(book)
-
-    local_repo.add_all_files()
-    local_repo.commit("add readme, contributing and license files to book repo")
-    
-
-testtext = c.texts[0]
-testtext
-
-c.texts
-
-for text in c.texts: 
-    make(text)
-
-
-
-# Borrowed from the GITenberg project
-
-"""
-Syncs a local git book repo to a remote git repo (by default, github)
-"""
-
-
-test = GithubRepo(testtext)
-
-test.create_and_push()
-
-for text in c.texts: 
-    print(text)
-
-for text in c.texts: 
-    repo = GithubRepo(text)
-    repo.create_and_push()
+logging.info('All repos complete')
