@@ -167,6 +167,7 @@ def test():
             else:
                 #print '   Skipped', name
                 pass
+        zf.close()
         #print text
         print f.split('/')[1], words, confidence/words, len(text), styles.most_common()
 #         tot = sum(cc)
