@@ -18,6 +18,8 @@ try:
 except:
     print("no secrets file found, continuing without")
 
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
 
 class GithubRepo():
 
@@ -36,8 +38,7 @@ class GithubRepo():
         if hasattr(self.github, 'set_user_agent'):
             self.github.set_user_agent('Jonathan Reeve: http://jonreeve.com')
         self.org = self.github.organization(login='Git-Lit')
-        # FIXME: logging
-        print("ratelimit: " + str(self.org.ratelimit_remaining))
+        logger.debug("ratelimit: " + str(self.org.ratelimit_remaining))
 
     def format_desc(self):
         return u'{0} by {1} is a British Library book, now on GitHub.'.format(
