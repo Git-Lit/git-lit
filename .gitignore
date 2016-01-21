@@ -6,3 +6,4 @@ metadata/metadata-files
 /.project
 /.pydevproject
 /.settings
+*.pyc
