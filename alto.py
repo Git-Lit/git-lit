@@ -56,16 +56,45 @@ class Alto(object):
 
         self.parse_file()
 
-
     def parseTextBlock(self, block):
+        """
+        Parse the lines, words, spaces, hyphens in a single text block.
+
+        TODO: Do we need a parameter for paragraph indent, avg jitter, etc?
+        """
+        # TODO: Setting the threshold is key.  We should see a bimodal distribution
+        # with lots of values near the left margin, a number near the nominal indent, and few in the middle
+        # Perhaps pre-scan all TextBlocks/TextLines on page or in document?
+        PARA_INDENT_THRESHOLD = 25 # This value is for experimentation ONLY!
+
         words = 0
         confidence = 0
         text = ''
+        lmargin = None
         if 'STYLEREFS' in block.attrib:
             for s in block.attrib['STYLEREFS'].split():
                 self.styles[s] +=1
+        if 'HPOS' in block.attrib:
+            lmargin = int(block.attrib['HPOS'])
+            #print 'Block margin: ', lmargin
+        else:
+            raise "Block with no HPOS, can't continue"
+        firstLine = False
+        paraStart = False
         for tl in block:
             if tl.tag == 'TextLine':
+                if 'HPOS' in tl.attrib:
+                    indent = int(tl.attrib['HPOS']) - lmargin
+                    if indent > PARA_INDENT_THRESHOLD:
+                        if firstLine:
+                            paraStart = True
+                        text += '\n\n'
+                        #print '    New paragraph!', indent 
+                    elif indent > PARA_INDENT_THRESHOLD/4 and indent <- PARA_INDENT_THRESHOLD:
+                        print ' **Indent in the middle ', indent
+                        #print '  continuation: ', indent
+                else:
+                    raise 'Something bad happened - no HPOS in TextLine - aborting'
                 for elem in tl:
                     if elem.tag == 'String':
                         text += elem.attrib['CONTENT']
@@ -89,7 +118,8 @@ class Alto(object):
                         print 'Unknown tag', elem.tag
                 if tl[-1].tag != 'HYP':
                     text += ' '
-        return (words, confidence, text)
+                firstLine = False
+        return (words, confidence, text, paraStart)
         
     def parse_file(self):
         confidence = 0
@@ -102,17 +132,27 @@ class Alto(object):
             self.pages += 1
             if 'ACCURACY' in page.attrib:
                 self.page_accuracy.append(float(page.attrib['ACCURACY']))
-            self.text += '\n--- Page marker ---\n'
+            leaf = page.attrib['PHYSICAL_IMG_NR']
+            pageno=''
+            if 'PRINTED_IMG_NR' in page.attrib:
+                pageno = page.attrib['PRINTED_IMG_NR']
+            # TODO: page markers should be moved out of band (or elided for plain text formats)
+            self.text += '\n\n--Page: %s, Leaf: %s--\n' % (pageno, leaf)
+            pageStart = True
             for ps in page:
+                # Note: Text can also live in the margins TopMargin, BottomMargin, etc if the layout analysis messes up
                 if ps.tag == 'PrintSpace':
                     for tb in ps:
                         if tb.tag == 'TextBlock':
-                            (w, c, t) = self.parseTextBlock(tb)
+                            (w, c, t, beginningPara) = self.parseTextBlock(tb)
                             words += w 
                             confidence += c 
-                            # TODO: Need to be more sophisticated about breaks between blocks
-                            self.text += '\n' + t
+                            if pageStart and not beginningPara:
+                                self.text += " " + t # TODO: Deal with cross page hyphenatoin
+                            else:
+                                self.text += '\n\n' + t
                         elif tb.tag == 'ComposedBlock':
+                            # TODO: Can this be anything other than a picture?
                             pass
                         else:
                             print 'Unknown tag in <PrintSpace> ', tb.tag
@@ -130,15 +170,15 @@ class Alto(object):
 
 def test():
     # Simple single page test
-    a = Alto('./data2/000000037/ALTO/000000037_000010.xml')
+    a = Alto('./data/000000037/ALTO/000000037_000010.xml')
     print a.text
     print a.word_count, a.word_confidence, a.char_confidence
     
     # Run through a whole bunch of pages
-    files = {'data2/000000037/000000037_0_1-42pgs__944211_dat.zip',
-             'data2/000000196/000000196_0_1-164pgs__1031646_dat.zip',
-             'data2/000000206/000000206_0_1-256pgs__594984_dat.zip',
-             'data2/000000216/000000216_1_1-318pgs__632698_dat.zip',
+    files = {'data/000000037/000000037_0_1-42pgs__944211_dat.zip',
+             'data/000000196/000000196_0_1-164pgs__1031646_dat.zip',
+             'data/000000206/000000206_0_1-256pgs__594984_dat.zip',
+             'data/000000216/000000216_1_1-318pgs__632698_dat.zip',
              }
     from zipfile import ZipFile
     print '    File', 'Words', 'Word Confidence (0-1.0)', 'CharCount'
