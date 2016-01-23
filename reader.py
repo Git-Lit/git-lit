@@ -30,6 +30,8 @@ class BLText:
         self.textdir = os.path.dirname(zipfile)
         #print 'Loading ',zipfile
         zf = ZipFile(zipfile)
+        # TODO: Check for an warn if there are multiple books in the same zip file
+        # 00000037 is a file that can be used for testing
         fn = self.book_id + '_metadata.xml'
         with zf.open(fn) as f:
             self.metadata = lxml.etree.parse(f)
