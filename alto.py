@@ -78,7 +78,7 @@ class Alto(object):
             lmargin = int(block.attrib['HPOS'])
             #print 'Block margin: ', lmargin
         else:
-            raise "Block with no HPOS, can't continue"
+            raise Exception("Block with no HPOS, can't continue")
         firstLine = False
         paraStart = False
         for tl in block:
@@ -91,10 +91,10 @@ class Alto(object):
                         text += '\n\n'
                         #print '    New paragraph!', indent 
                     elif indent > PARA_INDENT_THRESHOLD/4 and indent <- PARA_INDENT_THRESHOLD:
-                        print ' **Indent in the middle ', indent
+                        print(' **Indent in the middle ', indent)
                         #print '  continuation: ', indent
                 else:
-                    raise 'Something bad happened - no HPOS in TextLine - aborting'
+                    raise Exception('Something bad happened - no HPOS in TextLine - aborting')
                 for elem in tl:
                     if elem.tag == 'String':
                         text += elem.attrib['CONTENT']
@@ -109,13 +109,13 @@ class Alto(object):
                             elif hy == 'HypPart2':
                                 self.hyphen2_count += 1
                             else:
-                                print 'Unrecognized SUBS_TYPE', hy
+                                print('Unrecognized SUBS_TYPE', hy)
                     elif elem.tag == 'SP':
                         text += ' '
                     elif elem.tag == 'HYP':
                         pass
                     else:
-                        print 'Unknown tag', elem.tag
+                        print('Unknown tag', elem.tag)
                 if tl[-1].tag != 'HYP':
                     text += ' '
                 firstLine = False
@@ -155,24 +155,24 @@ class Alto(object):
                             # TODO: Can this be anything other than a picture?
                             pass
                         else:
-                            print 'Unknown tag in <PrintSpace> ', tb.tag
+                            print('Unknown tag in <PrintSpace> ', tb.tag)
                 elif ps.tag in ['TopMargin', 'LeftMargin', 'RightMargin','BottomMargin']:
                     pass
                 else:
-                    print 'Unknown tag on <Page> ', ps.tag
+                    print('Unknown tag on <Page> ', ps.tag)
             page.clear() # Clear the page now that we're done with it
         if words:
             self.word_confidence = confidence / words
         self.word_count = words
         if self.pages > 1:
             # TODO: We kind of assumge one page per file now because that's the BL use case
-            print 'WARNING: Multi-page file: %d pages' % self.pages
+            print('WARNING: Multi-page file: %d pages' % self.pages)
 
 def test():
     # Simple single page test
     a = Alto('./data/000000037/ALTO/000000037_000010.xml')
-    print a.text
-    print a.word_count, a.word_confidence, a.char_confidence
+    print(a.text)
+    print(a.word_count, a.word_confidence, a.char_confidence)
     
     # Run through a whole bunch of pages
     files = {'data/000000037/000000037_0_1-42pgs__944211_dat.zip',
@@ -181,7 +181,7 @@ def test():
              'data/000000216/000000216_1_1-318pgs__632698_dat.zip',
              }
     from zipfile import ZipFile
-    print '    File', 'Words', 'Word Confidence (0-1.0)', 'CharCount'
+    print('    File', 'Words', 'Word Confidence (0-1.0)', 'CharCount')
     for f in files:
         words = 0
         confidence = 0
@@ -200,16 +200,16 @@ def test():
                     confidence += (a.word_confidence * a.word_count)
                     styles.update(a.styles)
                     if a.hyphen1_count != a.hyphen2_count:
-                        print 'Mismatched hyphenation count ', name, a.hyphen1_count, a.hyphen2_count
+                        print('Mismatched hyphenation count ', name, a.hyphen1_count, a.hyphen2_count)
                 #print name,a.word_count, a.page_accuracy, a.word_confidence, a.char_confidence
                 if a.word_confidence and abs(a.word_confidence*100.0 - a.page_accuracy[0]) > 2.0: # epsilon = 2%
-                    print 'Inaccurate page accuracy %2.2f %2.2f' % (a.page_accuracy[0], a.word_confidence)
+                    print('Inaccurate page accuracy %2.2f %2.2f' % (a.page_accuracy[0], a.word_confidence))
             else:
                 #print '   Skipped', name
                 pass
         zf.close()
         #print text
-        print f.split('/')[1], words, confidence/words, len(text), styles.most_common()
+        print(f.split('/')[1], words, confidence/words, len(text), styles.most_common())
 #         tot = sum(cc)
 #         for i in range(10):
 #             print i, '*'*(cc[i]*100/tot)

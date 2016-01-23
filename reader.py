@@ -122,10 +122,10 @@ class BLCorpus():
 def test():
     c = BLCorpus('data')
     #c.df
-    print c.texts[0].textdir
+    print(c.texts[0].textdir)
 
 if __name__ == '__main__':
-    print 'Beginning test'
+    print('Beginning test')
     test()
-    print 'Test complete'
+    print('Test complete')
 
