@@ -12,6 +12,8 @@ import re
 from unidecode import unidecode
 from zipfile import ZipFile
 
+# TODO: Move this to a template file for easy editing
+INTRO = '////\nThis file was created from text provided by the British Library. \n////\n\n'
 
 class BLText:
     NAMESPACES = {'MODS': 'http://www.loc.gov/mods/v3',
@@ -30,12 +32,12 @@ class BLText:
         zf = ZipFile(zipfile)
         fn = self.book_id + '_metadata.xml'
         with zf.open(fn) as f:
-            self.tree = lxml.etree.parse(f)
-        
+            self.metadata = lxml.etree.parse(f)
+
         self.pages = 0
         self.words = 0
         self.word_confidence = 0
-        self.text = ''
+        self.text = INTRO
         self.cc = array('L',[0]*10)
         self.styles = Counter()
         
@@ -66,7 +68,7 @@ class BLText:
 
 
     def getText(self, xpath):
-        out = self.tree.xpath(xpath + '/text()', namespaces=self.NAMESPACES)
+        out = self.metadata.xpath(xpath + '/text()', namespaces=self.NAMESPACES)
         if isinstance(out, list): 
             if len(out) == 1: 
                 # No sense having a list of length one. Get just the string. 
@@ -81,7 +83,8 @@ class BLText:
     @property
     def author(self): 
         rawAuthor = self.getText('//MODS:name[@type="personal"]/MODS:namePart')
-        # TODO: do some transformations to the text here. Get it in the appropriate case. 
+        # TODO: do some transformations to the text here. Get it in the appropriate case.
+        # Also handle multiple authors better
         return rawAuthor
 
     @property
