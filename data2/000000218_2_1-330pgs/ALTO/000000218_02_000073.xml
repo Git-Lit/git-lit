@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.bl.uk/schemas/alto/alto-1-4.xsd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<Description>
+		<MeasurementUnit>mm10</MeasurementUnit>
+		<sourceImageInformation>
+			<fileName>//head1/IN/2007-46/A0010888503.2/009281.jp2</fileName>
+		</sourceImageInformation>
+		<OCRProcessing ID="OCRPROCESSING_1">
+			<preProcessingStep>
+				<processingSoftware>
+					<softwareCreator>CCS Content Conversion Specialists GmbH, Germany</softwareCreator>
+					<softwareName>CCS docWORKS</softwareName>
+					<softwareVersion>6.1-0.61</softwareVersion>
+				</processingSoftware>
+			</preProcessingStep>
+			<ocrProcessingStep>
+				<processingSoftware>
+					<softwareCreator>ABBYY (BIT Software), Russia</softwareCreator>
+					<softwareName>Finereader</softwareName>
+				</processingSoftware>
+			</ocrProcessingStep>
+		</OCRProcessing>
+	</Description>
+	<Styles>
+		<TextStyle ID="TXT_0" FONTSIZE="10" FONTFAMILY="Courier New"/>
+		<ParagraphStyle ID="PAR_LEFT" ALIGN="Left"/>
+	</Styles>
+	<Layout>
+		<Page ID="P73" PHYSICAL_IMG_NR="73" HEIGHT="1747" WIDTH="1132" POSITION="Right" ACCURACY="63.79">
+			<TopMargin ID="P73_TM00001" HPOS="0" VPOS="0" WIDTH="1131" HEIGHT="0"/>
+			<LeftMargin ID="P73_LM00001" HPOS="0" VPOS="0" WIDTH="0" HEIGHT="1746"/>
+			<RightMargin ID="P73_RM00001" HPOS="1131" VPOS="0" WIDTH="0" HEIGHT="1746"/>
+			<BottomMargin ID="P73_BM00001" HPOS="0" VPOS="1746" WIDTH="1131" HEIGHT="0"/>
+			<PrintSpace ID="P73_PS00001" HPOS="0" VPOS="0" WIDTH="1131" HEIGHT="1746">
+				<TextBlock ID="P73_TB00001" HPOS="90" VPOS="90" WIDTH="881" HEIGHT="278" STYLEREFS="TXT_0 PAR_LEFT">
+					<TextLine ID="P73_TL00001" HPOS="387" VPOS="115" WIDTH="534" HEIGHT="27">
+						<String ID="P73_ST00001" HPOS="387" VPOS="119" WIDTH="42" HEIGHT="23" CONTENT="ON" WC="0.66" CC="06"/>
+						<SP ID="P73_SP00001" HPOS="429" VPOS="142" WIDTH="22"/>
+						<String ID="P73_ST00002" HPOS="451" VPOS="119" WIDTH="64" HEIGHT="22" CONTENT="THE" WC="0.69" CC="350"/>
+						<SP ID="P73_SP00002" HPOS="515" VPOS="142" WIDTH="22"/>
+						<String ID="P73_ST00003" HPOS="537" VPOS="119" WIDTH="105" HEIGHT="23" CONTENT="SCENT." WC="0.59" CC="307670"/>
+						<SP ID="P73_SP00003" HPOS="642" VPOS="142" WIDTH="245"/>
+						<String ID="P73_ST00004" HPOS="887" VPOS="115" WIDTH="34" HEIGHT="26" CONTENT="63" WC="0.64" CC="07"/>
+					</TextLine>
+					<TextLine ID="P73_TL00002" HPOS="148" VPOS="196" WIDTH="775" HEIGHT="43">
+						<String ID="P73_ST00005" HPOS="148" VPOS="199" WIDTH="16" HEIGHT="12" CONTENT='"' WC="1.00" CC="0"/>
+						<SP ID="P73_SP00004" HPOS="164" VPOS="211" WIDTH="11"/>
+						<String ID="P73_ST00006" HPOS="175" VPOS="196" WIDTH="58" HEIGHT="38" CONTENT="Oh," WC="0.54" CC="372"/>
+						<SP ID="P73_SP00005" HPOS="233" VPOS="234" WIDTH="20"/>
+						<String ID="P73_ST00007" HPOS="253" VPOS="196" WIDTH="83" HEIGHT="42" CONTENT='yes,"' WC="0.68" CC="62230"/>
+						<SP ID="P73_SP00006" HPOS="336" VPOS="238" WIDTH="20"/>
+						<String ID="P73_ST00008" HPOS="356" VPOS="197" WIDTH="137" HEIGHT="41" CONTENT="rejoined" WC="0.79" CC="30005800"/>
+						<SP ID="P73_SP00007" HPOS="493" VPOS="238" WIDTH="18"/>
+						<String ID="P73_ST00009" HPOS="511" VPOS="197" WIDTH="136" HEIGHT="42" CONTENT="Aspasie," WC="0.56" CC="74905403"/>
+						<SP ID="P73_SP00008" HPOS="647" VPOS="239" WIDTH="16"/>
+						<String ID="P73_ST00010" HPOS="663" VPOS="197" WIDTH="76" HEIGHT="31" CONTENT="with" WC="0.53" CC="8126"/>
+						<SP ID="P73_SP00009" HPOS="739" VPOS="239" WIDTH="16"/>
+						<String ID="P73_ST00011" HPOS="755" VPOS="208" WIDTH="18" HEIGHT="20" CONTENT="a" WC="0.02" CC="9"/>
+						<SP ID="P73_SP00010" HPOS="773" VPOS="239" WIDTH="15"/>
+						<String ID="P73_ST00012" HPOS="788" VPOS="197" WIDTH="135" HEIGHT="42" CONTENT="singular" WC="0.53" CC="52980703"/>
+					</TextLine>
+					<TextLine ID="P73_TL00003" HPOS="105" VPOS="258" WIDTH="818" HEIGHT="43">
+						<String ID="P73_ST00013" HPOS="105" VPOS="258" WIDTH="176" HEIGHT="41" CONTENT="expression" WC="0.62" CC="0895053050"/>
+						<String ID="P73_ST00014" HPOS="295" VPOS="269" WIDTH="7" HEIGHT="27" CONTENT=";" WC="0.34" CC="6"/>
+						<SP ID="P73_SP00011" HPOS="302" VPOS="299" WIDTH="26"/>
+						<String ID="P73_ST00015" HPOS="328" VPOS="261" WIDTH="17" HEIGHT="12" CONTENT='"' WC="1.00" CC="0"/>
+						<SP ID="P73_SP00012" HPOS="345" VPOS="299" WIDTH="11"/>
+						<String ID="P73_ST00016" HPOS="356" VPOS="258" WIDTH="15" HEIGHT="31" CONTENT="I" WC="1.00" CC="0"/>
+						<SP ID="P73_SP00013" HPOS="371" VPOS="299" WIDTH="19"/>
+						<String ID="P73_ST00017" HPOS="390" VPOS="259" WIDTH="65" HEIGHT="31" CONTENT="will" WC="0.69" CC="7022"/>
+						<SP ID="P73_SP00014" HPOS="455" VPOS="299" WIDTH="19"/>
+						<String ID="P73_ST00018" HPOS="474" VPOS="259" WIDTH="131" HEIGHT="42" CONTENT="promise" WC="0.83" CC="0000560"/>
+						<SP ID="P73_SP00015" HPOS="605" VPOS="301" WIDTH="19"/>
+						<String ID="P73_ST00019" HPOS="624" VPOS="270" WIDTH="94" HEIGHT="21" CONTENT="never" WC="0.86" CC="00600"/>
+						<SP ID="P73_SP00016" HPOS="718" VPOS="301" WIDTH="17"/>
+						<String ID="P73_ST00020" HPOS="735" VPOS="264" WIDTH="32" HEIGHT="27" CONTENT="to" WC="0.73" CC="05"/>
+						<SP ID="P73_SP00017" HPOS="767" VPOS="301" WIDTH="19"/>
+						<String ID="P73_ST00021" HPOS="786" VPOS="258" WIDTH="55" HEIGHT="33" CONTENT="tell" WC="0.93" CC="0020"/>
+						<SP ID="P73_SP00018" HPOS="841" VPOS="301" WIDTH="18"/>
+						<String ID="P73_ST00022" HPOS="859" VPOS="258" WIDTH="64" HEIGHT="31" CONTENT="him" WC="0.60" CC="047"/>
+					</TextLine>
+					<TextLine ID="P73_TL00004" HPOS="104" VPOS="319" WIDTH="333" HEIGHT="42">
+						<String ID="P73_ST00023" HPOS="104" VPOS="339" WIDTH="44" HEIGHT="3" CONTENT="—" WC="0.20" CC="8"/>
+						<String ID="P73_ST00024" HPOS="148" VPOS="319" WIDTH="49" HEIGHT="32" CONTENT="till" WC="0.57" CC="5272"/>
+						<SP ID="P73_SP00019" HPOS="197" VPOS="351" WIDTH="16"/>
+						<String ID="P73_ST00025" HPOS="213" VPOS="330" WIDTH="62" HEIGHT="31" CONTENT="you" WC="0.44" CC="717"/>
+						<SP ID="P73_SP00020" HPOS="275" VPOS="361" WIDTH="15"/>
+						<String ID="P73_ST00026" HPOS="290" VPOS="319" WIDTH="78" HEIGHT="32" CONTENT="wish" WC="0.55" CC="7450"/>
+						<SP ID="P73_SP00021" HPOS="368" VPOS="361" WIDTH="15"/>
+						<String ID="P73_ST00027" HPOS="383" VPOS="319" WIDTH="54" HEIGHT="32" CONTENT='it."' WC="0.66" CC="0903"/>
+					</TextLine>
+				</TextBlock>
+			</PrintSpace>
+		</Page>
+	</Layout>
+</alto>

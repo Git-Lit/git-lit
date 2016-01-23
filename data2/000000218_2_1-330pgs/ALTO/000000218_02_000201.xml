@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.bl.uk/schemas/alto/alto-1-4.xsd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<Description>
+		<MeasurementUnit>mm10</MeasurementUnit>
+		<sourceImageInformation>
+			<fileName>//head1/IN/2007-46/A0010888503.2/009409.jp2</fileName>
+		</sourceImageInformation>
+		<OCRProcessing ID="OCRPROCESSING_1">
+			<preProcessingStep>
+				<processingSoftware>
+					<softwareCreator>CCS Content Conversion Specialists GmbH, Germany</softwareCreator>
+					<softwareName>CCS docWORKS</softwareName>
+					<softwareVersion>6.1-0.61</softwareVersion>
+				</processingSoftware>
+			</preProcessingStep>
+			<ocrProcessingStep>
+				<processingSoftware>
+					<softwareCreator>ABBYY (BIT Software), Russia</softwareCreator>
+					<softwareName>Finereader</softwareName>
+				</processingSoftware>
+			</ocrProcessingStep>
+		</OCRProcessing>
+	</Description>
+	<Styles>
+		<TextStyle ID="TXT_0" FONTSIZE="10" FONTFAMILY="Courier New"/>
+		<ParagraphStyle ID="PAR_LEFT" ALIGN="Left"/>
+	</Styles>
+	<Layout>
+		<Page ID="P201" PHYSICAL_IMG_NR="201" HEIGHT="1747" WIDTH="1132" POSITION="Right" ACCURACY="69.62">
+			<TopMargin ID="P201_TM00001" HPOS="0" VPOS="0" WIDTH="1131" HEIGHT="0"/>
+			<LeftMargin ID="P201_LM00001" HPOS="0" VPOS="0" WIDTH="0" HEIGHT="1746"/>
+			<RightMargin ID="P201_RM00001" HPOS="1131" VPOS="0" WIDTH="0" HEIGHT="1746"/>
+			<BottomMargin ID="P201_BM00001" HPOS="0" VPOS="1746" WIDTH="1131" HEIGHT="0"/>
+			<PrintSpace ID="P201_PS00001" HPOS="0" VPOS="0" WIDTH="1131" HEIGHT="1746">
+				<TextBlock ID="P201_TB00001" HPOS="100" VPOS="95" WIDTH="881" HEIGHT="333" STYLEREFS="TXT_0 PAR_LEFT">
+					<TextLine ID="P201_TL00001" HPOS="328" VPOS="103" WIDTH="599" HEIGHT="27">
+						<String ID="P201_ST00001" HPOS="328" VPOS="108" WIDTH="63" HEIGHT="22" CONTENT="THE" WC="0.78" CC="060"/>
+						<SP ID="P201_SP00001" HPOS="391" VPOS="130" WIDTH="22"/>
+						<String ID="P201_ST00002" HPOS="413" VPOS="109" WIDTH="74" HEIGHT="21" CONTENT="NEW" WC="0.15" CC="959"/>
+						<SP ID="P201_SP00002" HPOS="487" VPOS="130" WIDTH="22"/>
+						<String ID="P201_ST00003" HPOS="509" VPOS="108" WIDTH="189" HEIGHT="22" CONTENT="CANDIDATE." WC="0.58" CC="7137089030"/>
+						<SP ID="P201_SP00003" HPOS="698" VPOS="130" WIDTH="177"/>
+						<String ID="P201_ST00004" HPOS="875" VPOS="103" WIDTH="52" HEIGHT="27" CONTENT="191" WC="0.96" CC="001"/>
+					</TextLine>
+					<TextLine ID="P201_TL00002" HPOS="157" VPOS="185" WIDTH="772" HEIGHT="42">
+						<String ID="P201_ST00005" HPOS="157" VPOS="185" WIDTH="138" HEIGHT="31" CONTENT='"Pah!"' WC="0.70" CC="060712"/>
+						<SP ID="P201_SP00004" HPOS="295" VPOS="216" WIDTH="35"/>
+						<String ID="P201_ST00006" HPOS="330" VPOS="185" WIDTH="81" HEIGHT="31" CONTENT="cried" WC="0.89" CC="00320"/>
+						<SP ID="P201_SP00005" HPOS="411" VPOS="216" WIDTH="22"/>
+						<String ID="P201_ST00007" HPOS="433" VPOS="185" WIDTH="144" HEIGHT="32" CONTENT="Madame" WC="0.72" CC="420900"/>
+						<SP ID="P201_SP00006" HPOS="577" VPOS="217" WIDTH="23"/>
+						<String ID="P201_ST00008" HPOS="600" VPOS="185" WIDTH="133" HEIGHT="38" CONTENT="Heloise," WC="0.78" CC="40310304"/>
+						<SP ID="P201_SP00007" HPOS="733" VPOS="223" WIDTH="24"/>
+						<String ID="P201_ST00009" HPOS="757" VPOS="196" WIDTH="32" HEIGHT="20" CONTENT="as" WC="0.69" CC="06"/>
+						<SP ID="P201_SP00008" HPOS="789" VPOS="223" WIDTH="22"/>
+						<String ID="P201_ST00010" HPOS="811" VPOS="185" WIDTH="118" HEIGHT="42" CONTENT="though" WC="0.57" CC="075507"/>
+					</TextLine>
+					<TextLine ID="P201_TL00003" HPOS="112" VPOS="246" WIDTH="815" HEIGHT="43">
+						<String ID="P201_ST00011" HPOS="112" VPOS="246" WIDTH="194" HEIGHT="43" CONTENT="vindicating" WC="0.72" CC="64705000060"/>
+						<SP ID="P201_SP00009" HPOS="306" VPOS="289" WIDTH="22"/>
+						<String ID="P201_ST00012" HPOS="328" VPOS="247" WIDTH="54" HEIGHT="31" CONTENT="the" WC="0.75" CC="070"/>
+						<SP ID="P201_SP00010" HPOS="382" VPOS="289" WIDTH="24"/>
+						<String ID="P201_ST00013" HPOS="406" VPOS="247" WIDTH="182" HEIGHT="41" CONTENT="superiority" WC="0.71" CC="67001406400"/>
+						<SP ID="P201_SP00011" HPOS="588" VPOS="289" WIDTH="22"/>
+						<String ID="P201_ST00014" HPOS="610" VPOS="246" WIDTH="33" HEIGHT="32" CONTENT="of" WC="1.00" CC="00"/>
+						<SP ID="P201_SP00012" HPOS="643" VPOS="289" WIDTH="26"/>
+						<String ID="P201_ST00015" HPOS="669" VPOS="247" WIDTH="54" HEIGHT="31" CONTENT="her" WC="0.49" CC="707"/>
+						<SP ID="P201_SP00013" HPOS="723" VPOS="289" WIDTH="30"/>
+						<String ID="P201_ST00016" HPOS="753" VPOS="246" WIDTH="95" HEIGHT="32" CONTENT="entire" WC="0.76" CC="070060"/>
+						<SP ID="P201_SP00014" HPOS="848" VPOS="289" WIDTH="26"/>
+						<String ID="P201_ST00017" HPOS="874" VPOS="257" WIDTH="53" HEIGHT="21" CONTENT="sex" WC="0.61" CC="506"/>
+					</TextLine>
+					<TextLine ID="P201_TL00004" HPOS="113" VPOS="307" WIDTH="816" HEIGHT="42">
+						<String ID="P201_ST00018" HPOS="113" VPOS="307" WIDTH="77" HEIGHT="31" CONTENT="with" WC="0.72" CC="0307"/>
+						<SP ID="P201_SP00015" HPOS="190" VPOS="338" WIDTH="25"/>
+						<String ID="P201_ST00019" HPOS="215" VPOS="318" WIDTH="56" HEIGHT="20" CONTENT="one" WC="0.78" CC="060"/>
+						<SP ID="P201_SP00016" HPOS="271" VPOS="338" WIDTH="27"/>
+						<String ID="P201_ST00020" HPOS="298" VPOS="308" WIDTH="94" HEIGHT="37" CONTENT="word," WC="0.76" CC="02602"/>
+						<SP ID="P201_SP00017" HPOS="392" VPOS="345" WIDTH="19"/>
+						<String ID="P201_ST00021" HPOS="411" VPOS="311" WIDTH="17" HEIGHT="12" CONTENT='"' WC="0.99" CC="0"/>
+						<SP ID="P201_SP00018" HPOS="428" VPOS="345" WIDTH="11"/>
+						<String ID="P201_ST00022" HPOS="439" VPOS="308" WIDTH="73" HEIGHT="31" CONTENT="such" WC="0.46" CC="6707"/>
+						<SP ID="P201_SP00019" HPOS="512" VPOS="345" WIDTH="25"/>
+						<String ID="P201_ST00023" HPOS="537" VPOS="312" WIDTH="91" HEIGHT="37" CONTENT="nasty" WC="0.64" CC="29500"/>
+						<SP ID="P201_SP00020" HPOS="628" VPOS="349" WIDTH="26"/>
+						<String ID="P201_ST00024" HPOS="654" VPOS="319" WIDTH="100" HEIGHT="20" CONTENT="coarse" WC="0.76" CC="010750"/>
+						<SP ID="P201_SP00021" HPOS="754" VPOS="349" WIDTH="23"/>
+						<String ID="P201_ST00025" HPOS="777" VPOS="312" WIDTH="94" HEIGHT="27" CONTENT="tastes" WC="0.80" CC="006005"/>
+						<SP ID="P201_SP00022" HPOS="871" VPOS="349" WIDTH="24"/>
+						<String ID="P201_ST00026" HPOS="895" VPOS="319" WIDTH="34" HEIGHT="20" CONTENT="as" WC="0.16" CC="97"/>
+					</TextLine>
+					<TextLine ID="P201_TL00005" HPOS="113" VPOS="367" WIDTH="202" HEIGHT="34">
+						<String ID="P201_ST00027" HPOS="113" VPOS="380" WIDTH="71" HEIGHT="20" CONTENT="men" WC="1.00" CC="000"/>
+						<SP ID="P201_SP00023" HPOS="184" VPOS="400" WIDTH="15"/>
+						<String ID="P201_ST00028" HPOS="199" VPOS="369" WIDTH="78" HEIGHT="31" CONTENT="have" WC="0.65" CC="7060"/>
+						<SP ID="P201_SP00024" HPOS="277" VPOS="400" WIDTH="13"/>
+						<String ID="P201_ST00029" HPOS="290" VPOS="367" WIDTH="25" HEIGHT="34" CONTENT='\"' WC="0.63" CC="70"/>
+					</TextLine>
+				</TextBlock>
+			</PrintSpace>
+		</Page>
+	</Layout>
+</alto>

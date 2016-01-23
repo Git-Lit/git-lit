@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.bl.uk/schemas/alto/alto-1-4.xsd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<Description>
+		<MeasurementUnit>mm10</MeasurementUnit>
+		<sourceImageInformation>
+			<fileName>//head1/IN/2007-46/A0010888503.3/007977.jp2</fileName>
+		</sourceImageInformation>
+		<OCRProcessing ID="OCRPROCESSING_1">
+			<preProcessingStep>
+				<processingSoftware>
+					<softwareCreator>CCS Content Conversion Specialists GmbH, Germany</softwareCreator>
+					<softwareName>CCS docWORKS</softwareName>
+					<softwareVersion>6.1-0.62</softwareVersion>
+				</processingSoftware>
+			</preProcessingStep>
+			<ocrProcessingStep>
+				<processingSoftware>
+					<softwareCreator>ABBYY (BIT Software), Russia</softwareCreator>
+					<softwareName>Finereader</softwareName>
+				</processingSoftware>
+			</ocrProcessingStep>
+		</OCRProcessing>
+	</Description>
+	<Styles>
+		<TextStyle ID="TXT_0" FONTSIZE="11" FONTFAMILY="Courier New"/>
+		<ParagraphStyle ID="PAR_LEFT" ALIGN="Left"/>
+	</Styles>
+	<Layout>
+		<Page ID="P5" PHYSICAL_IMG_NR="5" HEIGHT="1710" WIDTH="1079" POSITION="Right" ACCURACY="54.56">
+			<TopMargin ID="P5_TM00001" HPOS="0" VPOS="0" WIDTH="1078" HEIGHT="0"/>
+			<LeftMargin ID="P5_LM00001" HPOS="0" VPOS="0" WIDTH="0" HEIGHT="1710"/>
+			<RightMargin ID="P5_RM00001" HPOS="1078" VPOS="0" WIDTH="0" HEIGHT="1710"/>
+			<BottomMargin ID="P5_BM00001" HPOS="0" VPOS="1710" WIDTH="1078" HEIGHT="0"/>
+			<PrintSpace ID="P5_PS00001" HPOS="0" VPOS="0" WIDTH="1078" HEIGHT="1710">
+				<TextBlock ID="P5_TB00001" HPOS="224" VPOS="742" WIDTH="560" HEIGHT="41" STYLEREFS="TXT_0 PAR_LEFT">
+					<TextLine ID="P5_TL00001" HPOS="226" VPOS="744" WIDTH="558" HEIGHT="39">
+						<String ID="P5_ST00001" HPOS="226" VPOS="744" WIDTH="134" HEIGHT="39" CONTENT="LOYE" WC="0.48" CC="6472"/>
+						<SP ID="P5_SP00001" HPOS="360" VPOS="783" WIDTH="41"/>
+						<String ID="P5_ST00002" HPOS="401" VPOS="744" WIDTH="102" HEIGHT="39" CONTENT="THE" WC="0.70" CC="071"/>
+						<SP ID="P5_SP00002" HPOS="503" VPOS="783" WIDTH="39"/>
+						<String ID="P5_ST00003" HPOS="542" VPOS="744" WIDTH="242" HEIGHT="39" CONTENT="AVENGER" WC="0.45" CC="7604828"/>
+					</TextLine>
+				</TextBlock>
+			</PrintSpace>
+		</Page>
+	</Layout>
+</alto>

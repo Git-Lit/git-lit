@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mets xmlns="http://www.loc.gov/METS/" xmlns:MODS="http://www.loc.gov/mods/v3"><dmdSec ID="MODSMD">
+    <mdWrap LABEL="Bibliographic meta-data of the printed version" MDTYPE="MODS" MIMETYPE="text/xml">
+      <xmlData>
+        <MODS:mods version="3.1">
+          <MODS:titleInfo>
+            <MODS:title>Welsh Sketches, chiefly ecclesiastical, to the close of the twelfth century. By the author of “Proposals for Christian Union” (E. S. A. [i.e. Ernest Appleyard])</MODS:title>
+          </MODS:titleInfo>
+          <MODS:name type="personal">
+            <MODS:namePart>A., E. S.</MODS:namePart>
+            <MODS:role>
+              <MODS:roleTerm authority="marcrelator" type="text">creator</MODS:roleTerm>
+            </MODS:role>
+          </MODS:name>
+          <MODS:name type="personal">
+            <MODS:namePart>Appleyard, Ernest Silvanus.</MODS:namePart>
+          </MODS:name>
+          <MODS:typeOfResource>text</MODS:typeOfResource>
+          <MODS:originInfo>
+            <MODS:place>
+              <MODS:placeTerm type="text">London</MODS:placeTerm>
+            </MODS:place>
+            <MODS:publisher>James Darling</MODS:publisher>
+            <MODS:dateIssued>1851</MODS:dateIssued>
+            <MODS:issuance>monographic</MODS:issuance>
+          </MODS:originInfo>
+          <MODS:physicalDescription>
+            <MODS:extent>viii. 160 p. ; 12º.</MODS:extent>
+          </MODS:physicalDescription>
+          <MODS:relatedItem type="otherVersion">
+            <MODS:titleInfo>
+              <MODS:title>[Welsh Sketches, chiefly ecclesiastical, to the close of the twelfth century. By the author of “Proposals for Christian Union” (E. S. A. [i.e. Ernest Appleyard])]</MODS:title>
+            </MODS:titleInfo>
+            <MODS:originInfo>
+              <MODS:publisher>pp. viii. 160. James Darling: London, 1852. 12º.</MODS:publisher>
+            </MODS:originInfo>
+            <MODS:identifier type="local">(Uk)MP1.0000000454.1</MODS:identifier>
+          </MODS:relatedItem>
+          <MODS:relatedItem type="otherVersion">
+            <MODS:titleInfo>
+              <MODS:title>[Welsh Sketches, chiefly ecclesiastical, to the close of the twelfth century. By the author of “Proposals for Christian Union” (E. S. A. [i.e. Ernest Appleyard])]</MODS:title>
+            </MODS:titleInfo>
+            <MODS:originInfo>
+              <MODS:publisher>pp. viii. 160. James Darling: London, 1853. 12º.</MODS:publisher>
+            </MODS:originInfo>
+            <MODS:identifier type="local">(Uk)MP1.0000000454.2</MODS:identifier>
+          </MODS:relatedItem>
+          <MODS:location>
+            <MODS:physicalLocation>British Library HMNTS 10369.bbb.15.</MODS:physicalLocation>
+          </MODS:location>
+          <MODS:recordInfo>
+            <MODS:recordContentSource authority="marcorg">Uk</MODS:recordContentSource>
+            <MODS:recordCreationDate encoding="w3cdtf">1987-08-13</MODS:recordCreationDate>
+            <MODS:recordChangeDate encoding="w3cdtf">1987-08-13</MODS:recordChangeDate>
+            <MODS:recordIdentifier>000000472</MODS:recordIdentifier>
+          </MODS:recordInfo>
+          <MODS:accessCondition type="Copyright Status">Out of Copyright</MODS:accessCondition>
+        </MODS:mods>
+      </xmlData>
+    </mdWrap>
+  </dmdSec>
+  </mets>

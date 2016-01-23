@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.bl.uk/schemas/alto/alto-1-4.xsd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<Description>
+		<MeasurementUnit>mm10</MeasurementUnit>
+		<sourceImageInformation>
+			<fileName>//head1/IN/2007-46/A0010888503.2/009291.jp2</fileName>
+		</sourceImageInformation>
+		<OCRProcessing ID="OCRPROCESSING_1">
+			<preProcessingStep>
+				<processingSoftware>
+					<softwareCreator>CCS Content Conversion Specialists GmbH, Germany</softwareCreator>
+					<softwareName>CCS docWORKS</softwareName>
+					<softwareVersion>6.1-0.61</softwareVersion>
+				</processingSoftware>
+			</preProcessingStep>
+			<ocrProcessingStep>
+				<processingSoftware>
+					<softwareCreator>ABBYY (BIT Software), Russia</softwareCreator>
+					<softwareName>Finereader</softwareName>
+				</processingSoftware>
+			</ocrProcessingStep>
+		</OCRProcessing>
+	</Description>
+	<Styles>
+		<TextStyle ID="TXT_0" FONTSIZE="10" FONTFAMILY="Courier New"/>
+		<TextStyle ID="TXT_1" FONTSIZE="11" FONTFAMILY="Courier New"/>
+		<ParagraphStyle ID="PAR_LEFT" ALIGN="Left"/>
+		<ParagraphStyle ID="PAR_RIGHT" ALIGN="Right"/>
+	</Styles>
+	<Layout>
+		<Page ID="P83" PHYSICAL_IMG_NR="83" HEIGHT="1747" WIDTH="1132" PRINTED_IMG_NR="73" POSITION="Right" ACCURACY="71.31">
+			<TopMargin ID="P83_TM00001" HPOS="0" VPOS="0" WIDTH="1131" HEIGHT="140">
+				<TextBlock ID="P83_TB00001" HPOS="352" VPOS="116" WIDTH="333" HEIGHT="22" STYLEREFS="TXT_0 PAR_LEFT">
+					<TextLine ID="P83_TL00001" HPOS="352" VPOS="117" WIDTH="333" HEIGHT="21">
+						<String ID="P83_ST00001" HPOS="352" VPOS="117" WIDTH="80" HEIGHT="21" CONTENT="DUST" WC="0.31" CC="7766"/>
+						<SP ID="P83_SP00001" HPOS="432" VPOS="138" WIDTH="23"/>
+						<String ID="P83_ST00002" HPOS="455" VPOS="117" WIDTH="34" HEIGHT="21" CONTENT="IN" WC="0.14" CC="97"/>
+						<SP ID="P83_SP00002" HPOS="489" VPOS="138" WIDTH="23"/>
+						<String ID="P83_ST00003" HPOS="512" VPOS="118" WIDTH="64" HEIGHT="20" CONTENT="THE" WC="0.41" CC="763"/>
+						<SP ID="P83_SP00003" HPOS="576" VPOS="138" WIDTH="23"/>
+						<String ID="P83_ST00004" HPOS="599" VPOS="117" WIDTH="86" HEIGHT="21" CONTENT="EYES." WC="0.68" CC="51630"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P83_TB00002" HPOS="891" VPOS="113" WIDTH="31" HEIGHT="25" STYLEREFS="TXT_1 PAR_RIGHT">
+					<TextLine ID="P83_TL00002" HPOS="891" VPOS="113" WIDTH="31" HEIGHT="25">
+						<String ID="P83_ST00005" HPOS="891" VPOS="113" WIDTH="31" HEIGHT="25" CONTENT="73" WC="1.00" CC="00"/>
+					</TextLine>
+				</TextBlock>
+			</TopMargin>
+			<LeftMargin ID="P83_LM00001" HPOS="0" VPOS="140" WIDTH="0" HEIGHT="1606"/>
+			<RightMargin ID="P83_RM00001" HPOS="1131" VPOS="140" WIDTH="0" HEIGHT="1606"/>
+			<BottomMargin ID="P83_BM00001" HPOS="0" VPOS="1746" WIDTH="1131" HEIGHT="0"/>
+			<PrintSpace ID="P83_PS00001" HPOS="0" VPOS="140" WIDTH="1131" HEIGHT="1606">
+				<TextBlock ID="P83_TB00003" HPOS="111" VPOS="192" WIDTH="815" HEIGHT="165" STYLEREFS="TXT_0 PAR_LEFT">
+					<TextLine ID="P83_TL00003" HPOS="115" VPOS="192" WIDTH="811" HEIGHT="44">
+						<String ID="P83_ST00006" HPOS="115" VPOS="192" WIDTH="83" HEIGHT="31" CONTENT="Mile," WC="0.85" CC="00700"/>
+						<SP ID="P83_SP00004" HPOS="198" VPOS="223" WIDTH="20"/>
+						<String ID="P83_ST00007" HPOS="218" VPOS="193" WIDTH="38" HEIGHT="31" CONTENT="de" WC="1.00" CC="00"/>
+						<SP ID="P83_SP00005" HPOS="256" VPOS="224" WIDTH="16"/>
+						<String ID="P83_ST00008" HPOS="272" VPOS="193" WIDTH="227" HEIGHT="42" CONTENT="Mourjonville," WC="0.68" CC="0075027740112"/>
+						<SP ID="P83_SP00006" HPOS="499" VPOS="235" WIDTH="17"/>
+						<String ID="P83_ST00009" HPOS="516" VPOS="194" WIDTH="76" HEIGHT="31" CONTENT="with" WC="0.46" CC="9127"/>
+						<SP ID="P83_SP00007" HPOS="592" VPOS="235" WIDTH="16"/>
+						<String ID="P83_ST00010" HPOS="608" VPOS="205" WIDTH="18" HEIGHT="20" CONTENT="a" WC="1.00" CC="0"/>
+						<SP ID="P83_SP00008" HPOS="626" VPOS="235" WIDTH="14"/>
+						<String ID="P83_ST00011" HPOS="640" VPOS="194" WIDTH="152" HEIGHT="42" CONTENT="profound" WC="0.70" CC="06051550"/>
+						<SP ID="P83_SP00009" HPOS="792" VPOS="236" WIDTH="16"/>
+						<String ID="P83_ST00012" HPOS="808" VPOS="205" WIDTH="118" HEIGHT="31" CONTENT="expres" SUBS_TYPE="HypPart1" SUBS_CONTENT="expression" WC="0.87" CC="0004040"/>
+						<HYP CONTENT="-"/>
+					</TextLine>
+					<TextLine ID="P83_TL00004" HPOS="114" VPOS="254" WIDTH="812" HEIGHT="43">
+						<String ID="P83_ST00013" HPOS="114" VPOS="254" WIDTH="67" HEIGHT="31" CONTENT="sion" SUBS_TYPE="HypPart2" SUBS_CONTENT="expression" WC="0.73" CC="3006"/>
+						<SP ID="P83_SP00010" HPOS="181" VPOS="285" WIDTH="25"/>
+						<String ID="P83_ST00014" HPOS="206" VPOS="254" WIDTH="34" HEIGHT="32" CONTENT="of" WC="1.00" CC="00"/>
+						<SP ID="P83_SP00011" HPOS="240" VPOS="286" WIDTH="20"/>
+						<String ID="P83_ST00015" HPOS="260" VPOS="255" WIDTH="142" HEIGHT="31" CONTENT="offended" WC="0.92" CC="00004010"/>
+						<SP ID="P83_SP00012" HPOS="402" VPOS="286" WIDTH="25"/>
+						<String ID="P83_ST00016" HPOS="427" VPOS="256" WIDTH="115" HEIGHT="41" CONTENT="purity," WC="0.69" CC="0670304"/>
+						<SP ID="P83_SP00013" HPOS="542" VPOS="297" WIDTH="24"/>
+						<String ID="P83_ST00017" HPOS="566" VPOS="256" WIDTH="61" HEIGHT="30" CONTENT="and" WC="0.79" CC="060"/>
+						<SP ID="P83_SP00014" HPOS="627" VPOS="297" WIDTH="22"/>
+						<String ID="P83_ST00018" HPOS="649" VPOS="256" WIDTH="44" HEIGHT="30" CONTENT="M." WC="0.60" CC="34"/>
+						<SP ID="P83_SP00015" HPOS="693" VPOS="297" WIDTH="18"/>
+						<String ID="P83_ST00019" HPOS="711" VPOS="256" WIDTH="37" HEIGHT="30" CONTENT="de" WC="1.00" CC="00"/>
+						<SP ID="P83_SP00016" HPOS="748" VPOS="297" WIDTH="16"/>
+						<String ID="P83_ST00020" HPOS="764" VPOS="256" WIDTH="162" HEIGHT="41" CONTENT="Moranges" WC="0.75" CC="00106560"/>
+					</TextLine>
+					<TextLine ID="P83_TL00005" HPOS="112" VPOS="327" WIDTH="164" HEIGHT="30">
+						<String ID="P83_ST00021" HPOS="112" VPOS="327" WIDTH="63" HEIGHT="20" CONTENT="was" WC="1.00" CC="000"/>
+						<SP ID="P83_SP00017" HPOS="175" VPOS="347" WIDTH="15"/>
+						<String ID="P83_ST00022" HPOS="190" VPOS="328" WIDTH="86" HEIGHT="29" CONTENT="gone." WC="0.80" CC="10701"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P83_TB00004" HPOS="113" VPOS="376" WIDTH="813" HEIGHT="225" STYLEREFS="TXT_0 PAR_LEFT">
+					<TextLine ID="P83_TL00006" HPOS="160" VPOS="377" WIDTH="765" HEIGHT="44">
+						<String ID="P83_ST00023" HPOS="160" VPOS="380" WIDTH="17" HEIGHT="11" CONTENT='"' WC="1.00" CC="0"/>
+						<SP ID="P83_SP00018" HPOS="177" VPOS="391" WIDTH="13"/>
+						<String ID="P83_ST00024" HPOS="190" VPOS="377" WIDTH="58" HEIGHT="31" CONTENT="We" WC="0.50" CC="90"/>
+						<SP ID="P83_SP00019" HPOS="248" VPOS="408" WIDTH="15"/>
+						<String ID="P83_ST00025" HPOS="263" VPOS="379" WIDTH="79" HEIGHT="30" CONTENT="have" WC="0.66" CC="7060"/>
+						<SP ID="P83_SP00020" HPOS="342" VPOS="409" WIDTH="16"/>
+						<String ID="P83_ST00026" HPOS="358" VPOS="378" WIDTH="97" HEIGHT="31" CONTENT="found" WC="0.54" CC="25770"/>
+						<SP ID="P83_SP00021" HPOS="455" VPOS="409" WIDTH="22"/>
+						<String ID="P83_ST00027" HPOS="477" VPOS="379" WIDTH="52" HEIGHT="30" CONTENT="the" WC="0.62" CC="370"/>
+						<SP ID="P83_SP00022" HPOS="529" VPOS="409" WIDTH="18"/>
+						<String ID="P83_ST00028" HPOS="547" VPOS="384" WIDTH="231" HEIGHT="37" CONTENT="paratonnerre" WC="0.54" CC="753651361632"/>
+						<SP ID="P83_SP00023" HPOS="778" VPOS="421" WIDTH="16"/>
+						<String ID="P83_ST00029" HPOS="794" VPOS="383" WIDTH="32" HEIGHT="26" CONTENT="at" WC="0.81" CC="03"/>
+						<SP ID="P83_SP00024" HPOS="826" VPOS="421" WIDTH="15"/>
+						<String ID="P83_ST00030" HPOS="841" VPOS="378" WIDTH="84" HEIGHT="37" CONTENT='last,"' WC="0.43" CC="576734"/>
+					</TextLine>
+					<TextLine ID="P83_TL00007" HPOS="116" VPOS="439" WIDTH="810" HEIGHT="42">
+						<String ID="P83_ST00031" HPOS="116" VPOS="440" WIDTH="171" HEIGHT="41" CONTENT="whispered" WC="0.62" CC="970602600"/>
+						<SP ID="P83_SP00025" HPOS="287" VPOS="481" WIDTH="30"/>
+						<String ID="P83_ST00032" HPOS="317" VPOS="441" WIDTH="136" HEIGHT="40" CONTENT="Aspasie," WC="0.78" CC="07003303"/>
+						<SP ID="P83_SP00026" HPOS="453" VPOS="481" WIDTH="36"/>
+						<String ID="P83_ST00033" HPOS="489" VPOS="452" WIDTH="32" HEIGHT="19" CONTENT="as" WC="0.57" CC="80"/>
+						<SP ID="P83_SP00027" HPOS="521" VPOS="481" WIDTH="38"/>
+						<String ID="P83_ST00034" HPOS="559" VPOS="441" WIDTH="51" HEIGHT="30" CONTENT="she" WC="0.50" CC="770"/>
+						<SP ID="P83_SP00028" HPOS="610" VPOS="481" WIDTH="37"/>
+						<String ID="P83_ST00035" HPOS="647" VPOS="440" WIDTH="112" HEIGHT="31" CONTENT="turned" WC="0.67" CC="152720"/>
+						<SP ID="P83_SP00029" HPOS="759" VPOS="481" WIDTH="36"/>
+						<String ID="P83_ST00036" HPOS="795" VPOS="439" WIDTH="131" HEIGHT="31" CONTENT="towards" WC="0.86" CC="0000603"/>
+					</TextLine>
+					<TextLine ID="P83_TL00008" HPOS="117" VPOS="501" WIDTH="809" HEIGHT="42">
+						<String ID="P83_ST00037" HPOS="117" VPOS="501" WIDTH="159" HEIGHT="39" CONTENT="Claudine," WC="0.64" CC="200765504"/>
+						<SP ID="P83_SP00030" HPOS="276" VPOS="540" WIDTH="25"/>
+						<String ID="P83_ST00038" HPOS="301" VPOS="501" WIDTH="70" HEIGHT="31" CONTENT="who" WC="0.75" CC="070"/>
+						<SP ID="P83_SP00031" HPOS="371" VPOS="540" WIDTH="24"/>
+						<String ID="P83_ST00039" HPOS="395" VPOS="507" WIDTH="48" HEIGHT="26" CONTENT="sat" WC="0.61" CC="604"/>
+						<SP ID="P83_SP00032" HPOS="443" VPOS="540" WIDTH="23"/>
+						<String ID="P83_ST00040" HPOS="466" VPOS="501" WIDTH="72" HEIGHT="39" CONTENT="still," WC="0.70" CC="270304"/>
+						<SP ID="P83_SP00033" HPOS="538" VPOS="540" WIDTH="28"/>
+						<String ID="P83_ST00041" HPOS="566" VPOS="501" WIDTH="126" HEIGHT="42" CONTENT="looking" WC="0.78" CC="0030074"/>
+						<SP ID="P83_SP00034" HPOS="692" VPOS="543" WIDTH="28"/>
+						<String ID="P83_ST00042" HPOS="720" VPOS="512" WIDTH="116" HEIGHT="30" CONTENT="uneasy" WC="0.69" CC="460060"/>
+						<SP ID="P83_SP00035" HPOS="836" VPOS="543" WIDTH="30"/>
+						<String ID="P83_ST00043" HPOS="866" VPOS="501" WIDTH="60" HEIGHT="30" CONTENT="and" WC="0.82" CC="050"/>
+					</TextLine>
+					<TextLine ID="P83_TL00009" HPOS="114" VPOS="563" WIDTH="76" HEIGHT="38">
+						<String ID="P83_ST00044" HPOS="114" VPOS="563" WIDTH="76" HEIGHT="38" CONTENT="pale." WC="0.93" CC="00110"/>
+					</TextLine>
+				</TextBlock>
+			</PrintSpace>
+		</Page>
+	</Layout>
+</alto>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alto xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.bl.uk/schemas/alto/alto-1-4.xsd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<Description>
+		<MeasurementUnit>mm10</MeasurementUnit>
+		<sourceImageInformation>
+			<fileName>//head1/IN/2007-46/A0010888503.2/009215.jp2</fileName>
+		</sourceImageInformation>
+		<OCRProcessing ID="OCRPROCESSING_1">
+			<preProcessingStep>
+				<processingSoftware>
+					<softwareCreator>CCS Content Conversion Specialists GmbH, Germany</softwareCreator>
+					<softwareName>CCS docWORKS</softwareName>
+					<softwareVersion>6.1-0.61</softwareVersion>
+				</processingSoftware>
+			</preProcessingStep>
+			<ocrProcessingStep>
+				<processingSoftware>
+					<softwareCreator>ABBYY (BIT Software), Russia</softwareCreator>
+					<softwareName>Finereader</softwareName>
+				</processingSoftware>
+			</ocrProcessingStep>
+		</OCRProcessing>
+	</Description>
+	<Styles>
+		<TextStyle ID="TXT_0" FONTSIZE="11" FONTFAMILY="Courier New"/>
+		<TextStyle ID="TXT_1" FONTSIZE="9" FONTFAMILY="Courier New"/>
+		<TextStyle ID="TXT_2" FONTSIZE="10" FONTFAMILY="Courier New"/>
+		<ParagraphStyle ID="PAR_LEFT" ALIGN="Left"/>
+		<ParagraphStyle ID="PAR_RIGHT" ALIGN="Right"/>
+	</Styles>
+	<Layout>
+		<Page ID="P7" PHYSICAL_IMG_NR="7" HEIGHT="1747" WIDTH="1132" POSITION="Right" ACCURACY="56.85">
+			<TopMargin ID="P7_TM00001" HPOS="0" VPOS="0" WIDTH="1131" HEIGHT="0"/>
+			<LeftMargin ID="P7_LM00001" HPOS="0" VPOS="0" WIDTH="0" HEIGHT="1746"/>
+			<RightMargin ID="P7_RM00001" HPOS="1131" VPOS="0" WIDTH="0" HEIGHT="1746"/>
+			<BottomMargin ID="P7_BM00001" HPOS="0" VPOS="1746" WIDTH="1131" HEIGHT="0"/>
+			<PrintSpace ID="P7_PS00001" HPOS="0" VPOS="0" WIDTH="1131" HEIGHT="1746">
+				<TextBlock ID="P7_TB00001" HPOS="98" VPOS="181" WIDTH="857" HEIGHT="58" STYLEREFS="TXT_0 PAR_LEFT">
+					<TextLine ID="P7_TL00001" HPOS="98" VPOS="181" WIDTH="857" HEIGHT="58">
+						<String ID="P7_ST00001" HPOS="98" VPOS="181" WIDTH="198" HEIGHT="58" CONTENT="LOVE" WC="0.52" CC="0774"/>
+						<SP ID="P7_SP00001" HPOS="296" VPOS="239" WIDTH="68"/>
+						<String ID="P7_ST00002" HPOS="364" VPOS="182" WIDTH="154" HEIGHT="55" CONTENT="THE" WC="0.67" CC="450"/>
+						<SP ID="P7_SP00002" HPOS="518" VPOS="239" WIDTH="61"/>
+						<String ID="P7_ST00003" HPOS="579" VPOS="181" WIDTH="376" HEIGHT="58" CONTENT="AVENGER." WC="0.43" CC="99077064"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P7_TB00002" HPOS="487" VPOS="461" WIDTH="89" HEIGHT="13" STYLEREFS="TXT_1 PAR_LEFT">
+					<TextLine ID="P7_TL00002" HPOS="488" VPOS="461" WIDTH="88" HEIGHT="13">
+						<String ID="P7_ST00004" HPOS="488" VPOS="461" WIDTH="11" HEIGHT="13" CONTENT="II" WC="0.57" CC="08"/>
+						<String ID="P7_ST00005" HPOS="502" VPOS="461" WIDTH="14" HEIGHT="13" CONTENT="V" WC="0.38" CC="6"/>
+						<SP ID="P7_SP00003" HPOS="516" VPOS="474" WIDTH="15"/>
+						<String ID="P7_ST00006" HPOS="531" VPOS="461" WIDTH="45" HEIGHT="13" CONTENT="THE" WC="0.55" CC="580"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P7_TB00003" HPOS="165" VPOS="555" WIDTH="735" HEIGHT="32" STYLEREFS="TXT_0 PAR_LEFT">
+					<TextLine ID="P7_TL00003" HPOS="166" VPOS="555" WIDTH="734" HEIGHT="32">
+						<String ID="P7_ST00007" HPOS="166" VPOS="557" WIDTH="178" HEIGHT="30" CONTENT="AUTHOR" WC="0.61" CC="030648"/>
+						<SP ID="P7_SP00004" HPOS="344" VPOS="587" WIDTH="36"/>
+						<String ID="P7_ST00008" HPOS="380" VPOS="557" WIDTH="52" HEIGHT="30" CONTENT="OF" WC="0.32" CC="76"/>
+						<SP ID="P7_SP00005" HPOS="432" VPOS="587" WIDTH="37"/>
+						<String ID="P7_ST00009" HPOS="469" VPOS="557" WIDTH="111" HEIGHT="30" CONTENT='"ALL' WC="0.90" CC="4000"/>
+						<SP ID="P7_SP00006" HPOS="580" VPOS="587" WIDTH="35"/>
+						<String ID="P7_ST00010" HPOS="615" VPOS="556" WIDTH="81" HEIGHT="30" CONTENT="FOR" WC="0.54" CC="508"/>
+						<SP ID="P7_SP00007" HPOS="696" VPOS="587" WIDTH="35"/>
+						<String ID="P7_ST00011" HPOS="731" VPOS="555" WIDTH="169" HEIGHT="31" CONTENT='GREED."' WC="0.40" CC="7646726"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P7_TB00004" HPOS="264" VPOS="758" WIDTH="226" HEIGHT="15" STYLEREFS="TXT_1 PAR_LEFT">
+					<TextLine ID="P7_TL00004" HPOS="265" VPOS="758" WIDTH="225" HEIGHT="15">
+						<String ID="P7_ST00012" HPOS="265" VPOS="759" WIDTH="66" HEIGHT="14" CONTENT='"True' WC="0.46" CC="70783"/>
+						<SP ID="P7_SP00008" HPOS="331" VPOS="773" WIDTH="8"/>
+						<String ID="P7_ST00013" HPOS="339" VPOS="758" WIDTH="42" HEIGHT="15" CONTENT="love" WC="0.52" CC="3780"/>
+						<SP ID="P7_SP00009" HPOS="381" VPOS="773" WIDTH="9"/>
+						<String ID="P7_ST00014" HPOS="390" VPOS="758" WIDTH="16" HEIGHT="15" CONTENT="is" WC="0.67" CC="06"/>
+						<SP ID="P7_SP00010" HPOS="406" VPOS="773" WIDTH="9"/>
+						<String ID="P7_ST00015" HPOS="415" VPOS="758" WIDTH="75" HEIGHT="15" CONTENT='sweet."' WC="0.66" CC="7603006"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P7_TB00005" HPOS="427" VPOS="787" WIDTH="111" HEIGHT="15" STYLEREFS="TXT_1 PAR_LEFT">
+					<TextLine ID="P7_TL00005" HPOS="428" VPOS="787" WIDTH="110" HEIGHT="15">
+						<String ID="P7_ST00016" HPOS="428" VPOS="787" WIDTH="110" HEIGHT="15" CONTENT="Tennyson." WC="0.28" CC="869577764"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P7_TB00006" HPOS="266" VPOS="828" WIDTH="534" HEIGHT="22" STYLEREFS="TXT_1 PAR_LEFT">
+					<TextLine ID="P7_TL00006" HPOS="266" VPOS="828" WIDTH="534" HEIGHT="22">
+						<String ID="P7_ST00017" HPOS="266" VPOS="833" WIDTH="12" HEIGHT="6" CONTENT='"' WC="0.48" CC="5"/>
+						<SP ID="P7_SP00011" HPOS="278" VPOS="839" WIDTH="8"/>
+						<String ID="P7_ST00018" HPOS="286" VPOS="832" WIDTH="57" HEIGHT="16" CONTENT="Point" WC="0.34" CC="76576"/>
+						<SP ID="P7_SP00012" HPOS="343" VPOS="848" WIDTH="8"/>
+						<String ID="P7_ST00019" HPOS="351" VPOS="831" WIDTH="91" HEIGHT="19" CONTENT="d'amour," WC="0.35" CC="74977176"/>
+						<SP ID="P7_SP00013" HPOS="442" VPOS="850" WIDTH="10"/>
+						<String ID="P7_ST00020" HPOS="452" VPOS="831" WIDTH="19" HEIGHT="16" CONTENT="et" WC="0.23" CC="78"/>
+						<SP ID="P7_SP00014" HPOS="471" VPOS="850" WIDTH="7"/>
+						<String ID="P7_ST00021" HPOS="478" VPOS="831" WIDTH="80" HEIGHT="19" CONTENT="partout" WC="0.49" CC="7530368"/>
+						<SP ID="P7_SP00015" HPOS="558" VPOS="850" WIDTH="7"/>
+						<String ID="P7_ST00022" HPOS="565" VPOS="829" WIDTH="17" HEIGHT="17" CONTENT="le" WC="0.52" CC="45"/>
+						<SP ID="P7_SP00016" HPOS="582" VPOS="850" WIDTH="9"/>
+						<String ID="P7_ST00023" HPOS="591" VPOS="830" WIDTH="73" HEIGHT="20" CONTENT="spectre" WC="0.70" CC="1960002"/>
+						<SP ID="P7_SP00017" HPOS="664" VPOS="850" WIDTH="10"/>
+						<String ID="P7_ST00024" HPOS="674" VPOS="828" WIDTH="22" HEIGHT="17" CONTENT="de" WC="0.46" CC="90"/>
+						<SP ID="P7_SP00018" HPOS="696" VPOS="850" WIDTH="9"/>
+						<String ID="P7_ST00025" HPOS="705" VPOS="828" WIDTH="95" HEIGHT="16" CONTENT="1'aniour.&#34;" WC="0.35" CC="2697568746"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P7_TB00007" HPOS="678" VPOS="857" WIDTH="154" HEIGHT="16" STYLEREFS="TXT_1 PAR_RIGHT">
+					<TextLine ID="P7_TL00007" HPOS="678" VPOS="857" WIDTH="154" HEIGHT="16">
+						<String ID="P7_ST00026" HPOS="678" VPOS="858" WIDTH="21" HEIGHT="15" CONTENT="A." WC="0.32" CC="93"/>
+						<SP ID="P7_SP00019" HPOS="699" VPOS="873" WIDTH="15"/>
+						<String ID="P7_ST00027" HPOS="714" VPOS="861" WIDTH="25" HEIGHT="12" CONTENT="de" WC="0.30" CC="85"/>
+						<SP ID="P7_SP00020" HPOS="739" VPOS="873" WIDTH="12"/>
+						<String ID="P7_ST00028" HPOS="751" VPOS="857" WIDTH="81" HEIGHT="16" CONTENT="Musset." WC="0.60" CC="4334074"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P7_TB00008" HPOS="350" VPOS="1060" WIDTH="360" HEIGHT="24" STYLEREFS="TXT_2 PAR_LEFT">
+					<TextLine ID="P7_TL00008" HPOS="351" VPOS="1060" WIDTH="359" HEIGHT="24">
+						<String ID="P7_ST00029" HPOS="351" VPOS="1064" WIDTH="38" HEIGHT="20" CONTENT="IN" WC="1.00" CC="00"/>
+						<SP ID="P7_SP00021" HPOS="389" VPOS="1084" WIDTH="22"/>
+						<String ID="P7_ST00030" HPOS="411" VPOS="1062" WIDTH="112" HEIGHT="22" CONTENT="THREE" WC="0.45" CC="86803"/>
+						<SP ID="P7_SP00022" HPOS="523" VPOS="1084" WIDTH="22"/>
+						<String ID="P7_ST00031" HPOS="545" VPOS="1060" WIDTH="165" HEIGHT="24" CONTENT="VOLUMES." WC="0.63" CC="90093060"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P7_TB00009" HPOS="463" VPOS="1136" WIDTH="144" HEIGHT="27" STYLEREFS="TXT_2 PAR_LEFT">
+					<TextLine ID="P7_TL00009" HPOS="464" VPOS="1136" WIDTH="143" HEIGHT="27">
+						<String ID="P7_ST00032" HPOS="464" VPOS="1137" WIDTH="80" HEIGHT="26" CONTENT="VOL." WC="0.75" CC="9000"/>
+						<SP ID="P7_SP00023" HPOS="544" VPOS="1163" WIDTH="28"/>
+						<String ID="P7_ST00033" HPOS="572" VPOS="1136" WIDTH="35" HEIGHT="26" CONTENT="II." WC="0.93" CC="010"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P7_TB00010" HPOS="455" VPOS="1399" WIDTH="161" HEIGHT="26" STYLEREFS="TXT_2 PAR_LEFT">
+					<TextLine ID="P7_TL00010" HPOS="456" VPOS="1399" WIDTH="160" HEIGHT="26">
+						<String ID="P7_ST00034" HPOS="456" VPOS="1399" WIDTH="144" HEIGHT="26" CONTENT="LONDON" WC="0.51" CC="800756"/>
+						<String ID="P7_ST00035" HPOS="614" VPOS="1409" WIDTH="2" HEIGHT="14" CONTENT=":" WC="1.00" CC="0"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P7_TB00011" HPOS="122" VPOS="1452" WIDTH="818" HEIGHT="39" STYLEREFS="TXT_2 PAR_LEFT">
+					<TextLine ID="P7_TL00011" HPOS="124" VPOS="1452" WIDTH="816" HEIGHT="39">
+						<String ID="P7_ST00036" HPOS="124" VPOS="1463" WIDTH="193" HEIGHT="28" CONTENT="BRADBURY," WC="0.51" CC="770079613"/>
+						<SP ID="P7_SP00024" HPOS="317" VPOS="1491" WIDTH="15"/>
+						<String ID="P7_ST00037" HPOS="332" VPOS="1460" WIDTH="121" HEIGHT="30" CONTENT="EVANS," WC="0.42" CC="178663"/>
+						<SP ID="P7_SP00025" HPOS="453" VPOS="1491" WIDTH="16"/>
+						<String ID="P7_ST00038" HPOS="469" VPOS="1461" WIDTH="20" HEIGHT="22" CONTENT="&lt;fe" WC="0.64" CC="522"/>
+						<SP ID="P7_SP00026" HPOS="489" VPOS="1491" WIDTH="14"/>
+						<String ID="P7_ST00039" HPOS="503" VPOS="1458" WIDTH="58" HEIGHT="29" CONTENT="CO.," WC="0.61" CC="3524"/>
+						<SP ID="P7_SP00027" HPOS="561" VPOS="1491" WIDTH="13"/>
+						<String ID="P7_ST00040" HPOS="574" VPOS="1459" WIDTH="39" HEIGHT="27" CONTENT="11," WC="0.87" CC="003"/>
+						<SP ID="P7_SP00028" HPOS="613" VPOS="1491" WIDTH="14"/>
+						<String ID="P7_ST00041" HPOS="627" VPOS="1455" WIDTH="172" HEIGHT="25" CONTENT="BOUVERIE" WC="0.60" CC="66060705"/>
+						<SP ID="P7_SP00029" HPOS="799" VPOS="1491" WIDTH="13"/>
+						<String ID="P7_ST00042" HPOS="812" VPOS="1452" WIDTH="128" HEIGHT="25" CONTENT="STREET." WC="0.72" CC="6066000"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P7_TB00012" HPOS="499" VPOS="1507" WIDTH="73" HEIGHT="23" STYLEREFS="TXT_1 PAR_LEFT">
+					<TextLine ID="P7_TL00012" HPOS="500" VPOS="1507" WIDTH="72" HEIGHT="23">
+						<String ID="P7_ST00043" HPOS="500" VPOS="1507" WIDTH="72" HEIGHT="23" CONTENT="1869." WC="0.84" CC="01060"/>
+					</TextLine>
+				</TextBlock>
+				<TextBlock ID="P7_TB00013" HPOS="330" VPOS="1559" WIDTH="409" HEIGHT="36" STYLEREFS="TXT_1 PAR_LEFT">
+					<TextLine ID="P7_TL00013" HPOS="331" VPOS="1560" WIDTH="408" HEIGHT="35">
+						<String ID="P7_ST00044" HPOS="331" VPOS="1566" WIDTH="80" HEIGHT="29" CONTENT="[Right" WC="0.44" CC="870556"/>
+						<SP ID="P7_SP00030" HPOS="411" VPOS="1595" WIDTH="12"/>
+						<String ID="P7_ST00045" HPOS="423" VPOS="1566" WIDTH="27" HEIGHT="28" CONTENT="of" WC="0.85" CC="20"/>
+						<SP ID="P7_SP00031" HPOS="450" VPOS="1595" WIDTH="15"/>
+						<String ID="P7_ST00046" HPOS="465" VPOS="1564" WIDTH="148" HEIGHT="23" CONTENT="Translation" WC="0.62" CC="94203563300"/>
+						<SP ID="P7_SP00032" HPOS="613" VPOS="1595" WIDTH="11"/>
+						<String ID="P7_ST00047" HPOS="624" VPOS="1560" WIDTH="115" HEIGHT="29" CONTENT="reserved.]" WC="0.74" CC="0030660206"/>
+					</TextLine>
+				</TextBlock>
+			</PrintSpace>
+		</Page>
+	</Layout>
+</alto>
