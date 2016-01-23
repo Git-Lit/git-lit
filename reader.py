@@ -9,7 +9,7 @@ import os
 import re
 #from IPython.display import display
 # import pandas as pd
-import unicodedata
+from unidecode import unidecode
 from zipfile import ZipFile
 
 
@@ -91,8 +91,10 @@ class BLText:
         idLength = len(textID)
         oldTitle = re.sub(r'[^\w\s-]','',oldTitle)
         titleNoSpace = re.sub(r'[\s]','-',oldTitle)
-        cleanTitle = str(unicodedata.normalize('NFKD', unicode(titleNoSpace)).encode('ascii', 'ignore'))
-        newTitle = titleNoSpace[:100-idLength]+'-'+textID
+        # Replace non-ASCII characters with their closest
+        # ASCII equivalents. See https://pypi.python.org/pypi/Unidecode
+        cleanTitle = unidecode(titleNoSpace)
+        newTitle = cleanTitle[:100-idLength]+'-'+textID
         return newTitle
 
     def __str__(self): 
@@ -123,6 +125,7 @@ def test():
     c = BLCorpus('data')
     #c.df
     print(c.texts[0].textdir)
+    return c
 
 if __name__ == '__main__':
     print('Beginning test')
