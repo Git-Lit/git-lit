@@ -10,6 +10,7 @@ import jinja2
 import sh
 
 import logging
+import lxml
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
@@ -45,7 +46,7 @@ class LocalRepo():
                     'README.md',
                     'CONTRIBUTING.md',
                     'LICENSE.md',
-                    '_plain.txt'
+                    '.adoc'
                     }
         with CdContext(self.book.textdir):
             sh.git.init('.')
@@ -88,15 +89,22 @@ class NewFilesHandler():
         self.add_new_files()
 
     def add_new_files(self):
+        self.write_metadata()
+        self.write_text()
         self.template_readme()
         self.copy_files()
         self.write_text()
 
     def write_text(self):
-        f = codecs.open(self.book.textdir+'/'+self.book.book_id + '_plain.txt','w','utf-8')
+        f = codecs.open(self.book.textdir+'/'+self.book.book_id + '.adoc','w','utf-8')
         f.write(self.book.text + '\n')
         f.close()
         
+    def write_metadata(self):
+        f = codecs.open(self.book.textdir+'/'+self.book.book_id + '_metadata.xml','w','utf-8')
+        f.write(lxml.etree.tostring(self.book.metadata) + '\n')
+        f.close()
+
     def template_readme(self):
         templateFile = codecs.open('templates/README.md.j2','r','utf-8').read()
         template = jinja2.Template(templateFile)
@@ -126,16 +134,14 @@ class NewFilesHandler():
 
 
 def make(book):
+
+    # Create files from zip
+    NewFilesHandler(book)
+
     # Initial commit of book files
     local_repo = LocalRepo(book)
     local_repo.add_all_files()
     local_repo.commit("Initial import from British Library originals.")
-
-    # New files commit
-    NewFilesHandler(book)
-
-    local_repo.add_all_files()
-    local_repo.commit("Add readme, contributing and license files")
 
 
 def test():
