@@ -2,3 +2,8 @@ secrets.py
 .ipynb_checkpoints
 __pycache__
 metadata/metadata-files
+/.DS_Store
+/.project
+/.pydevproject
+/.settings
+*.pyc

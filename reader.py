@@ -1,29 +1,72 @@
 # coding: utf-8
 
+from alto import Alto
+from array import array
+from collections import Counter
+import glob
 import lxml.etree
 import os
-from IPython.display import display
-import pandas as pd
-import sh
-import unicodedata
 import re
+#from IPython.display import display
+# import pandas as pd
+import unicodedata
+from zipfile import ZipFile
+
 
 class BLText:
-    FLICKR_TEMPLATE = 'https://www.flickr.com/photos/britishlibrary/tags/sysnum%s'
-    # template below is magic - stolen from Flickr entry for BL photos
-    BRITLIB_TEMPLATE = 'http://explore.bl.uk/primo_library/libweb/action/search.do?cs=frb&doc=BLL01%s&dscnt=1&scp.scps=scope:(BLCONTENT)&frbg=&tab=local_tab&srt=rank&ct=search&mode=Basic&dum=true&tb=t&indx=1&vl(freeText0)=%s&fn=search&vid=BLVU1'
-    NAMESPACES = {'MODS': 'http://www.loc.gov/mods/v3'}
-    
-    def __init__(self, metadataFile): 
-        textdir = '12345'
-        self.book_id = os.path.basename(textdir) # alias
-        #self.book_id = self.ID # another alias. TODO: simplify this
-        self.tree = lxml.etree.parse(metadataFile)        
-        #self.flickrURL =  BLText.FLICKR_TEMPLATE % self.ID
-        #self.britLibURL = BLText.BRITLIB_TEMPLATE % (self.ID, self.ID)
+    NAMESPACES = {'MODS': 'http://www.loc.gov/mods/v3',
+                  'METS': 'http://www.loc.gov/METS/',
+                  'xsi': 'http://www.w3.org/2001/XMLSchema-instance',
+                  'xlink': 'http://www.w3.org/1999/xlink'
+                  }
+
+    def __init__(self, zipfile, metadataOnly=True): 
+        # Zipfiles look like:
+        # data2/000000037/000000037_0_1-42pgs__944211_dat.zip
+        # data2/000000216/000000216_1_1-318pgs__632698_dat.zip
+        self.book_id = os.path.basename(zipfile).split('_')[0]
+        self.textdir = os.path.dirname(zipfile)
+        #print 'Loading ',zipfile
+        zf = ZipFile(zipfile)
+        fn = self.book_id + '_metadata.xml'
+        with zf.open(fn) as f:
+            self.tree = lxml.etree.parse(f)
+        
+        self.pages = 0
+        self.words = 0
+        self.word_confidence = 0
+        self.text = ''
+        self.cc = array('L',[0]*10)
+        self.styles = Counter()
+        
+        if not metadataOnly:
+            self.loadText(zf)
+
+        zf.close()
+
+
+    def loadText(self, zf):
+        """  Parse page OCR files and merge individual page stats
+        """
+        confidence = 0
+        for name in zf.namelist():
+            if name.startswith('ALTO/0'):
+                with zf.open(name) as f:
+                    a = Alto(f)
+                    self.pages += 1
+                    if a.word_count:
+                        self.text += a.text
+                        self.words += a.word_count
+                        for i in range(10):
+                            self.cc[i] += a.char_confidence[i]
+                        
+                        confidence += a.word_confidence * a.word_count
+                        self.styles.update(a.styles)
+        self.word_confidence = confidence / self.words
+
 
     def getText(self, xpath):
-        out = self.tree.xpath(xpath + '/text()', namespaces=BLText.NAMESPACES)
+        out = self.tree.xpath(xpath + '/text()', namespaces=self.NAMESPACES)
         if isinstance(out, list): 
             if len(out) == 1: 
                 # No sense having a list of length one. Get just the string. 
@@ -34,10 +77,7 @@ class BLText:
     def title(self):
         # TODO enable caching of this result
         return self.getText('//MODS:title')
-        
-#    def getTitle(self): 
-#        return self.getText('//MODS:title')
-        
+  
     @property
     def author(self): 
         rawAuthor = self.getText('//MODS:name[@type="personal"]/MODS:namePart')
@@ -50,36 +90,42 @@ class BLText:
         textID = self.book_id
         idLength = len(textID)
         oldTitle = re.sub(r'[^\w\s-]','',oldTitle)
-        titleNoSpace = oldTitle.replace(' ','-')
-        cleanTitle = str(unicodedata.normalize('NFKD', titleNoSpace).encode('ascii', 'ignore'))
-        newTitle = titleNoSpace[:100-idLength]+textID
+        titleNoSpace = re.sub(r'[\s]','-',oldTitle)
+        cleanTitle = str(unicodedata.normalize('NFKD', unicode(titleNoSpace)).encode('ascii', 'ignore'))
+        newTitle = titleNoSpace[:100-idLength]+'-'+textID
         return newTitle
 
-    def printOut(self): 
-        print( "title: {}\nauthor: {}\ngithubTitle: {}\n".format(self.title, self.author, self.githubTitle))
+    def __str__(self): 
+        return "title: {}\nauthor: {}\ngithubTitle: {}\n".format(self.title, self.author, self.githubTitle)
 
 # A collection of BLText objects. 
 class BLCorpus(): 
-    def __init__(self, corpusDir):
+    def __init__(self, corpusDir, metadataOnly=True):
         self.baseDir = corpusDir
         self.texts = []
-        self.readDataDir()
+        self.readDataDir(metadataOnly)
         #self.makeDataFrame()
 
-    def readDataDir(self): 
-        textdirs = os.listdir(self.baseDir)
-        print( 'textdirs: ' )
-        for textdir in textdirs: 
-            print( textdir )
-        self.texts = [ BLText(os.path.join(self.baseDir,textdir, textdir+'_metadata.xml')) for textdir in textdirs ]
-        self.metadata = [ [ text.ID, text.title, text.author ] for text in self.texts ] 
+    def readDataDir(self, metadataOnly): 
+        metadatafiles = glob.glob(self.baseDir + "/**/*pgs__*_dat.zip")
+        #print 'Loading %d files' % len(metadatafiles)
+        self.texts = [ BLText(mdf, metadataOnly=metadataOnly) for mdf in metadatafiles ]
+        self.metadata = [ [ text.book_id, text.pages, text.title, text.author, text.githubTitle] for text in self.texts ] 
+        #print 'Loaded ',self.metadata
     
-    def makeDataFrame(self): 
-        self.df = pd.DataFrame(self.metadata, columns=['ID', 'Title', 'Author'])
-        
-    def show(self): 
-        display(self.df)
+#     def makeDataFrame(self): 
+#         self.df = pd.DataFrame(self.metadata, columns=['ID', 'Title', 'Author'])
+#         
+#     def show(self): 
+#         display(self.df)
 
-#c = BLCorpus('data2')
-#c.df
-#c.texts[0].textdir
+def test():
+    c = BLCorpus('data')
+    #c.df
+    print c.texts[0].textdir
+
+if __name__ == '__main__':
+    print 'Beginning test'
+    test()
+    print 'Test complete'
+

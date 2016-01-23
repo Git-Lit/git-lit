@@ -10,4 +10,4 @@ Git-lit was created to allow the world to edit books. If you see an error in thi
  4. Submit a pull request for your change, describing the reasons for your edit. 
   
 ##How to Contribute to Git-Lit
-If you're familiar with Python and want to contribute to the Git-Lit project, simply fork the [git-lit repository](https://github.com/JonathanReeve/git-lit) and submit a pull request. 
+If you're familiar with Python and want to contribute to the Git-Lit project, simply fork the [git-lit repository](https://github.com/Git-Lit/git-lit) and submit a pull request. 
