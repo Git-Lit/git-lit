@@ -37,7 +37,7 @@ class GithubRepo():
         self.github = github3.login(username=GH_USER, password=GH_PASSWORD)
         if hasattr(self.github, 'set_user_agent'):
             self.github.set_user_agent('Jonathan Reeve: http://jonreeve.com')
-        self.org = self.github.organization(login='Git-Lit')
+        self.org = self.github.organization('Git-Lit')
         logger.debug("ratelimit: " + str(self.org.ratelimit_remaining))
 
     def format_desc(self):
@@ -49,7 +49,7 @@ class GithubRepo():
         return self.book.book_id # Just using the book ID as a title for now. 
 
     def create_repo(self):
-        self.repo = self.org.create_repo(
+        self.repo = self.org.create_repository(
             self.format_title(),
             description=self.format_desc(),
             homepage=u'https://Git-Lit.github.io/',
