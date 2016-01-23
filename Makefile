@@ -1,3 +1,4 @@
 clean: 
-	rm -f data2/*/*.md
-	rm -rf data2/*/.git
+	rm -f data/*/*_plain.txt
+	rm -f data/*/*.md
+	rm -rf data/*/.git
