@@ -1,11 +1,10 @@
 # Git-Lit
 
-Scripts to create git repositories for ALTO XML texts, like those from the British Library's scanned documents. These scripts produce the GitHub repositories that can be seen on [Git-Lit](https://github.com/Git-Lit). 
-
+Scripts to create git repositories for ALTO XML texts, like those from the British Library's scanned documents. These scripts produce the GitHub repositories that can be seen on [Git-Lit](https://github.com/Git-Lit). The code has been adapted from [GITenberg](https://gitenberg.org/), a similar project for texts from Project Gutenberg.
 
 # Project Summary
 
-This project aims to make the British Library's corpus of scanned and OCRed ALTO XML texts better available to digital humanists, by transforming the texts into useful file formats and publishing them to the Web as corpus repositories. This is intended to have a threefold effect. First, it will make public the heretofore obscure textual holdings of the British Library (with their permission, of course). Second, it will transform their verbose XML data into archival TEI XML and plain text formats that are easier to read and computationally analyze. Third, it will make this data available to text analysts, editors, and other interested parties by creating version-controlled git repositories for each text and programmatically posting them to GitHub. This will allow for crowdsourced proofreading and collaborative improvement of the texts, as well as archival storage of every subsequent revision of the text. 
+This project aims to make the British Library's corpus of scanned and OCRed ALTO XML texts better available by transforming the texts into useful file formats and publishing them to the Web as corpus repositories. This is intended to have a threefold effect. First, it will make public the heretofore obscure textual holdings of the British Library (with their permission, of course). Second, it will transform their verbose XML data into archival TEI XML and plain text formats that are easier to read and computationally analyze. Third, it will make this data available to text analysts, editors, and other interested parties by creating version-controlled git repositories for each text and programmatically posting them to GitHub. This will allow for crowdsourced proofreading and collaborative improvement of the texts, as well as archival storage of every subsequent revision of the text. 
 
 # Project Status
 
@@ -22,7 +21,3 @@ This project will be divided into these phases:
 *Phase III*. A script will be written to transform the text into a more useful format, by ingesting the verbose ALTO XML and outputting Markdown editions of each text. Markdown was chosen as a plain-text file format, as it is one of the more human-readable formats, and one with the least amount of markup syntax, making it a reasonable format for computational analysis. GitHub also features an in-browser Markdown editor, which would allow any interested party to submit an edit to a text without leaving the browser. These markdown editions will be programmically committed and pushed to each repository. 
 
 *Phase IV*. Another transformation script will be written to ingest the ALTO XML and output TEI Simple XML. TEI Simple was chosen as an archival markup format, as it is a standardized subset of TEI XML, and eliminates many of the semantic ambiguities of the TEI superset. Many XSLT stylesheets and other tools have already been written for TEI XML, and it is the most feature-rich of textual markup languages. 
-
-# Technical Details
-
-The main script is main.ipynb, an IPython Notebook. It requires some variables set in secrets.py, which is not included here for security reasons. It assumes that all documents live in `/data` relative to `main.ipynb`. It runs on Python 3, and requires the libraries `lxml`, `sh`, `pandas`, `github3`, `logging`, `jinja2`, and possibly others. It has only been tested on Linux, but could possibly work on other platforms. 
