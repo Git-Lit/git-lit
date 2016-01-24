@@ -37,27 +37,27 @@ class BLText:
         # Zipfiles look like:
         # 000000037_0_1-42pgs__944211_dat.zip
         # 000000216_1_1-318pgs__632698_dat.zip
-        self.book_id = os.path.basename(zipfile).split('_')[0]
-        self.textdir = os.path.dirname(zipfile)
-        #print 'Loading ',zipfile
-        zf = ZipFile(zipfile)
-        # TODO: Check for an warn if there are multiple books in the same zip file
-        # 00000037 is a file that can be used for testing
-        fn = self.book_id + '_metadata.xml'
-        with zf.open(fn) as f:
-            self.metadata = lxml.etree.parse(f)
+        self.zipfile = zipfile
+        pieces = os.path.basename(zipfile).split('_')
+        self.book_id = pieces[0]
+        self.volume = int(pieces[1])
 
-        self.pages = 0
-        self.words = 0
-        self.word_confidence = 0
-        self.text = INTRO
-        self.cc = array('L',[0]*10)
-        self.styles = Counter()
+        with ZipFile(zipfile) as zf:
+            # TODO: Check for an warn if there are multiple books in the same zip file
+            # 00000037 is a file that can be used for testing
+            fn = self.book_id + '_metadata.xml'
+            with zf.open(fn) as f:
+                self.metadata = lxml.etree.parse(f)
 
-        if not metadataOnly:
-            self.loadText(zf)
-
-        zf.close()
+            self.pages = 0
+            self.words = 0
+            self.word_confidence = 0
+            self.text = INTRO
+            self.cc = array('L',[0]*10)
+            self.styles = Counter()
+    
+            if not metadataOnly:
+                self.loadText(zf)
 
 
     def loadText(self, zf):
@@ -91,7 +91,7 @@ class BLText:
     def title(self):
         # TODO enable caching of this result
         return self.getText('//MODS:title')
-  
+
     @property
     def author(self): 
         rawAuthor = self.getText('//MODS:name[@type="personal"]/MODS:namePart')
@@ -144,7 +144,7 @@ class BLCorpus():
         #print 'Loading %d files' % len(files)
         self.texts = [ BLText(mdf, metadataOnly=metadataOnly) for mdf in self.files ]
         #print 'Loaded ',self.texts
-    
+
 #     def makeDataFrame(self): 
 #        metadata = [ [ text.book_id, text.pages, text.title, text.author, text.githubTitle] for text in self.texts ] 
 #         self.df = pd.DataFrame(metadata, columns=['ID', 'Title', 'Author'])
@@ -161,7 +161,7 @@ def test():
     # assert len(c) == 10 # do we want to implement this?
     assert c.texts[0].book_id == '000000037'
     #print('Loaded %d texts. First is %s' % (len(c.texts), str(c.texts[0])))
-    
+
     print('Testing corpus constructor with a list')
     c2 = BLCorpus(('data/000000037_0_1-42pgs__944211_dat.zip',
                   'data/000000196_0_1-164pgs__1031646_dat.zip',

@@ -29,8 +29,9 @@ logger.setLevel(logging.INFO)
 
 class GithubRepo():
 
-    def __init__(self, book):
+    def __init__(self, book, directory):
         self.book = book
+        self.directory = directory
         self.create_api_handler()
 
     def create_and_push(self):
@@ -52,7 +53,11 @@ class GithubRepo():
         )
 
     def format_title(self):
-        return self.book.book_id # Just using the book ID as a title for now. 
+        # Just using the book ID + volume as a title for now.
+        title = self.book.book_id
+        if self.book.volume:
+            title += '_' + str(self.book.volume)
+        return title
 
     def create_repo(self):
         self.repo = self.org.create_repository(
@@ -62,18 +67,19 @@ class GithubRepo():
             private=False,
             has_issues=True,
             has_wiki=False,
-            has_downloads=True
+#            license_template='', # new in 1.0.0a1
+#            has_downloads=True # removed in 1.0.0a1
         )
 
     def add_remote_origin_to_local_repo(self):
-        with CdContext(self.book.textdir):
+        with CdContext(self.directory):
             try:
                 sh.git('remote', 'add', 'origin', self.repo.ssh_url)
             except sh.ErrorReturnCode_128:
                 print("We may have already added a remote origin to this repo")
 
     def push_to_github(self):
-        with CdContext(self.book.textdir):
+        with CdContext(self.directory):
             try:
                 sh.git('push', 'origin', 'master')
             except sh.ErrorReturnCode_128:
