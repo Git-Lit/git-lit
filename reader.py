@@ -21,6 +21,7 @@ import re
 # import pandas as pd
 from unidecode import unidecode
 from zipfile import ZipFile
+import tempfile
 
 # TODO: Move this to a template file for easy editing
 INTRO = '////\nThis file was created from text provided by the British Library. \n////\n\n'
@@ -34,8 +35,8 @@ class BLText:
 
     def __init__(self, zipfile, metadataOnly=True): 
         # Zipfiles look like:
-        # data2/000000037/000000037_0_1-42pgs__944211_dat.zip
-        # data2/000000216/000000216_1_1-318pgs__632698_dat.zip
+        # 000000037_0_1-42pgs__944211_dat.zip
+        # 000000216_1_1-318pgs__632698_dat.zip
         self.book_id = os.path.basename(zipfile).split('_')[0]
         self.textdir = os.path.dirname(zipfile)
         #print 'Loading ',zipfile
@@ -52,7 +53,7 @@ class BLText:
         self.text = INTRO
         self.cc = array('L',[0]*10)
         self.styles = Counter()
-        
+
         if not metadataOnly:
             self.loadText(zf)
 
@@ -73,7 +74,6 @@ class BLText:
                         self.words += a.word_count
                         for i in range(10):
                             self.cc[i] += a.char_confidence[i]
-                        
                         confidence += a.word_confidence * a.word_count
                         self.styles.update(a.styles)
         self.word_confidence = confidence / self.words
@@ -117,33 +117,74 @@ class BLText:
 
 # A collection of BLText objects. 
 class BLCorpus(): 
-    def __init__(self, corpusDir, metadataOnly=True):
-        self.baseDir = corpusDir
+    def __init__(self, corpus, metadataOnly=True):
+        self.files = []
+        if type(corpus) is str or type(corpus) is unicode:
+            if os.path.isdir(corpus):
+                self.baseDir = corpus
+                for (path, dirs, files) in os.walk(corpus):  # @UnusedVariable
+                    for f in files:
+                        if f.endswith('_dat.zip'): # *pgs__*_dat.zip
+                            self.files.append(os.path.join(path,f))
+            elif os.path.isfile(corpus):
+                self.baseDir = None
+                with open(corpus) as f:
+                    self.files = [l.rstrip('\n') for l in f.readlines()]
+        elif type(corpus) is list or type(corpus) is tuple:
+            # TODO: use try/except around list constructor instead of type test?
+            self.files = list(corpus)
+        else:
+            raise Exception('Unknown corpus type')
+
         self.texts = []
         self.readDataDir(metadataOnly)
         #self.makeDataFrame()
 
     def readDataDir(self, metadataOnly): 
-        metadatafiles = glob.glob(self.baseDir + "/**/*pgs__*_dat.zip")
-        #print 'Loading %d files' % len(metadatafiles)
-        self.texts = [ BLText(mdf, metadataOnly=metadataOnly) for mdf in metadatafiles ]
-        self.metadata = [ [ text.book_id, text.pages, text.title, text.author, text.githubTitle] for text in self.texts ] 
-        #print 'Loaded ',self.metadata
+        #print 'Loading %d files' % len(files)
+        self.texts = [ BLText(mdf, metadataOnly=metadataOnly) for mdf in self.files ]
+        #print 'Loaded ',self.texts
     
 #     def makeDataFrame(self): 
-#         self.df = pd.DataFrame(self.metadata, columns=['ID', 'Title', 'Author'])
+#        metadata = [ [ text.book_id, text.pages, text.title, text.author, text.githubTitle] for text in self.texts ] 
+#         self.df = pd.DataFrame(metadata, columns=['ID', 'Title', 'Author'])
 #         
 #     def show(self): 
 #         display(self.df)
 
 def test():
+    
+    print('Testing corpus subdirectory constructor')
     c = BLCorpus('data')
     #c.df
-    print(c.texts[0].textdir)
+    assert len(c.texts) == 10
+    # assert len(c) == 10 # do we want to implement this?
+    assert c.texts[0].book_id == '000000037'
+    #print('Loaded %d texts. First is %s' % (len(c.texts), str(c.texts[0])))
+    
+    print('Testing corpus constructor with a list')
+    c2 = BLCorpus(('data/000000037_0_1-42pgs__944211_dat.zip',
+                  'data/000000196_0_1-164pgs__1031646_dat.zip',
+                  'data/000000206_0_1-256pgs__594984_dat.zip',
+                  ))
+    assert len(c2.texts) == 3
+    assert c2.texts[-1].book_id == '000000206'
+    #print('Loaded %d texts. Last is %s' % (len(c2.texts), str(c2.texts[-1])))
+
+    print('Testing file with list of filenames constructor')
+    files = glob.glob('data/*pgs__*_dat.zip')
+    with tempfile.NamedTemporaryFile() as tf:
+        tf.write('\n'.join(files))
+        tf.flush()
+        c3 = BLCorpus(tf.name)
+        assert len(c3.texts) == 10
+        assert c3.texts[1].book_id == '000000196'
+        #print('Loaded %d texts with the middle one being %s' % (len(c3.texts), c3.texts[1]))
+
     return c
 
 if __name__ == '__main__':
-    print('Beginning test')
+    print('Beginning tests')
     test()
-    print('Test complete')
+    print('Tests complete')
 
