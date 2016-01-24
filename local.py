@@ -1,8 +1,15 @@
-
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
 """
-Borrowed from GITenburg project. 
 Makes an organized git repo of a book folder.
+
+Based on code from GITenburg project.
 """
+
+from __future__ import absolute_import
+from __future__ import division
+from __future__ import print_function
+from __future__ import unicode_literals
 
 import codecs
 

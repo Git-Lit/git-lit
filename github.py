@@ -1,9 +1,15 @@
-
-# Borrowed from the GITenberg project
-
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
 """
 Syncs a local git book repo to a remote git repo (by default, github)
+
+Based on code from the GITenberg project
 """
+
+from __future__ import absolute_import
+from __future__ import division
+from __future__ import print_function
+from __future__ import unicode_literals
 
 import logging
 import time

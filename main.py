@@ -1,4 +1,15 @@
-# coding: utf-8
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+"""
+Test program to create a few repos.
+
+Based on code from GITenburg project.
+"""
+
+from __future__ import absolute_import
+from __future__ import division
+from __future__ import print_function
+from __future__ import unicode_literals
 
 import github
 import local

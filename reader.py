@@ -1,4 +1,14 @@
+#!/usr/bin/python
 # coding: utf-8
+"""
+Reader of metadata, and optionally text, for British Library
+public domain corpus.
+"""
+
+from __future__ import absolute_import
+from __future__ import division
+from __future__ import print_function
+from __future__ import unicode_literals
 
 from alto import Alto
 from array import array
