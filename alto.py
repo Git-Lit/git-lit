@@ -119,7 +119,8 @@ class Alto(object):
                         print(' **Indent in the middle ', indent)
                         #print '  continuation: ', indent
                     elif indent > PARA_INDENT_THRESHOLD2:
-                        print(' ** Unexpected indent -- too far right: ', indent)
+                        #print(' ** Unexpected indent -- too far right: ', indent)
+                        pass
                 else:
                     raise Exception('Something bad happened - no HPOS in TextLine - aborting')
                 for elem in tl:
