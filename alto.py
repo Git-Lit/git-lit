@@ -15,6 +15,9 @@ from array import array
 from collections import Counter
 from lxml import etree as ET
 import re
+import sys
+
+PY3 = sys.version_info[0] == 3
 
 # TODO These can be tagged semantically with visual attributes decided later
 LOW_QUALITY_STYLE = '[maroon]#%s#'
@@ -66,7 +69,10 @@ class Alto(object):
         self.xmlfile = xmlfile
         self.word_count = 0
         self.word_confidence = None # 0 - 1.0
-        self.char_confidence = array('L',[0]*10) # 0=Good to 9=Bad
+        if PY3:
+            self.char_confidence = array(u'L',[0]*10) # 0=Good to 9=Bad
+        else:
+            self.char_confidence = array(b'L',[0]*10) # 0=Good to 9=Bad
         self.hyphen1_count = 0
         self.hyphen2_count = 0
         self.text = ''

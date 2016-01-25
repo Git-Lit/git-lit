@@ -17,11 +17,14 @@ import glob
 import lxml.etree
 import os
 import re
+import sys
 #from IPython.display import display
 # import pandas as pd
 from unidecode import unidecode
 from zipfile import ZipFile
 import tempfile
+
+PY3 = sys.version_info[0] == 3
 
 # TODO: Move this to a template file for easy editing
 INTRO = '////\nThis file was created from text provided by the British Library. \n////\n\n'
@@ -53,7 +56,10 @@ class BLText:
             self.words = 0
             self.word_confidence = 0
             self.text = INTRO
-            self.cc = array('L',[0]*10)
+            if PY3:
+                self.cc = array(u'L',[0]*10)
+            else:
+                self.cc = array(b'L',[0]*10)
             self.styles = Counter()
     
             if not metadataOnly:
