@@ -96,7 +96,8 @@ class BLText:
     @property
     def title(self):
         # TODO enable caching of this result
-        return self.getText('//MODS:title')
+        # Be careful not to pick up related titles, etc.
+        return self.getText('//MODS:mods/MODS:titleInfo/MODS:title')
 
     @property
     def author(self): 
