@@ -54,12 +54,14 @@ class BLText:
 
             self.pages = 0
             self.words = 0
-            self.word_confidence = 0
+            self.avg_word_confidence = 0
             self.text = INTRO
             if PY3:
                 self.cc = array(u'L',[0]*10)
+                self.wc = array(u'L',[0]*Alto.WORD_CONFIDENCE_HISTOGRAM)
             else:
                 self.cc = array(b'L',[0]*10)
+                self.wc = array(b'L',[0]*Alto.WORD_CONFIDENCE_HISTOGRAM)
             self.styles = Counter()
     
             if not metadataOnly:
@@ -80,9 +82,11 @@ class BLText:
                         self.words += a.word_count
                         for i in range(10):
                             self.cc[i] += a.char_confidence[i]
-                        confidence += a.word_confidence * a.word_count
+                        for i in range(Alto.WORD_CONFIDENCE_HISTOGRAM):
+                            self.wc[i] += a.word_confidence[i]
+                        confidence += a.avg_word_confidence * a.word_count
                         self.styles.update(a.styles)
-        self.word_confidence = confidence / self.words
+        self.avg_word_confidence = confidence / self.words
 
 
     def getText(self, xpath):
@@ -97,7 +101,11 @@ class BLText:
     def title(self):
         # TODO enable caching of this result
         # Be careful not to pick up related titles, etc.
-        return self.getText('//MODS:mods/MODS:titleInfo/MODS:title')
+        title = self.getText('//MODS:mods/MODS:titleInfo/MODS:title')
+        return self.removeBracketed(title)
+
+    def removeBracketed(self, s):
+        return re.sub(r'\[[^\]]*\]', '', s).strip()
 
     @property
     def author(self): 

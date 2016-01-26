@@ -61,6 +61,7 @@ class Alto(object):
                     HYP hyphen
     '''
 
+    WORD_CONFIDENCE_HISTOGRAM = 20
 
     def __init__(self, xmlfile):
         '''
@@ -68,11 +69,13 @@ class Alto(object):
         '''
         self.xmlfile = xmlfile
         self.word_count = 0
-        self.word_confidence = None # 0 - 1.0
+        self.avg_word_confidence = None # 0 - 1.0
         if PY3:
             self.char_confidence = array(u'L',[0]*10) # 0=Good to 9=Bad
+            self.word_confidence = array(u'L',[0]*Alto.WORD_CONFIDENCE_HISTOGRAM)
         else:
             self.char_confidence = array(b'L',[0]*10) # 0=Good to 9=Bad
+            self.word_confidence = array(b'L',[0]*Alto.WORD_CONFIDENCE_HISTOGRAM)
         self.hyphen1_count = 0
         self.hyphen2_count = 0
         self.text = ''
@@ -149,7 +152,8 @@ class Alto(object):
                         else:
                             lines[-1] += s
 
-                        # Update character confidence histogram counts
+                        # Update word * character confidence histogram counts
+                        self.word_confidence[int(wc*100/Alto.WORD_CONFIDENCE_HISTOGRAM)] += 1
                         for c in elem.attrib['CC']:
                             self.char_confidence[int(c)] += 1
 
@@ -176,7 +180,7 @@ class Alto(object):
         # TODO: Escape ASCIIDOC syntax: ''', <<<, leading space on line, list markers
         for (i,l) in enumerate(lines):
             if len(l) > 1:
-                if l[0] == '=': # Heading marker
+                if l[0] == '=' or l[0] == '.': # Heading & block title markers
                     l = '{empty}'+l
                 elif l[1] == '.': # list marker
                     # Lines starting M. Girardeu get interpreted as lists
@@ -185,9 +189,13 @@ class Alto(object):
                     # Open quote followed by extraneous space
                     # This happens more than just at beginning of line, but it's the most common case
                     # (and the others are more ambiguous and need more sophistication to repair
-                    l = l[0] + l[2:]
+                    l = '\\"' + l[2:]
                 # directional quates are never ambiguous - clean them all up
-                l = l.replace(u'“ ',u'“').replace(u' ”',u'”')
+                l = l.replace(u'“ ',u'\\“').replace(u' ”',u'\\”')
+                # Escape bold/emphasis/monospace markers
+                l = l.replace('*','\\*').replace('_','\\_').replace('+','\\+')
+                # Extra space before punctuation is not uncommon
+                l = l.replace(' ;',';').replace(' ,',',').replace(' .','')
                 l = l.strip() # Leading (especially) and trailing whitespace is problematic
                 lines[i] = l
 
@@ -255,7 +263,7 @@ class Alto(object):
                     print('Unknown tag on <Page> ', ps.tag)
             page.clear() # Clear the page now that we're done with it
         if words:
-            self.word_confidence = confidence / words
+            self.avg_word_confidence = confidence / words
         self.word_count = words
         if self.pages > 1:
             # TODO: We kind of assumge one page per file now because that's the BL use case
@@ -263,13 +271,13 @@ class Alto(object):
 
 def test():
     # Run through a whole bunch of pages
-    files = {'data/000000037/000000037_0_1-42pgs__944211_dat.zip',
-             'data/000000196/000000196_0_1-164pgs__1031646_dat.zip',
-             'data/000000206/000000206_0_1-256pgs__594984_dat.zip',
-             'data/000000216/000000216_1_1-318pgs__632698_dat.zip',
+    files = {'data/000000037_0_1-42pgs__944211_dat.zip',
+             'data/000000196_0_1-164pgs__1031646_dat.zip',
+             'data/000000206_0_1-256pgs__594984_dat.zip',
+             'data/000000216_1_1-318pgs__632698_dat.zip',
              }
     from zipfile import ZipFile
-    print('    File', 'Words', 'Word Confidence (0-1.0)', 'CharCount')
+    print('    File', 'Words', 'Word Confidence (0-1.0)', 'CharCount', 'Styles')
     for f in files:
         words = 0
         confidence = 0
@@ -285,13 +293,13 @@ def test():
                     words += a.word_count
                     for i in range(10):
                         cc[i] += a.char_confidence[i]
-                    confidence += (a.word_confidence * a.word_count)
+                    confidence += (a.avg_word_confidence * a.word_count)
                     styles.update(a.styles)
                     if a.hyphen1_count != a.hyphen2_count:
                         print('Mismatched hyphenation count ', name, a.hyphen1_count, a.hyphen2_count)
-                #print name,a.word_count, a.page_accuracy, a.word_confidence, a.char_confidence
-                if a.word_confidence and abs(a.word_confidence*100.0 - a.page_accuracy[0]) > 2.0: # epsilon = 2%
-                    print('Inaccurate page accuracy %2.2f %2.2f' % (a.page_accuracy[0], a.word_confidence))
+                #print name,a.word_count, a.page_accuracy, a.avg_word_confidence, a.char_confidence
+                if a.avg_word_confidence and abs(a.avg_word_confidence*100.0 - a.page_accuracy[0]) > 2.0: # epsilon = 2%
+                    print('Inaccurate page accuracy %2.2f %2.2f' % (a.page_accuracy[0], a.avg_word_confidence))
             else:
                 #print '   Skipped', name
                 pass
