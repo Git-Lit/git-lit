@@ -5,13 +5,11 @@ Created on Jan 27, 2016
 '''
 
 from lxml import etree as ET
-from lxml.cssselect import CSSSelector
 import requests
 import requests_cache
 import time
 
 URL_TEMPLATE = 'http://primocat.bl.uk/F/?func=direct&local_base=PRIMO&doc_number=%s'
-
 
 def make_throttle_hook(timeout=1.0):
     """
@@ -45,15 +43,11 @@ def main():
                      time.sleep(5)
                 continue
             doc = ET.HTML(response.content)
-            #print response.content
-            #foo = doc.cssselect('.td1[id^=Related] a')  # '.td1[id^=Related] a' # [@class="td1"]') # contains(@id,"Related"]/a')
             foo = doc.findall('.//td[@class="td1"]/a[@href]') 
             href = foo[0].attrib['href']
             originalId = href.split('=')[-1]
             print('\t'.join([originalId, digitalId]))
-            
-            
-    pass
+
 
 if __name__ == '__main__':
     main()
