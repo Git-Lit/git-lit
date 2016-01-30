@@ -18,7 +18,10 @@ import requests
 import requests_cache
 import time
 
-URL_TEMPLATE = 'http://primocat.bl.uk/F/?func=direct&local_base=PRIMO&doc_number=%s'
+CATALOG_TEMPLATE = 'http://primocat.bl.uk/F/?func=direct&local_base=PRIMO&doc_number=%s'
+# Full viewer URL - http://access.bl.uk/item/viewer/lsidyv39e6ab44#ark:/81055/vdc_00000003D6EB.0x000009
+# (the piece after the dot is a hex-encoded page number)
+VIEWER_TEMPLATE = 'http://access.bl.uk/item/viewer/%s'
 
 def make_throttle_hook(timeout=1.0):
     """
@@ -34,39 +37,75 @@ def make_throttle_hook(timeout=1.0):
         return response
     return hook
 
+def getWithRetry(session, url):
+    tries = 3
+    while tries:
+        tries -= 1
+        response = session.get(url)
+        if response.status_code != requests.codes.ok:
+            print('Failed to fetch %d %s' % (response.status_code, url))
+            if response.status_code >= 500 and tries:
+                print('Sleeping before retry')
+                time.sleep(2**(3-tries))
+    return response
+
+def getPrintId(session, digitalId):
+    url = CATALOG_TEMPLATE % digitalId
+    originalId = None
+    response = getWithRetry(session, url)
+
+    if response.status_code == requests.codes.ok:
+        doc = ET.HTML(response.content)
+        relatedLinks = doc.findall('.//td[@class="td1"]/a[@href]')
+        if len(relatedLinks) > 0:
+            href = relatedLinks[0].attrib['href']
+            candidate = href.split('=')[-1]
+            if len(candidate) > 0:
+                originalId = candidate
+    return originalId
+
+def getARK(session, lsid):
+    """
+    Get ARK from lsid
+    """
+    url = VIEWER_TEMPLATE % lsid
+    ark = None
+    response = session.get(url)
+    if response.status_code == requests.codes.ok:
+        doc = ET.HTML(response.content)
+        inputItemId = doc.findall('.//input[@id="ItemID"]') # type = "hidden"
+        ark = 'None'
+        if len(inputItemId) > 0:
+            ark = inputItemId[0].attrib['value']
+    return ark
+
 def main():
     requests_cache.install_cache("british-library-catalog")
     session = requests_cache.CachedSession()
     session.hooks = {'response': make_throttle_hook(0.5)} # Be polite - less than 2 req/sec
 
-    print('\t'.join(['Print Id', 'Scan Id']))
+    print('\t'.join(['Print ID', 'Scan ID', 'DOM ID', 'ARK']))
 
     with open('metadata/booklist.tsv') as input:
         for line in input:
             if line.startswith('Aleph'): #skip header
                 continue
-
+            line = line.rstrip('\n')
             digitalId = line.split('\t')[0]
-            url = URL_TEMPLATE % digitalId
+            originalId = getPrintId(session, digitalId)
 
-            response = session.get(url)
-            if response.status_code != requests.codes.ok:
-                print('Failed to fetch %d %s' % (response.status_code, url))
-                if response.status_code >= 500:
-                     time.sleep(5)
-                continue
+            # This (disabled) section of code will translate lsid to ARK
+            # in case we ever need it.  Right now the BL Viewer accepts raw
+            # lsids, so it's unnecessary
+            lsids = line.split('\t')[-1].split(' -- ')
+            arks = []
+            if False:
+                for lsid in lsids:
+                    ark = getARK(session, lsid)
+                    arks.append(ark)
 
-            doc = ET.HTML(response.content)
-            relatedLinks = doc.findall('.//td[@class="td1"]/a[@href]')
-            originalId = 'None'
-            if digitalId == '014608411':
-                print(digitalId, relatedLinks)
-            if len(relatedLinks) > 0:
-                href = relatedLinks[0].attrib['href']
-                candidate = href.split('=')[-1]
-                if len(candidate) > 0:
-                    originalId = candidate
-            print('\t'.join([originalId, digitalId]))
+            print('\t'.join([originalId, digitalId,','.join(lsids),','.join(arks)]))
+
 
 
 if __name__ == '__main__':
