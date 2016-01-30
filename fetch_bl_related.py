@@ -86,8 +86,8 @@ def main():
 
     print('\t'.join(['Print ID', 'Scan ID', 'DOM ID', 'ARK']))
 
-    with open('metadata/booklist.tsv') as input:
-        for line in input:
+    with open('metadata/booklist.tsv') as infile:
+        for line in infile:
             if line.startswith('Aleph'): #skip header
                 continue
             line = line.rstrip('\n')
@@ -104,7 +104,7 @@ def main():
                     ark = getARK(session, lsid)
                     arks.append(ark)
 
-            print('\t'.join([originalId, digitalId,','.join(lsids),','.join(arks)]))
+            print('\t'.join([str(originalId), digitalId,','.join(lsids),','.join(arks)]))
 
 
 
