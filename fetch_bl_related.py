@@ -4,8 +4,12 @@ catalog based on the system number of the scanned digital record (there are
 separate catalog records for each).  Without this mapping, our two sets of
 metadata share no common identifiers.
 
-This ran in about 12 hours for 50K identifiers with a 0.5 second pause between
+This took about 12 hours for 50K identifiers with a 0.5 second pause between
 queries with only 11 of the 50K queries failing to identify the original.
+
+Fetching the ARKs took another 30 hours, so it is disabled by default.  There
+are multiple DOM IDs (lsid) and ARKs for multi-volume editions, so the values
+for these columns are comma-separated lists.
 
 Created on Jan 27, 2016
 
@@ -22,6 +26,8 @@ CATALOG_TEMPLATE = 'http://primocat.bl.uk/F/?func=direct&local_base=PRIMO&doc_nu
 # Full viewer URL - http://access.bl.uk/item/viewer/lsidyv39e6ab44#ark:/81055/vdc_00000003D6EB.0x000009
 # (the piece after the dot is a hex-encoded page number)
 VIEWER_TEMPLATE = 'http://access.bl.uk/item/viewer/%s'
+
+FETCH_ARKS = False
 
 def make_throttle_hook(timeout=1.0):
     """
@@ -84,7 +90,10 @@ def main():
     session = requests_cache.CachedSession()
     session.hooks = {'response': make_throttle_hook(0.5)} # Be polite - less than 2 req/sec
 
-    print('\t'.join(['Print ID', 'Scan ID', 'DOM ID', 'ARK']))
+    columns = '\t'.join(['Print ID', 'Scan ID', 'DOM IDs'])
+    if FETCH_ARKS:
+        columns += '\tARKs'
+    print(columns)
 
     with open('metadata/booklist.tsv') as infile:
         for line in infile:
@@ -99,7 +108,7 @@ def main():
             # lsids, so it's unnecessary
             lsids = line.split('\t')[-1].split(' -- ')
             arks = []
-            if False:
+            if FETCH_ARKS:
                 for lsid in lsids:
                     ark = getARK(session, lsid)
                     arks.append(ark)
