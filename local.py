@@ -122,6 +122,8 @@ class NewFilesHandler():
         command = "pandoc -o {0} {1}".format(mdfilename, filename)
         logging.info("Converting to markdown with command: {0}".format(command))
         os.system(command)
+        # TODO: get jekyll files here and convert to jekyll site
+
 
     def write_metadata(self):
         with codecs.open(self.directory+'/'+self.basename + '_metadata.xml','w','utf-8') as f:
