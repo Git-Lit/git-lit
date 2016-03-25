@@ -243,7 +243,7 @@ class Alto(object):
             pageno=''
             if 'PRINTED_IMG_NR' in page.attrib:
                 pageno = ', Page: %s' % page.attrib['PRINTED_IMG_NR']
-            self.text += '\n// Leaf %s' % leaf + pageno + '\n'
+            self.text += '\n<!-- Leaf %s' % leaf + pageno + ' -->\n'
             pageStart = True
             for ps in page:
                 # Note: Text can also live in the margins TopMargin, BottomMargin, etc if the layout analysis messes up
