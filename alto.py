@@ -63,7 +63,7 @@ class Alto(object):
 
     WORD_CONFIDENCE_HISTOGRAM = 20
 
-    def __init__(self, xmlfile):
+    def __init__(self, xmlfile, continuation):
         '''
         Constructor
         '''
@@ -82,6 +82,7 @@ class Alto(object):
         self.page_accuracy=[]
         self.pages = 0
         self.styles = Counter()
+        self.continuation = continuation
 
         self.parse_file()
 
@@ -100,6 +101,10 @@ class Alto(object):
         words = 0
         confidence = 0
         lines = ['']
+        # Start with any hyphenated piece left over
+        if self.continuation:
+            lines[0] = self.continuation.rstrip('-')
+            self.continuation = None
         lmargin = None
         centered = False
         if 'STYLEREFS' in block.attrib:
@@ -122,7 +127,7 @@ class Alto(object):
                     if indent > PARA_INDENT_THRESHOLD and indent < PARA_INDENT_THRESHOLD2:
                         if firstLine:
                             paraStart = True
-                        lines.extend(['',''])
+                        lines.append('')
                         #print '    New paragraph!', indent 
                     elif indent > PARA_INDENT_THRESHOLD/4 and indent <- PARA_INDENT_THRESHOLD:
                         print(' **Indent in the middle ', indent)
@@ -133,8 +138,6 @@ class Alto(object):
                 else:
                     raise Exception('Something bad happened - no HPOS in TextLine - aborting')
                 for elem in tl:
-                    # TODO: we may want to assemble the physical line of text separately first
-                    # so that we can do some physical line processing
                     if elem.tag == 'String': # <String> element is just a single word
                         words += 1
                         wc = float(elem.attrib['WC'])
@@ -162,18 +165,23 @@ class Alto(object):
                             hy = elem.attrib['SUBS_TYPE']
                             if hy == 'HypPart1':
                                 self.hyphen1_count += 1
-                            elif hy == 'HypPart2':
+                            elif hy == 'HypPart2': # These are sometimes missing
                                 self.hyphen2_count += 1
                             else:
-                                print('Unrecognized SUBS_TYPE', hy)
+                                print('Unrecognized SUBS_TYPE ' + hy, file=sys.stderr)
                     elif elem.tag == 'SP':
                         lines[-1] += ' '
                     elif elem.tag == 'HYP':
                         pass
                     else:
-                        print('Unknown tag', elem.tag)
-                if tl[-1].tag != 'HYP':
-                    lines[-1] += ' '
+                        print('Unknown tag ' + elem.tag, file=sys.stderr)
+                # End of block hyphenation  not handled correctly by OCR
+                if lines[-1][-1] == '-' or tl[-1].tag == 'HYP':
+                    w = lines[-1].split(' ')
+                    lines[-1] = ' '.join(w[0:-1])
+                    self.continuation = w[-1]
+                else:
+                    lines.append('')
                 firstLine = False
 
         # Postprocess text
@@ -190,7 +198,7 @@ class Alto(object):
                     # This happens more than just at beginning of line, but it's the most common case
                     # (and the others are more ambiguous and need more sophistication to repair
                     l = '\\"' + l[2:]
-                # directional quates are never ambiguous - clean them all up
+                # directional quotes are never ambiguous - clean them all up
                 l = l.replace(u'“ ',u'\\“').replace(u' ”',u'\\”')
                 # Escape bold/emphasis/monospace markers
                 l = l.replace('*','\\*').replace('_','\\_').replace('+','\\+')
@@ -235,7 +243,7 @@ class Alto(object):
             pageno=''
             if 'PRINTED_IMG_NR' in page.attrib:
                 pageno = ', Page: %s' % page.attrib['PRINTED_IMG_NR']
-            self.text += '\n// Leaf %s ' % leaf + pageno + '\n'
+            self.text += '\n// Leaf %s' % leaf + pageno + '\n'
             pageStart = True
             for ps in page:
                 # Note: Text can also live in the margins TopMargin, BottomMargin, etc if the layout analysis messes up
@@ -245,17 +253,17 @@ class Alto(object):
                     for tb in ps:
                         if tb.tag == 'TextBlock':
                             (w, c, t, beginningPara) = self.parseTextBlock(tb, pageStart)
-                            words += w 
+                            words += w
                             confidence += c
                             if pageStart and beginningPara:
                                 self.text += '\n' + t
                             else:
-                                self.text += t # TODO: Deal with cross page hyphenation
+                                self.text += t
                         elif tb.tag == 'ComposedBlock':
                             # TODO: Can this be anything other than a picture?
-                            self.text += '\n// ComposedBlock (picture?) skipped here\n'
+                            self.text += ('\n// ComposedBlock (picture?) skipped here %s\n' % tb.attrib['ID'])
                         else:
-                            print('Unknown tag in <PrintSpace> ', tb.tag)
+                            print('Unknown tag in <PrintSpace> ' + tb.tag, file=sys.stderr)
                         pageStart = False
                 elif ps.tag in ['TopMargin', 'LeftMargin', 'RightMargin','BottomMargin']:
                     pass
@@ -271,11 +279,18 @@ class Alto(object):
 
 def test():
     # Run through a whole bunch of pages
-    files = {'data/000000037_0_1-42pgs__944211_dat.zip',
-             'data/000000196_0_1-164pgs__1031646_dat.zip',
-             'data/000000206_0_1-256pgs__594984_dat.zip',
-             'data/000000216_1_1-318pgs__632698_dat.zip',
-             }
+    files = [
+            'data/000000037_0_1-42pgs__944211_dat.zip',
+            'data/000000196_0_1-164pgs__1031646_dat.zip',
+            'data/000000206_0_1-256pgs__594984_dat.zip',
+            'data/000000216_1_1-318pgs__632698_dat.zip',
+            'data/000000216_2_1-286pgs__638718_dat.zip',
+            'data/000000218_1_1-324pgs__630262_dat.zip',
+            'data/000000218_2_1-330pgs__630265_dat.zip',
+            'data/000000218_3_1-306pgs__634403_dat.zip',
+            'data/000000428_0_1-206pgs__1025980_dat.zip',
+            'data/000000472_0_1-178pgs__999442_dat.zip',
+             ]
     from zipfile import ZipFile
     print('    File', 'Words', 'Word Confidence (0-1.0)', 'CharCount', 'Styles')
     for f in files:
@@ -284,26 +299,29 @@ def test():
         text = ''
         cc = array('L',[0]*10)
         styles = Counter()
-        zf = ZipFile(f)
-        for name in zf.namelist():
-            if name.startswith('ALTO/0'):
-                a = Alto(zf.open(name))
-                if a.word_count:
-                    text += a.text
-                    words += a.word_count
-                    for i in range(10):
-                        cc[i] += a.char_confidence[i]
-                    confidence += (a.avg_word_confidence * a.word_count)
-                    styles.update(a.styles)
-                    if a.hyphen1_count != a.hyphen2_count:
-                        print('Mismatched hyphenation count ', name, a.hyphen1_count, a.hyphen2_count)
-                #print name,a.word_count, a.page_accuracy, a.avg_word_confidence, a.char_confidence
-                if a.avg_word_confidence and abs(a.avg_word_confidence*100.0 - a.page_accuracy[0]) > 2.0: # epsilon = 2%
-                    print('Inaccurate page accuracy %2.2f %2.2f' % (a.page_accuracy[0], a.avg_word_confidence))
-            else:
-                #print '   Skipped', name
-                pass
-        zf.close()
+        with ZipFile(f) as zf:
+            continuation = None
+            for name in zf.namelist():
+                if name.startswith('ALTO/0'):
+                    with zf.open(name) as entry:
+                        a = Alto(entry, continuation)
+                        if a.word_count:
+                            text += a.text
+                            words += a.word_count
+                            for i in range(10):
+                                cc[i] += a.char_confidence[i]
+                            confidence += (a.avg_word_confidence * a.word_count)
+                            styles.update(a.styles)
+                            if a.hyphen1_count != a.hyphen2_count:
+                                print('Mismatched hyphenation count ', name, a.hyphen1_count, a.hyphen2_count, file=sys.stderr)
+                        # print name,a.word_count, a.page_accuracy, a.avg_word_confidence, a.char_confidence
+                        if a.avg_word_confidence and abs(a.avg_word_confidence * 100.0 - a.page_accuracy[0]) > 2.0:  # epsilon = 2%
+                            print('Inaccurate page accuracy %2.2f %2.2f' % (a.page_accuracy[0], a.avg_word_confidence), file=sys.stderr)
+                        continuation = a.continuation
+                else:
+                    #print '   Skipped', name
+                    pass
+
         #print text
         print(f.split('/')[1], words, confidence/words, len(text), styles.most_common())
 #         tot = sum(cc)
