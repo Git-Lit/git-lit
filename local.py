@@ -20,6 +20,8 @@ import logging
 import lxml
 import shutil
 import tempfile
+import os
+from subprocess import call
 
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
@@ -112,8 +114,14 @@ class NewFilesHandler():
         self.copy_files()
 
     def write_text(self):
-        with codecs.open(self.directory+'/'+ self.basename + '.adoc','w','utf-8') as f:
+        filename = self.directory+'/'+ self.basename + '.adoc'
+        mdfilename = self.directory+'/'+ self.basename + '.md'
+        with codecs.open(filename,'w','utf-8') as f:
             f.write(self.book.text + '\n')
+        # Convert ASCIIDOC to markdown so that we can make Jekyll sites!
+        command = "pandoc -o {0} {1}".format(mdfilename, filename)
+        logging.info("Converting to markdown with command: {0}".format(command))
+        os.system(command)
 
     def write_metadata(self):
         with codecs.open(self.directory+'/'+self.basename + '_metadata.xml','w','utf-8') as f:
