@@ -72,10 +72,11 @@ class BLText:
         """  Parse page OCR files and merge individual page stats
         """
         confidence = 0
+        continuation = None
         for name in zf.namelist():
             if name.startswith('ALTO/0'):
                 with zf.open(name) as f:
-                    a = Alto(f)
+                    a = Alto(f, continuation)
                     self.pages += 1
                     if a.word_count:
                         self.text += a.text
@@ -86,6 +87,7 @@ class BLText:
                             self.wc[i] += a.word_confidence[i]
                         confidence += a.avg_word_confidence * a.word_count
                         self.styles.update(a.styles)
+                    continuation = a.continuation
         self.avg_word_confidence = confidence / self.words
 
 
