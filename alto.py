@@ -86,7 +86,7 @@ class Alto(object):
 
         self.parse_file()
 
-    def parseTextBlock(self, block, pageStart):
+    def parseTextBlock(self, block, pageStart, pageMargin):
         """
         Parse the lines, words, spaces, hyphens in a single text block.
 
@@ -97,14 +97,13 @@ class Alto(object):
         # Perhaps pre-scan all TextBlocks/TextLines on page or in document?
         PARA_INDENT_THRESHOLD = 25 # This value is for experimentation ONLY!
         PARA_INDENT_THRESHOLD2 = 100
+        BLOCK_INDENT_THRESHOLD = PARA_INDENT_THRESHOLD # This value is for experimentation ONLY!
 
         words = 0
         confidence = 0
-        lines = ['']
-        # Start with any hyphenated piece left over
-        if self.continuation:
-            lines[0] = self.continuation.rstrip('-')
-            self.continuation = None
+        lines = []
+        if not pageStart and not self.continuation:
+            lines.extend(['',''])
         lmargin = None
         centered = False
         if 'STYLEREFS' in block.attrib:
@@ -117,16 +116,28 @@ class Alto(object):
         else:
             raise Exception("Block with no HPOS, can't continue")
         firstLine = False
-        paraStart = centered # Anything centered is automatically a new paragraph to deal with chapter heads, etc.
+        # Anything centered is automatically a new paragraph to deal with chapter heads, etc.
+        # Ditto for indented text blocks since they could be blockquote, verse, etc.
+        # FIXME: centered/indented blocks continued from the previous page don't count
+        paraStart = centered or ((lmargin - pageMargin) > BLOCK_INDENT_THRESHOLD)
         for tl in block:
             if tl.tag == 'TextLine':
+                # Start with any hyphenated piece left over
+                if self.continuation:
+                    lines.append(self.continuation.rstrip('-'))
+                    self.continuation = None
+                elif paraStart:
+                    lines.extend(['[verse]',''])
+                    paraStart = False
+                else:
+                    lines.append('')
                 if 'HPOS' in tl.attrib:
                     indent = int(tl.attrib['HPOS']) - lmargin
                     # TODO: Pages ending with a single line paragraph beginning can have them
                     # split into a separate block.  Perhaps we should work off print area margin?
                     if indent > PARA_INDENT_THRESHOLD and indent < PARA_INDENT_THRESHOLD2:
-                        if firstLine:
-                            paraStart = True
+#                         if firstLine:
+#                             paraStart = True
                         lines.append('')
                         #print '    New paragraph!', indent 
                     elif indent > PARA_INDENT_THRESHOLD/4 and indent <- PARA_INDENT_THRESHOLD:
@@ -180,8 +191,6 @@ class Alto(object):
                     w = lines[-1].split(' ')
                     lines[-1] = ' '.join(w[0:-1])
                     self.continuation = w[-1]
-                else:
-                    lines.append('')
                 firstLine = False
 
         # Postprocess text
@@ -226,7 +235,7 @@ class Alto(object):
             lines.insert(2, '')
             lines.insert(0,'') # Make sure we have a blank line before
 
-        return (words, confidence, '\n'.join(lines), paraStart)
+        return (words, confidence, '\n'.join(lines))
 
     def parse_file(self):
         confidence = 0
@@ -246,19 +255,18 @@ class Alto(object):
             self.text += '\n// Leaf %s' % leaf + pageno + '\n'
             pageStart = True
             for ps in page:
-                # Note: Text can also live in the margins TopMargin, BottomMargin, etc if the layout analysis messes up
+                # Note: Body text can also live in the margins TopMargin, BottomMargin, etc 
+                # if the layout analysis messes up, although normally they only contain
+                # header/footer text
                 if ps.tag == 'PrintSpace':
-                    blockMargin = ps.attrib['HPOS']
+                    pageMargin = int(ps.attrib['HPOS'])
                     # TOOD: check for indented text blocks (block quote, etc)
                     for tb in ps:
                         if tb.tag == 'TextBlock':
-                            (w, c, t, beginningPara) = self.parseTextBlock(tb, pageStart)
+                            (w, c, t) = self.parseTextBlock(tb, pageStart, pageMargin)
                             words += w
                             confidence += c
-                            if pageStart and beginningPara:
-                                self.text += '\n' + t
-                            else:
-                                self.text += t
+                            self.text += t
                         elif tb.tag == 'ComposedBlock':
                             # TODO: Can this be anything other than a picture?
                             self.text += ('\n// ComposedBlock (picture?) skipped here %s\n' % tb.attrib['ID'])
