@@ -10,3 +10,4 @@ metadata/metadata-files
 /venv
 *.sqlite
 *.*~
+tmp*
