@@ -45,7 +45,7 @@ testtexts = [corpus.texts[-1]]
 
 for text in testtexts: 
     logging.info(u'Making local repo: %s %s' % (text.book_id, text.title))
-    directory = local.make(text)
+    #directory = local.make(text)
     processed_file = start_ed(text)
     # remote = github.GithubRepo(text, directory)
     # logging.info('Making & pushing to remote repo')
