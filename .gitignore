@@ -9,3 +9,4 @@ metadata/metadata-files
 *.pyc
 /venv
 *.sqlite
+*.*~
