@@ -11,14 +11,14 @@ class ed:
 #Dans le constructeur d'une classe, on declare tous les attributs des objets qui peupleront cette classe
 	  self.book = book
           self.book_id = self.book.book_id
+          self.new_name_f = self.book_id+'_ed'
+
 	def make(self,cufolder):
 	#I would certainly like to have this new_name_f variable below as a global variable for all the class
-          new_name_f = self.book_id+'_ed'
 	  dir_to_create = os.path.join(cufolder,new_name_f)
 	  repository = os.makedirs(dir_to_create)
 
 	def ed_structure(self,cufolder,ed_repository):
-	  new_name_f = self.book_id+'_ed'
 	  dir_to_create = os.path.join(cufolder,new_name_f)
 	  distutils.dir_util.copy_tree(ed_repository,dir_to_create)  	
 
