@@ -5,11 +5,6 @@ Reader of metadata, and optionally text, for British Library
 public domain corpus.
 """
 
-from __future__ import absolute_import
-from __future__ import division
-from __future__ import print_function
-from __future__ import unicode_literals
-
 from alto import Alto
 from array import array
 from collections import Counter
@@ -57,8 +52,8 @@ class BLText:
             self.avg_word_confidence = 0
             self.text = INTRO
             if PY3:
-                self.cc = array(u'L',[0]*10)
-                self.wc = array(u'L',[0]*Alto.WORD_CONFIDENCE_HISTOGRAM)
+                self.cc = array('L',[0]*10)
+                self.wc = array('L',[0]*Alto.WORD_CONFIDENCE_HISTOGRAM)
             else:
                 self.cc = array(b'L',[0]*10)
                 self.wc = array(b'L',[0]*Alto.WORD_CONFIDENCE_HISTOGRAM)
@@ -136,7 +131,7 @@ class BLText:
 class BLCorpus(): 
     def __init__(self, corpus, metadataOnly=True):
         self.files = []
-        if type(corpus) is str or type(corpus) is unicode:
+        if type(corpus) is str or type(corpus) is str:
             if os.path.isdir(corpus):
                 self.baseDir = corpus
                 for (path, dirs, files) in os.walk(corpus):  # @UnusedVariable

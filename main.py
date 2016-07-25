@@ -6,11 +6,6 @@ Test program to create a few repos.
 Based on code from GITenburg project.
 """
 
-from __future__ import absolute_import
-from __future__ import division
-from __future__ import print_function
-from __future__ import unicode_literals
-
 import github
 import local
 from reader import BLCorpus
@@ -43,11 +38,11 @@ corpus = BLCorpus((
 testtexts = [corpus.texts[-1]]
 
 for text in testtexts: 
-    logging.info(u'Making local repo: %s %s' % (text.book_id, text.title))
+    logging.info('Making local repo: %s %s' % (text.book_id, text.title))
     directory = local.make(text)
     remote = github.GithubRepo(text, directory)
     logging.info('Making & pushing to remote repo')
-    remote.create_and_push()
+    #remote.create_and_push()
     logging.info('Remote repo complete')
 
 logging.info('All repos complete')
