@@ -111,7 +111,7 @@ class NewFilesHandler():
 
     def write_metadata(self):
         with codecs.open(self.directory+'/'+self.basename + '_metadata.xml','w','utf-8') as f:
-            f.write(lxml.etree.tostring(self.book.metadata) + '\n')
+            f.write(lxml.etree.tostring(self.book.metadata, encoding='unicode') + '\n')
 
     def template_readme(self):
         with codecs.open('templates/README.md.j2','r','utf-8') as f:
