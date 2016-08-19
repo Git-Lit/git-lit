@@ -17,7 +17,7 @@ import time
 import github3
 import sh
 
-from local import CdContext
+from gitlit.local import CdContext
 
 try:
     from secrets import GH_USER, GH_PASSWORD

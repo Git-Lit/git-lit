@@ -19,10 +19,10 @@ setup(
     url = 'https://github.com/git-lit/git-lit',
     download_url = 'https://github.com/git-lit/git-lit/tarball/0.2.0',
     install_requires=[
-        'jinja2','sh','lxml','unidecode'
+        'click','jinja2','sh','lxml','unidecode','github3.py'
     ],
     entry_points='''
         [console_scripts]
-        gitlit=gitlit.main:cli
+        git-lit=gitlit.main:cli
     ''',
 )
