@@ -5,7 +5,7 @@ Reader of metadata, and optionally text, for British Library
 public domain corpus.
 """
 
-from alto import Alto
+from gitlit.alto import Alto
 from array import array
 from collections import Counter
 import glob
