@@ -52,7 +52,7 @@ class LocalRepo():
                     'README.md',
                     'CONTRIBUTING.md',
                     'LICENSE.md',
-                    '.adoc'
+                    '.md'
                     }
         with CdContext(self.directory):
             sh.git.init('.')
@@ -107,7 +107,7 @@ class NewFilesHandler():
         self.copy_files()
 
     def write_text(self):
-        with open(self.directory+'/'+ self.basename + '.adoc','w') as f:
+        with open(self.directory+'/'+ self.basename + '.md','w') as f:
             f.write(self.book.text + '\n')
 
     def write_metadata(self):
