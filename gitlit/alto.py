@@ -190,9 +190,9 @@ class Alto(object):
                 firstLine = False
 
         # Postprocess text
-        # TODO: Escape ASCIIDOC syntax: ''', <<<, leading space on line, list markers
         for (i,l) in enumerate(lines):
             if len(l) > 1:
+                self.escape_markdown_chars(l)
                 if l[0] == '=' or l[0] == '.': # Heading & block title markers
                     l = '{empty}'+l
                 elif l[1] == '.': # list marker
@@ -205,8 +205,6 @@ class Alto(object):
                     l = '\\"' + l[2:]
                 # directional quotes are never ambiguous - clean them all up
                 l = l.replace(u'“ ',u'\\“').replace(u' ”',u'\\”')
-                # Escape bold/emphasis/monospace markers
-                l = l.replace('*','\\*').replace('_','\\_').replace('+','\\+')
                 # Extra space before punctuation is not uncommon
                 l = l.replace(' ;',';').replace(' ,',',').replace(' .','')
                 lines[i] = l
@@ -231,6 +229,12 @@ class Alto(object):
             lines.insert(0,'') # Make sure we have a blank line before
 
         return (words, confidence, '\n'.join(lines))
+
+    def escape_markdown_chars(self, line): 
+        markdown_special_chars = '\`*_{}[]()#+-.!'
+        for char in markdown_special_chars: 
+            line = line.replace(char, "\\"+char) 
+        return line
 
     def parse_file(self):
         confidence = 0
