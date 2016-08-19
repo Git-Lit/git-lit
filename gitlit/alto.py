@@ -120,6 +120,7 @@ class Alto(object):
                     lines.extend(['',''])
                     newlines = []
                     for line in lines: 
+                        line = line.strip() # Leading (especially) and trailing whitespace is problematic
                         line = '    ' + line + '  ' # indent four spaces for verse, and append two spaces to indicate verse mode
                         newlines.append(line) 
                     lines = newlines
@@ -208,7 +209,6 @@ class Alto(object):
                 l = l.replace('*','\\*').replace('_','\\_').replace('+','\\+')
                 # Extra space before punctuation is not uncommon
                 l = l.replace(' ;',';').replace(' ,',',').replace(' .','')
-                l = l.strip() # Leading (especially) and trailing whitespace is problematic
                 lines[i] = l
 
             # Move signature marks out of line to a footnote (need better markup)
