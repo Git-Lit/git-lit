@@ -22,7 +22,7 @@ import tempfile
 PY3 = sys.version_info[0] == 3
 
 # TODO: Move this to a template file for easy editing
-INTRO = '////\nThis file was created from text provided by the British Library. \n////\n\n'
+INTRO = '<!-- This file was created from text provided by the British Library. --> \n\n\n'
 
 class BLText:
     NAMESPACES = {'MODS': 'http://www.loc.gov/mods/v3',
