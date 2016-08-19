@@ -117,7 +117,12 @@ class Alto(object):
                     lines.append(self.continuation.rstrip('-'))
                     self.continuation = None
                 elif paraStart:
-                    lines.extend(['[verse]',''])
+                    lines.extend(['',''])
+                    newlines = []
+                    for line in lines: 
+                        line = '    ' + line + '  ' # indent four spaces for verse, and append two spaces to indicate verse mode
+                        newlines.append(line) 
+                    lines = newlines
                     paraStart = False
                 else:
                     lines.append('')
@@ -241,8 +246,8 @@ class Alto(object):
             leaf = page.attrib['PHYSICAL_IMG_NR']
             pageno=''
             if 'PRINTED_IMG_NR' in page.attrib:
-                pageno = ', Page: %s -->' % page.attrib['PRINTED_IMG_NR']
-            self.text += '\n<!-- Leaf %s' % leaf + pageno + '\n'
+                pageno = ', Page: %s' % page.attrib['PRINTED_IMG_NR']
+            self.text += '\n<!-- Leaf %s' % leaf + pageno + ' -->\n'
             pageStart = True
             for ps in page:
                 # Note: Body text can also live in the margins TopMargin, BottomMargin, etc 
