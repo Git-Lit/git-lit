@@ -31,7 +31,7 @@ class BLText:
                   'xlink': 'http://www.w3.org/1999/xlink'
                   }
 
-    def __init__(self, zipfile, metadataOnly=True): 
+    def __init__(self, zipfile, metadataOnly=False): 
         # Zipfiles look like:
         # 000000037_0_1-42pgs__944211_dat.zip
         # 000000216_1_1-318pgs__632698_dat.zip
