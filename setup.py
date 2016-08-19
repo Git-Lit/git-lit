@@ -12,6 +12,7 @@ setup(
     name='git-lit',
     packages = ['gitlit'], # this must be the same as the name above
     py_modules=['gitlit'],
+    package_data={'gitlit': ['templates/*']},
     version='0.2.0',
     description = 'Scripts for making git repositories from ebooks, like those from the British Library.',
     author = 'Jonathan Reeve',

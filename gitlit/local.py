@@ -15,6 +15,7 @@ import logging
 import lxml
 import shutil
 import tempfile
+from pkg_resources import resource_filename
 
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
@@ -114,7 +115,8 @@ class NewFilesHandler():
             f.write(lxml.etree.tostring(self.book.metadata, encoding='unicode') + '\n')
 
     def template_readme(self):
-        with codecs.open('templates/README.md.j2','r','utf-8') as f:
+        templateFilename = resource_filename(__name__, 'templates/README.md.j2')
+        with open(templateFilename) as f:
             templateSrc = f.read()
         template = jinja2.Template(templateSrc)
         readme_text = template.render(
@@ -133,11 +135,13 @@ class NewFilesHandler():
     def copy_files(self):
         """ Copy the LICENSE and CONTRIBUTING files to each folder repo """
         # TODO: Add .gitattributes for line endings (and .gitignore?)
-        FILES = ['LICENSE.md', 'CONTRIBUTING.md']
+        # license = resource_filename(__name__, 'templates/LICENSE')
+        contributing = resource_filename(__name__, 'templates/CONTRIBUTING.md')
+        FILES = [contributing] 
         this_dir = sh.pwd().strip()
         for _file in FILES:
             sh.cp(
-                '{0}/templates/{1}'.format(this_dir, _file),
+                _file,
                 '{0}/'.format(self.directory)
             )
 
