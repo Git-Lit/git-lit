@@ -241,8 +241,8 @@ class Alto(object):
             leaf = page.attrib['PHYSICAL_IMG_NR']
             pageno=''
             if 'PRINTED_IMG_NR' in page.attrib:
-                pageno = ', Page: %s' % page.attrib['PRINTED_IMG_NR']
-            self.text += '\n// Leaf %s' % leaf + pageno + '\n'
+                pageno = ', Page: %s -->' % page.attrib['PRINTED_IMG_NR']
+            self.text += '\n<!-- Leaf %s' % leaf + pageno + '\n'
             pageStart = True
             for ps in page:
                 # Note: Body text can also live in the margins TopMargin, BottomMargin, etc 
@@ -259,7 +259,7 @@ class Alto(object):
                             self.text += t
                         elif tb.tag == 'ComposedBlock':
                             # TODO: Can this be anything other than a picture?
-                            self.text += ('\n// ComposedBlock (picture?) skipped here %s\n' % tb.attrib['ID'])
+                            self.text += ('\n<!-- ComposedBlock (picture?) skipped here %s -->\n' % tb.attrib['ID'])
                         else:
                             print('Unknown tag in <PrintSpace> ' + tb.tag, file=sys.stderr)
                         pageStart = False
