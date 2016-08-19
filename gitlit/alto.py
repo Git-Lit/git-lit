@@ -13,8 +13,6 @@ from lxml import etree as ET
 import re
 import sys
 
-PY3 = sys.version_info[0] == 3
-
 # TODO These can be tagged semantically with visual attributes decided later
 LOW_QUALITY_STYLE = '[maroon]#%s#'
 MED_QUALITY_STYLE = '[grey]#%s#'
