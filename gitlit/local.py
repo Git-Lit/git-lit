@@ -107,11 +107,11 @@ class NewFilesHandler():
         self.copy_files()
 
     def write_text(self):
-        with codecs.open(self.directory+'/'+ self.basename + '.adoc','w','utf-8') as f:
+        with open(self.directory+'/'+ self.basename + '.adoc','w') as f:
             f.write(self.book.text + '\n')
 
     def write_metadata(self):
-        with codecs.open(self.directory+'/'+self.basename + '_metadata.xml','w','utf-8') as f:
+        with open(self.directory+'/'+self.basename + '_metadata.xml','w') as f:
             f.write(lxml.etree.tostring(self.book.metadata, encoding='unicode') + '\n')
 
     def template_readme(self):
@@ -129,7 +129,7 @@ class NewFilesHandler():
             self.directory,
             'README.md'
         )
-        with codecs.open(readme_path, 'w', 'utf-8') as readme_file:
+        with open(readme_path, 'w') as readme_file:
             readme_file.write(readme_text)
 
     def copy_files(self):
