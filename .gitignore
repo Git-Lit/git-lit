@@ -9,3 +9,5 @@ metadata/metadata-files
 *.pyc
 /venv
 *.sqlite
+tmprepo*
+git_lit.egg-info
