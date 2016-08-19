@@ -66,12 +66,8 @@ class Alto(object):
         self.xmlfile = xmlfile
         self.word_count = 0
         self.avg_word_confidence = None # 0 - 1.0
-        if PY3:
-            self.char_confidence = array(u'L',[0]*10) # 0=Good to 9=Bad
-            self.word_confidence = array(u'L',[0]*Alto.WORD_CONFIDENCE_HISTOGRAM)
-        else:
-            self.char_confidence = array(b'L',[0]*10) # 0=Good to 9=Bad
-            self.word_confidence = array(b'L',[0]*Alto.WORD_CONFIDENCE_HISTOGRAM)
+        self.char_confidence = array(u'L',[0]*10) # 0=Good to 9=Bad
+        self.word_confidence = array(u'L',[0]*Alto.WORD_CONFIDENCE_HISTOGRAM)
         self.hyphen1_count = 0
         self.hyphen2_count = 0
         self.text = ''
