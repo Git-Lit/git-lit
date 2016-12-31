@@ -27,21 +27,31 @@ def convert(filenames):
     for filename in filenames: 
         logging.info('Converting book: %s', filename) 
         book = BLText(filename)  
-        with open(book.basename + '.md','w') as f:
+        with open(book.book_id + '.md','w') as f:
             f.write(book.text + '\n')
 
 @cli.command() 
 @click.argument('filenames', nargs=-1) 
-def process(filenames): 
-    """Processes a book, converting it to markdown and creating a git repository for it,
-    but not pushing it to github."""
-
+@click.option('--nojekyll', is_flag=True, help="Don't make a Jekyll site out of the repo." ) 
+def process(filenames, nojekyll=False): 
+    """Creates a local git repository for the book. Doesn't push."""
+    
     logging.info('Processing files: %s', filenames) 
+    if nojekyll: 
+        logging.info('Not creating jekyll sites for them.')
+        jekyll = False
+    else: 
+        logging.info('Creating jekyll sites for them, too.')
+        jekyll = True
+
     for filename in filenames: 
         logging.info('Processing book: %s', filename) 
         book = BLText(filename)  
         logging.info('Making local repo: %s %s' % (book.book_id, book.title))
-        repo = local.make(book) 
+        repo = local.make(book)
+        if jekyll: 
+            repo.jekyllify()
+            
 
 if __name__ == '__main__':
     cli()

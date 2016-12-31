@@ -15,6 +15,7 @@ import logging
 import lxml
 import shutil
 import tempfile
+import glob
 from pkg_resources import resource_filename
 
 logger = logging.getLogger()
@@ -84,6 +85,25 @@ class LocalRepo():
             except sh.ErrorReturnCode_1 as e: 
                 print("Commit aborted for {0} with msg {1}".format(self.book.book_id, message))
                 print("Error: " + e.message)
+
+    def jekyllify(self): 
+        logging.info('Now creating a Jekyll site out of this repo.')
+
+        with CdContext(self.directory):
+
+            # Copy Jekyll skeleton files to our new directory. 
+            try:
+                skel_dir = resource_filename(__name__, 'jekyll-skel/') 
+                files = glob.glob(skel_dir+'*')
+                logging.info('Files: %s' % files)
+            except: 
+                logging.warn("Couldn't find Jekyll skel directory.")
+                raise IOError("Couldn't find Jekyll skel directory!")
+            for jekyllFile in files: 
+                sh.cp(jekyllFile, '.')
+
+
+
 
 # TODO: It's very weird partitioning to have this as a separate class. Refactor!
 class NewFilesHandler():
@@ -156,7 +176,7 @@ def make(book):
     local_repo.add_all_files()
     local_repo.commit("Initial import from British Library originals.")
     # TODO: Cleanup temp dir
-    return handler.directory
+    return local_repo 
 
 def test():
     pass
