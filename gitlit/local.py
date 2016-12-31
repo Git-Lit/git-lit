@@ -38,11 +38,65 @@ class CdContext():
 
 class LocalRepo():
 
-    def __init__(self, book, directory):
+    def __init__(self, book):
+        """ Requires a BLText book object as input. """ 
         self.book = book
-        self.directory = directory
         logging.info("Now attempting to initialize a local git repository for text: " 
                       + self.book.book_id + " a.k.a. " + self.book.title )
+        self.basename = self.book.book_id
+        self.directory = tempfile.mkdtemp(prefix='tmprepo%s' % self.basename, dir='.')
+        if book.volume:
+            self.basename += '_%02d' % self.book.volume
+        # TODO: Temp dirs being created locally to ease debugging.  Remove for production
+        self.add_new_files()
+        self.add_all_files()
+        self.commit("Initial import from British Library originals.")
+
+    def add_new_files(self):
+        shutil.copy(self.book.zipfile, self.directory)
+        self.write_text()
+        self.write_metadata()
+        self.template_readme()
+        self.copy_files()
+
+    def write_text(self):
+        with open(self.directory+'/'+ self.basename + '.md','w') as f:
+            f.write(self.book.text + '\n')
+
+    def write_metadata(self):
+        with open(self.directory+'/'+self.basename + '_metadata.xml','w') as f:
+            f.write(lxml.etree.tostring(self.book.metadata, encoding='unicode') + '\n')
+
+    def template_readme(self):
+        templateFilename = resource_filename(__name__, 'templates/README.md.j2')
+        with open(templateFilename) as f:
+            templateSrc = f.read()
+        template = jinja2.Template(templateSrc)
+        readme_text = template.render(
+            title=self.book.title,
+            author=self.book.author,
+            book_id=self.book.book_id
+        )
+
+        readme_path = "{0}/{1}".format(
+            self.directory,
+            'README.md'
+        )
+        with open(readme_path, 'w') as readme_file:
+            readme_file.write(readme_text)
+
+    def copy_files(self):
+        """ Copy the LICENSE and CONTRIBUTING files to each folder repo """
+        # TODO: Add .gitattributes for line endings (and .gitignore?)
+        # license = resource_filename(__name__, 'templates/LICENSE')
+        contributing = resource_filename(__name__, 'templates/CONTRIBUTING.md')
+        FILES = [contributing] 
+        this_dir = sh.pwd().strip()
+        for _file in FILES:
+            sh.cp(
+                _file,
+                '{0}/'.format(self.directory)
+            )
 
     def add_file(self, filename):
         sh.git('add', filename)
@@ -102,84 +156,8 @@ class LocalRepo():
             for jekyllFile in files: 
                 sh.cp(jekyllFile, '.')
 
-
-
-
-# TODO: It's very weird partitioning to have this as a separate class. Refactor!
-class NewFilesHandler():
-    """ NewFilesHandler - templates and copies additional files to book repos
-    """
-
-    def __init__(self, book):
-        self.book = book
-        self.basename = self.book.book_id
-        if book.volume:
-            self.basename += '_%02d' % self.book.volume
-        # TODO: Temp dirs being created locally to ease debugging.  Remove for production
-        self.directory = tempfile.mkdtemp(prefix='tmprepo%s' % self.basename, dir='.')
-        self.add_new_files()
-
-    def add_new_files(self):
-        shutil.copy(self.book.zipfile, self.directory)
-        self.write_metadata()
-        self.write_text()
-        self.template_readme()
-        self.copy_files()
-
-    def write_text(self):
-        with open(self.directory+'/'+ self.basename + '.md','w') as f:
-            f.write(self.book.text + '\n')
-
-    def write_metadata(self):
-        with open(self.directory+'/'+self.basename + '_metadata.xml','w') as f:
-            f.write(lxml.etree.tostring(self.book.metadata, encoding='unicode') + '\n')
-
-    def template_readme(self):
-        templateFilename = resource_filename(__name__, 'templates/README.md.j2')
-        with open(templateFilename) as f:
-            templateSrc = f.read()
-        template = jinja2.Template(templateSrc)
-        readme_text = template.render(
-            title=self.book.title,
-            author=self.book.author,
-            book_id=self.book.book_id
-        )
-
-        readme_path = "{0}/{1}".format(
-            self.directory,
-            'README.md'
-        )
-        with open(readme_path, 'w') as readme_file:
-            readme_file.write(readme_text)
-
-    def copy_files(self):
-        """ Copy the LICENSE and CONTRIBUTING files to each folder repo """
-        # TODO: Add .gitattributes for line endings (and .gitignore?)
-        # license = resource_filename(__name__, 'templates/LICENSE')
-        contributing = resource_filename(__name__, 'templates/CONTRIBUTING.md')
-        FILES = [contributing] 
-        this_dir = sh.pwd().strip()
-        for _file in FILES:
-            sh.cp(
-                _file,
-                '{0}/'.format(self.directory)
-            )
-
-
 def make(book):
-
-    # Create files from zip
-    handler = NewFilesHandler(book)
-
     # Initial commit of book files
-    local_repo = LocalRepo(book, handler.directory)
-    local_repo.add_all_files()
-    local_repo.commit("Initial import from British Library originals.")
+    local_repo = LocalRepo(book)
     # TODO: Cleanup temp dir
     return local_repo 
-
-def test():
-    pass
-
-if __name__ == '__main__':
-    test()
