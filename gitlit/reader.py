@@ -49,8 +49,8 @@ class BLText:
             self.words = 0
             self.avg_word_confidence = 0
             self.text = INTRO
-            self.cc = array(b'L',[0]*10)
-            self.wc = array(b'L',[0]*Alto.WORD_CONFIDENCE_HISTOGRAM)
+            self.cc = array('L',[0]*10)
+            self.wc = array('L',[0]*Alto.WORD_CONFIDENCE_HISTOGRAM)
             self.styles = Counter()
     
             if not metadataOnly:
