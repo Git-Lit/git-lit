@@ -119,6 +119,30 @@ class LocalRepo():
                 print("Commit aborted for {0} with msg {1}".format(self.book.book_id, message))
                 print("Error: " + e.message)
 
+    def template_header(self): 
+        """ Generates a Jekyll page header (YAML) from the template. """
+        logging.info('Creating book headers from template.')
+        headerTemplate = resource_filename(__name__, 'templates/book-header.md.j2')
+        with open(headerTemplate, 'r') as templateFile: 
+            templateContents = templateFile.read() 
+            template = jinja2.Template(templateContents)
+            header = template.render(title=self.book.title)
+        return header
+
+    def template_config(self): 
+        """ Generates a _config.yml from the template. """
+        logging.info('Creating _config.yml from template.')
+        configTemplate = resource_filename(__name__, 'templates/_config.yml.j2')
+        with open(configTemplate, 'r') as templateFile: 
+            templateContents = templateFile.read()
+            template = jinja2.Template(templateContents)
+        configOut = template.render(
+                title = self.book.title, 
+                author = self.book.author,
+                book_id = self.book.book_id
+                )
+        return configOut
+
     def jekyllify(self): 
         logging.info('Now creating a Jekyll site out of this repo.')
 
@@ -126,21 +150,14 @@ class LocalRepo():
             # Copy Jekyll skeleton files to our new directory. 
             try:
                 skel_dir = resource_filename(__name__, 'jekyll-skel/') 
-                files = glob.glob(skel_dir+'*')
-                logging.info('Files: %s' % files)
             except: 
                 logging.warn("Couldn't find Jekyll skel directory.")
                 raise IOError("Couldn't find Jekyll skel directory!")
-            for jekyllFile in files: 
-                sh.cp(jekyllFile, '.')
+            sh.cp('-a', skel_dir+'.', '.')
 
             # Create header from template. 
-            logging.info('Creating book headers from template.')
-            headerTemplate = resource_filename(__name__, 'templates/book-header.md.j2')
-            with open(headerTemplate, 'r') as templateFile: 
-                templateContents = templateFile.read() 
-                template = jinja2.Template(templateContents)
-                header = template.render(title=self.book.title)
+            header = self.template_header()
+
             # Prepend header to book markdown file. 
             doc = self.basename+'.md'
             with open(doc, 'r') as origFile: 
@@ -151,18 +168,12 @@ class LocalRepo():
             # Remove it from git, since we've renamed it to index.md
             sh.git('rm', doc) 
 
-            logging.info('Creating _config.yml from template.')
-            configTemplate = resource_filename(__name__, 'templates/_config.yml.j2')
-            with open(configTemplate, 'r') as templateFile: 
-                templateContents = templateFile.read()
-                template = jinja2.Template(templateContents)
-                configOut = template.render(
-                        title = self.book.title, 
-                        author = self.book.author,
-                        book_id = self.book.book_id
-                        )
+            # Generate config file. 
+            configOut = self.template_config()
             with open('_config.yml', 'w') as outFile: 
                 outFile.write(configOut)
+
+            # Use gh-pages branch. 
             sh.git('checkout', '-b', 'gh-pages')
 
         self.add_all_files()
