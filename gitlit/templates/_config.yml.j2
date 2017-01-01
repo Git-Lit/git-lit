@@ -11,16 +11,17 @@
 title: {{ title }}
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  This is the text of _{{title}}_ by {{author}}, adapted from a British Library 
-  electronic text. This book is in the Public Domain, see the LICENSE file for details.
+  This is the text of <em>{{title}}</em> by {{author}}, adapted from a British Library 
+  electronic text.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+book_id: {{book_id}}
+url: "https://git-lit.github.io/{{book_id}}" 
 
 twitter_username: jekyllrb
 github_username:  jekyll
 
 about: > 
-  This is an electronic text of _{{title}}_ by {{author}}, adapted from a British Library electronic text. This book is in the Public Domain, see the LICENSE file for details. Here is the British Library [catalog record](http://explore.bl.uk/primo_library/libweb/action/search.do?cs=frb&doc=BLL01{{book_id}}&dscnt=1&scp.scps=scope:(BLCONTENT)&frbg=&tab=local_tab&srt=rank&ct=search&mode=Basic&dum=true&tb=t&indx=1&vl(freeText0)={{book_id}}&fn=search&vid=BLVU1). There may be illustrations from the volume available on [flickr](https://www.flickr.com/photos/britishlibrary/tags/sysnum{{book_id}}). There may be illustrations from the volume available on [flickr](https://www.flickr.com/photos/britishlibrary/tags/sysnum{{book_id}}).
+  This is an electronic text of <em>{{title}}</em> by {{author}}, adapted from a British Library scan. Here is the British Library [catalog record](http://explore.bl.uk/primo_library/libweb/action/search.do?cs=frb&doc=BLL01{{book_id}}&dscnt=1&scp.scps=scope:(BLCONTENT)&frbg=&tab=local_tab&srt=rank&ct=search&mode=Basic&dum=true&tb=t&indx=1&vl(freeText0)={{book_id}}&fn=search&vid=BLVU1). There may be illustrations from the volume available on [flickr](https://www.flickr.com/photos/britishlibrary/tags/sysnum{{book_id}}). There may be illustrations from the volume available on [flickr](https://www.flickr.com/photos/britishlibrary/tags/sysnum{{book_id}}).
 
 # Set encoding to UTF-8
 encoding: utf-8
