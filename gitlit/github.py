@@ -77,3 +77,24 @@ class GithubRepo():
                 logging.error(u"github repo not ready yet")
                 time.sleep(10)
                 sh.git('push', 'origin', 'gh-pages')
+
+class GitHub(): 
+    """ A class for generic GH utility actions. """
+    def __init__(self): 
+        self.create_api_handler()
+
+    def create_api_handler(self):
+        """ Creates an api handler and sets it on self """
+        self.github = github3.login(username=GH_USER, password=GH_PASSWORD)
+        if hasattr(self.github, 'set_user_agent'):
+            self.github.set_user_agent('Jonathan Reeve: http://jonreeve.com')
+        self.org = self.github.organization('Git-Lit')
+        logger.debug("ratelimit: " + str(self.org.ratelimit_remaining))
+
+    def delete(self, repo): 
+        repository = self.github.repository('git-lit', repo)
+        success = repository.delete()
+        if success: 
+            logging.info('Repo %s successfully deleted.' % repo)
+        else: 
+            logging.warn("Repo %s wasn't deleted!" % repo)

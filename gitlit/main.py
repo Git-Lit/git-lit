@@ -57,5 +57,14 @@ def process(filenames, nojekyll=False, push=False):
             gh = github.GithubRepo(book, repo.directory) 
             gh.create_and_push()
             
+@cli.command() 
+@click.argument('repos', nargs=-1) 
+def delete(repos): 
+    """ Deletes repos from GitHub. """
+    click.confirm('Are you really sure you want to delete this/these repo(s)?', abort=True)
+    gh = github.GitHub()
+    for repo in repos: 
+        gh.delete(repo)
+
 if __name__ == '__main__':
     cli()
