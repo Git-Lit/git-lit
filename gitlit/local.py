@@ -75,7 +75,8 @@ class LocalRepo():
             title = self.book.title,
             author = self.book.author,
             book_id = self.basename, # Use this, since it will have volume info. 
-            url = BASE_URL + self.basename
+            url = BASE_URL + self.basename, 
+            volume = self.book.volume
         )
 
         readme_path = "{0}/{1}".format(
@@ -140,7 +141,8 @@ class LocalRepo():
         out = template.render(
                 title = self.book.title, 
                 author = self.book.author,
-                book_id = self.basename
+                book_id = self.basename,
+                volume = self.book.volume
                 )
         return out
 
