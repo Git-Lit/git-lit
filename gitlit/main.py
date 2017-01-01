@@ -48,7 +48,7 @@ def process(filenames, nojekyll=False):
         logging.info('Processing book: %s', filename) 
         book = BLText(filename)  
         logging.info('Making local repo: %s %s' % (book.book_id, book.title))
-        repo = local.make(book)
+        repo = local.LocalRepo(book)
         if jekyll: 
             repo.jekyllify()
             

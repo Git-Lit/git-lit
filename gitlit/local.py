@@ -145,6 +145,8 @@ class LocalRepo():
             with open(doc, 'w') as modifiedFile:
                 modifiedFile.write(header + '\n' + origContent)
             sh.mv(doc, 'index.md')
+            # Remove it from git, since we've renamed it to index.md
+            sh.git('rm', doc) 
 
             logging.info('Creating _config.yml from template.')
             configTemplate = resource_filename(__name__, 'templates/_config.yml.j2')
@@ -159,9 +161,5 @@ class LocalRepo():
             with open('_config.yml', 'w') as outFile: 
                 outFile.write(configOut)
 
-
-def make(book):
-    # Initial commit of book files
-    local_repo = LocalRepo(book)
-    # TODO: Cleanup temp dir
-    return local_repo 
+        self.add_all_files()
+        self.commit('Create Jekyll site.')
