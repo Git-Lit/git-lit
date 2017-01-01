@@ -33,7 +33,8 @@ def convert(filenames):
 @cli.command() 
 @click.argument('filenames', nargs=-1) 
 @click.option('--nojekyll', is_flag=True, help="Don't make a Jekyll site out of the repo." ) 
-def process(filenames, nojekyll=False): 
+@click.option('--push', is_flag=True, help="Push the resulting repo to GitHub." ) 
+def process(filenames, nojekyll=False, push=False): 
     """Creates a local git repository for the book. Doesn't push."""
     
     logging.info('Processing files: %s', filenames) 
@@ -51,7 +52,10 @@ def process(filenames, nojekyll=False):
         repo = local.LocalRepo(book)
         if jekyll: 
             repo.jekyllify()
-            
 
+        if push: 
+            gh = github.GithubRepo(book, repo.directory) 
+            gh.create_and_push()
+            
 if __name__ == '__main__':
     cli()

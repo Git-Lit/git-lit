@@ -53,10 +53,10 @@ class GithubRepo():
         return title
 
     def create_repo(self):
-        self.repo = self.org.create_repository(
+        self.repo = self.org.create_repo(
             self.format_title(),
             description=self.format_desc(),
-            homepage='https://Git-Lit.github.io/',
+            homepage='https://Git-Lit.github.io/' + self.book.book_id,
             private=False,
             has_issues=True,
             has_wiki=False,
@@ -72,8 +72,8 @@ class GithubRepo():
     def push_to_github(self):
         with CdContext(self.directory):
             try:
-                sh.git('push', 'origin', 'master')
+                sh.git('push', 'origin', 'gh-pages')
             except sh.ErrorReturnCode_128:
                 logging.error(u"github repo not ready yet")
                 time.sleep(10)
-                sh.git('push', 'origin', 'master')
+                sh.git('push', 'origin', 'gh-pages')

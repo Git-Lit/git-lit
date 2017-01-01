@@ -19,6 +19,8 @@ from pkg_resources import resource_filename
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
+BASE_URL = 'https://Git-Lit.github.io/'
+
 class CdContext():
     """ A context manager using `sh` to cd to a directory and back
         `with CdContext(new path to go to)`
@@ -70,9 +72,10 @@ class LocalRepo():
             templateSrc = f.read()
         template = jinja2.Template(templateSrc)
         readme_text = template.render(
-            title=self.book.title,
-            author=self.book.author,
-            book_id=self.book.book_id
+            title = self.book.title,
+            author = self.book.author,
+            book_id = self.book.book_id, 
+            url = BASE_URL + self.book.book_id
         )
 
         readme_path = "{0}/{1}".format(
@@ -160,6 +163,7 @@ class LocalRepo():
                         )
             with open('_config.yml', 'w') as outFile: 
                 outFile.write(configOut)
+            sh.git('checkout', '-b', 'gh-pages')
 
         self.add_all_files()
         self.commit('Create Jekyll site.')
