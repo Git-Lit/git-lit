@@ -8,9 +8,9 @@
     <p>{{ site.description }}</p>
   </div>
 
-  <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
+  <a class="sidebar-nav-item" href="{{ site.url }}">Home</a>
 
+  <nav class="sidebar-nav">
     {% comment %}
       The code below dynamically generates a sidebar nav of pages with
       `layout: page` in the front-matter. See readme for usage.
@@ -27,14 +27,15 @@
 
     <!-- The code below is used for manually entered links  -->
 
+    <a class="sidebar-nav-item" href="https://github.com/git-lit/{{ site.book_id }}">Source</a>
 
-    <a class="sidebar-nav-item" href="https://via.hypothes.is/{{ site.url }}{{ site.baseurl }}{{page.url}}/">Annotate me</a>
+    <a class="sidebar-nav-item" href="https://github.com/git-lit/{{ site.book_id }}/edit/gh-pages/index.md">Edit</a>
 
-    <a class="sidebar-nav-item" href="https://Git-Lit.github.io/" target="_blank">The Git-Lit Project</a>
-    <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
+    <a class="sidebar-nav-item" href="https://via.hypothes.is/{{ site.url }}{{ site.baseurl }}{{page.url}}/">Annotate</a>
+
   </nav>
 
   <div class="sidebar-item">
-    <p>Distributed with an MIT license.</p>
+    <p>This text is in the public domain. Code released under the GPLv3.</p>
   </div>
 </div>
