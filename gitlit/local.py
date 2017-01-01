@@ -156,6 +156,35 @@ class LocalRepo():
             for jekyllFile in files: 
                 sh.cp(jekyllFile, '.')
 
+            # Create header from template. 
+            logging.info('Creating book headers from template.')
+            headerTemplate = resource_filename(__name__, 'templates/book-header.md.j2')
+            with open(headerTemplate, 'r') as templateFile: 
+                templateContents = templateFile.read() 
+                template = jinja2.Template(templateContents)
+                header = template.render(title=self.book.title)
+            # Prepend header to book markdown file. 
+            doc = self.basename+'.md'
+            with open(doc, 'r') as origFile: 
+                origContent = origFile.read()
+            with open(doc, 'w') as modifiedFile:
+                modifiedFile.write(header + '\n' + origContent)
+            sh.mv(doc, 'index.md')
+
+            logging.info('Creating _config.yml from template.')
+            configTemplate = resource_filename(__name__, 'templates/_config.yml.j2')
+            with open(configTemplate, 'r') as templateFile: 
+                templateContents = templateFile.read()
+                template = jinja2.Template(templateContents)
+                configOut = template.render(
+                        title = self.book.title, 
+                        author = self.book.author,
+                        book_id = self.book.book_id
+                        )
+            with open('_config.yml', 'w') as outFile: 
+                outFile.write(configOut)
+
+
 def make(book):
     # Initial commit of book files
     local_repo = LocalRepo(book)
