@@ -6,11 +6,6 @@ Syncs a local git book repo to a remote git repo (by default, github)
 Based on code from the GITenberg project
 """
 
-from __future__ import absolute_import
-from __future__ import division
-from __future__ import print_function
-from __future__ import unicode_literals
-
 import logging
 import time
 
@@ -48,7 +43,7 @@ class GithubRepo():
         logger.debug("ratelimit: " + str(self.org.ratelimit_remaining))
 
     def format_desc(self):
-        return u'{0} by {1} is a British Library book, now on GitHub.'.format(
+        return '{0} by {1} is a British Library book, now on GitHub.'.format(
             self.book.title, self.book.author
         )
 
@@ -63,7 +58,7 @@ class GithubRepo():
         self.repo = self.org.create_repository(
             self.format_title(),
             description=self.format_desc(),
-            homepage=u'https://Git-Lit.github.io/',
+            homepage='https://Git-Lit.github.io/',
             private=False,
             has_issues=True,
             has_wiki=False,

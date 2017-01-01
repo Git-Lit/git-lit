@@ -98,34 +98,13 @@ class LocalRepo():
                 '{0}/'.format(self.directory)
             )
 
-    def add_file(self, filename):
-        sh.git('add', filename)
-
     def add_all_files(self):
-        SUFFIXES = {'_dat.zip',
-                    '_metadata.xml',
-                    'README.md',
-                    'CONTRIBUTING.md',
-                    'LICENSE.md',
-                    '.md'
-                    }
         with CdContext(self.directory):
             sh.git.init('.')
-
-            logging.debug("Files to add: " + str(sh.ls()))
-
-            # NOTE: repo.untracked_files is unreliable with CdContext
-            # using sh.ls() instead, this doesn't recognize .gitignore
-            for _file in sh.ls('-1'):
-                # TODO: This attempts to add existing files a second time
-                _file = _file.rstrip('\n')
-                for suffix in SUFFIXES:
-                    if _file.endswith(suffix):
-                        logging.info("Adding file: " + _file)
-                        self.add_file(_file)
-                        break
-                else:
-                    logging.debug('Skipping ' + _file)
+            files = glob.glob('./*')
+            logging.debug("Files to add: %s")
+            for file in files: 
+                sh.git('add', file)
 
     def commit(self, message):
         with CdContext(self.directory):
