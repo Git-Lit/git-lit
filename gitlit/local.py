@@ -129,19 +129,20 @@ class LocalRepo():
             header = template.render(title=self.book.title)
         return header
 
-    def template_config(self): 
-        """ Generates a _config.yml from the template. """
-        logging.info('Creating _config.yml from template.')
-        configTemplate = resource_filename(__name__, 'templates/_config.yml.j2')
-        with open(configTemplate, 'r') as templateFile: 
+    def template_file(self, filename): 
+        """ Generates a file from its template. """
+        templateFilename = filename + '.j2'
+        logging.info('Generating %s from %s.' % (filename, templateFilename))
+        templateFilename = resource_filename(__name__, 'templates/'+templateFilename)
+        with open(templateFilename, 'r') as templateFile: 
             templateContents = templateFile.read()
             template = jinja2.Template(templateContents)
-        configOut = template.render(
+        out = template.render(
                 title = self.book.title, 
                 author = self.book.author,
                 book_id = self.book.book_id
                 )
-        return configOut
+        return out
 
     def jekyllify(self): 
         logging.info('Now creating a Jekyll site out of this repo.')
@@ -168,10 +169,10 @@ class LocalRepo():
             # Remove it from git, since we've renamed it to index.md
             sh.git('rm', doc) 
 
-            # Generate config file. 
-            configOut = self.template_config()
-            with open('_config.yml', 'w') as outFile: 
-                outFile.write(configOut)
+            for f in ['_config.yml', 'about.md']: 
+                out = self.template_file(f)
+                with open(f, 'w') as outFile: 
+                    outFile.write(out) 
 
             # Use gh-pages branch. 
             sh.git('checkout', '-b', 'gh-pages')
