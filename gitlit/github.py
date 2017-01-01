@@ -8,10 +8,8 @@ Based on code from the GITenberg project
 
 import logging
 import time
-
 import github3
 import sh
-
 from gitlit.local import CdContext
 
 try:
@@ -62,8 +60,6 @@ class GithubRepo():
             private=False,
             has_issues=True,
             has_wiki=False,
-#            license_template='', # new in 1.0.0a1
-#            has_downloads=True # removed in 1.0.0a1
         )
 
     def add_remote_origin_to_local_repo(self):
@@ -81,17 +77,3 @@ class GithubRepo():
                 logging.error(u"github repo not ready yet")
                 time.sleep(10)
                 sh.git('push', 'origin', 'master')
-
-
-
-#test = GithubRepo(testtext)
-
-#test.create_and_push()
-
-#for text in c.texts: 
-#    print(t1ext)
-
-#for text in c.texts: 
-#    repo = GithubRepo(text)
-#    repo.create_and_push()
-
