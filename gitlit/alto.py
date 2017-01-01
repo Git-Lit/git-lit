@@ -121,7 +121,7 @@ class Alto(object):
                     newlines = []
                     for line in lines: 
                         line = line.strip() # Leading (especially) and trailing whitespace is problematic
-                        line = '    ' + line + '  ' # indent four spaces for verse, and append two spaces to indicate verse mode
+                        line = line + '  ' # append two spaces to indicate verse mode
                         newlines.append(line) 
                     lines = newlines
                     paraStart = False
