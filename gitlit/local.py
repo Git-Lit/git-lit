@@ -7,10 +7,8 @@ Based on code from GITenburg project.
 """
 
 import codecs
-
 import jinja2
 import sh
-
 import logging
 import lxml
 import shutil
@@ -37,7 +35,6 @@ class CdContext():
 
 
 class LocalRepo():
-
     def __init__(self, book):
         """ Requires a BLText book object as input. """ 
         self.book = book
@@ -123,7 +120,6 @@ class LocalRepo():
         logging.info('Now creating a Jekyll site out of this repo.')
 
         with CdContext(self.directory):
-
             # Copy Jekyll skeleton files to our new directory. 
             try:
                 skel_dir = resource_filename(__name__, 'jekyll-skel/') 
