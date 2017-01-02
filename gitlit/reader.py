@@ -101,7 +101,16 @@ class BLText:
         # TODO enable caching of this result
         # Be careful not to pick up related titles, etc.
         title = self.getText('//MODS:mods/MODS:titleInfo/MODS:title')
-        return self.removeBracketed(title)
+        logging.info('Title: %s' % title)
+        if len(title) > 1: 
+            # FIXME. We're only taking the first of multiple titles,
+            # since there's no structure in place for handling
+            # multiple titles yet. 
+            title = title[0] 
+        out = self.removeBracketed(title)
+        if self.volume: 
+            out += " (Volume %s)" % self.volume
+        return out
 
     def removeBracketed(self, s):
         return re.sub(r'\[[^\]]*\]', '', s).strip()
