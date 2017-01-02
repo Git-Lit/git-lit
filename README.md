@@ -16,8 +16,19 @@ pip install --editable .
 
 # Usage 
 
+Convert a compressed ALTO collection to markdown: 
 ```
-git-lit path-to-my-zipped-ALTO-thing.zip
+git-lit convert path-to-my-zipped-ALTO-thing.zip
+```
+
+Convert to markdown, create a git repository, log everything in git, make a Jekyll site out of it, and push to GitHub: 
+```
+git-lit process path-to-my-zipped-ALTO-thing.zip --push
+```
+
+All of the above, but without creating a Jekyll site, and without pushing to GitHub.  
+```
+git-lit process path-to-my-zipped-ALTO-thing.zip --nojekyll
 ```
 
 At the moment, this only works with British Library zip files containing ALTO XML scanned data. 
