@@ -13,6 +13,7 @@ import lxml.etree
 import os
 import re
 import sys
+import logging
 #from IPython.display import display
 # import pandas as pd
 from unidecode import unidecode
@@ -81,7 +82,10 @@ class BLText:
                         confidence += a.avg_word_confidence * a.word_count
                         self.styles.update(a.styles)
                     continuation = a.continuation
-        self.avg_word_confidence = confidence / self.words
+        if self.words: 
+            self.avg_word_confidence = confidence / self.words
+        else: 
+            self.avg_word_confidence = 0
 
 
     def getText(self, xpath):
