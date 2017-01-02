@@ -102,7 +102,7 @@ class BLText:
         # Be careful not to pick up related titles, etc.
         title = self.getText('//MODS:mods/MODS:titleInfo/MODS:title')
         logging.info('Title: %s' % title)
-        if len(title) > 1: 
+        if type(title) == list: 
             # FIXME. We're only taking the first of multiple titles,
             # since there's no structure in place for handling
             # multiple titles yet. 
