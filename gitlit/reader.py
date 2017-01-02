@@ -37,6 +37,10 @@ class BLText:
         pieces = os.path.basename(zipfile).split('_')
         self.book_id = pieces[0]
         self.volume = int(pieces[1])
+        if self.volume:
+            self.vol_id = self.book_id + '_%02d' % self.volume
+        else: 
+            self.vol_id = self.book_id
 
         with ZipFile(zipfile) as zf:
             # TODO: Check for an warn if there are multiple books in the same zip file

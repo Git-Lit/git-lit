@@ -40,12 +40,11 @@ class LocalRepo():
     def __init__(self, book):
         """ Requires a BLText book object as input. """ 
         self.book = book
+        self.basename = self.book.vol_id
+        self.title = self.book.title
         logging.info("Now attempting to initialize a local git repository for text: " 
-                      + self.book.book_id + " a.k.a. " + self.book.title )
-        self.basename = self.book.book_id
+                      + self.basename + " a.k.a. " + self.title )
         self.directory = tempfile.mkdtemp(prefix='tmprepo%s' % self.basename, dir='.')
-        if book.volume:
-            self.basename += '_%02d' % self.book.volume
         # TODO: Temp dirs being created locally to ease debugging.  Remove for production
         self.add_new_files()
         self.add_all_files()
@@ -117,7 +116,7 @@ class LocalRepo():
                     '{message}'.format(message=message)
                 )
             except sh.ErrorReturnCode_1 as e: 
-                print("Commit aborted for {0} with msg {1}".format(self.book.book_id, message))
+                print("Commit aborted for {0} with msg {1}".format(self.book.vol_id, message))
                 print("Error: " + e.message)
 
     def template_header(self): 

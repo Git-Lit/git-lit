@@ -46,17 +46,14 @@ class GithubRepo():
         )
 
     def format_title(self):
-        # Just using the book ID + volume as a title for now.
-        title = self.book.book_id
-        if self.book.volume:
-            title += '_' + str(self.book.volume)
-        return title
+        # Just using the volume ID for now.  
+        return self.book.vol_id
 
     def create_repo(self):
         self.repo = self.org.create_repo(
             self.format_title(),
             description=self.format_desc(),
-            homepage='https://Git-Lit.github.io/' + self.book.book_id,
+            homepage='https://Git-Lit.github.io/' + self.book.vol_id,
             private=False,
             has_issues=True,
             has_wiki=False,
