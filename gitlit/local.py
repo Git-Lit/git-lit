@@ -71,11 +71,10 @@ class LocalRepo():
             templateSrc = f.read()
         template = jinja2.Template(templateSrc)
         readme_text = template.render(
-            title = self.book.title,
+            title = self.title,
             author = self.book.author,
             book_id = self.basename, # Use this, since it will have volume info. 
             url = BASE_URL + self.basename, 
-            volume = self.book.volume
         )
 
         readme_path = "{0}/{1}".format(
@@ -126,7 +125,7 @@ class LocalRepo():
         with open(headerTemplate, 'r') as templateFile: 
             templateContents = templateFile.read() 
             template = jinja2.Template(templateContents)
-            header = template.render(title=self.book.title)
+            header = template.render(title=self.title)
         return header
 
     def template_file(self, filename): 
@@ -138,10 +137,9 @@ class LocalRepo():
             templateContents = templateFile.read()
             template = jinja2.Template(templateContents)
         out = template.render(
-                title = self.book.title, 
+                title = self.title, 
                 author = self.book.author,
                 book_id = self.basename,
-                volume = self.book.volume
                 )
         return out
 
