@@ -11,12 +11,15 @@ logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
 @click.group()
-@click.option('--debug', is_flag=True, help='Turn on debugging mode for more verbose error messages.')
+@click.option('--debug', is_flag=True, help='Turn on debugging mode for verbose error messages.')
 def cli(debug): 
     """Processes books and turns them into GitHub repositories.
     Converts ALTO XML to markdown, adds READMEs, and pushes to GitHub. 
     Only works with British Library compressed ALTO files at the moment. 
     """
+    #FIXME: this doesn't seem to get passed to individual commands. 
+    if debug: 
+        logger.setLevel(logging.DEBUG)
 
 @cli.command()
 @click.argument('filenames', nargs=-1) 
