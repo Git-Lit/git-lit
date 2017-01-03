@@ -216,7 +216,7 @@ class Alto(object):
 
         # TODO: Fix this crude chapter detector - chapter head can be in multiple blocks, among other things
         # TODO:  doesn't handle mid-page chapter heads like doc 000000206
-        if pageStart and lines[0].find('CHAPTER') >= 0:
+        if pageStart and len(lines) > 0 and lines[0].find('CHAPTER') >= 0:
             head = lines[0]
             # Concatenate all upper case lines
             for i in range(1,len(lines)):
