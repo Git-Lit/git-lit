@@ -40,6 +40,13 @@ class GithubRepo():
         self.org = self.github.organization('Git-Lit')
         logger.debug("ratelimit: " + str(self.org.ratelimit_remaining))
 
+    def repo_exists(self, repo): 
+        """ Checks if a repo exists in the Git-Lit org. """
+        repos = [repo.name for repo in self.org.iter_repos()
+                # assumes that books start with 0. 
+                if repo.name.startswith('0')]
+        return repo in repos
+
     def format_desc(self):
         return '{0} by {1} is a British Library book, now on GitHub.'.format(
             self.book.title, self.book.author
