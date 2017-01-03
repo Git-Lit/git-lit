@@ -107,3 +107,10 @@ class GitHub():
             logging.info('Repo %s successfully deleted.' % repo)
         else: 
             logging.warn("Repo %s wasn't deleted!" % repo)
+
+    def list(self): 
+        """ Gets list of all book-looking items in the Git-Lit org. """
+        repos = [repo.name for repo in self.org.iter_repos()
+                # assumes that books start with 0. 
+                if repo.name.startswith('0')]
+        return sorted(repos)

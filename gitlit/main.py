@@ -66,5 +66,12 @@ def delete(repos):
     for repo in repos: 
         gh.delete(repo)
 
+@cli.command() 
+def list(): 
+    """ Lists all book-like repos in the Git-Lit org. """
+    gh = github.GitHub()
+    for repo in gh.list(): 
+        print(repo)
+
 if __name__ == '__main__':
     cli()
