@@ -83,7 +83,12 @@ class GithubRepo():
                 sh.git('push', 'origin', 'gh-pages')
 
 class GitHub(): 
-    """ A class for generic GH utility actions. """
+    """ 
+    A class for generic GH utility actions. 
+    Ideally this could be combined with the GitHubRepo class above, 
+    but keeping this separate allows us to poll GitHub without having to parse a book
+    first. 
+    """
     def __init__(self): 
         self.create_api_handler()
 
