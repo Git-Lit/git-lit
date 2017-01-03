@@ -58,6 +58,9 @@ def process(filenames, nojekyll=False, push=False):
 
         if push: 
             gh = github.GithubRepo(book, repo.directory) 
+            logging.info('Checking whether %s exists.' % repo.basename)
+            if gh.repo_exists(repo.basename): 
+                raise Exception('The repository %s already exists!' % repo.basename)
             gh.create_and_push()
             
 @cli.command() 
